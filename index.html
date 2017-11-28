@@ -1,73 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Crea tu CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <main>
-      <section>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#" class="link-personal-data">
-              <img src="img/personal-data.svg" alt="icon personal data" class="nav-icon">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="link-education">
-              <img src="img/education.svg" alt="icon education" class="nav-icon">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="link-experience">
-              <img src="img/experience.svg" alt="icon experience" class="nav-icon">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="link-projects">
-              <img src="img/projects.svg" alt="icon projects" class="nav-icon">
-              </a>
-            </li>
-          </ul>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Crea tu CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <main>
+    <section>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link">
+              <img src="img/personal.png" alt="icon personal data" class="nav-icon icon-personal">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <img src="img/education.png" alt="icon education" class="nav-icon icon-education">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <img src="img/experience.png" alt="icon experience" class="nav-icon icon-experience">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <img src="img/projects.png" alt="icon projects" class="nav-icon icon-projects">
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-        </nav>
-        <h2 class="tittle">Datos personales</h2>
+      <!-- Formulario -->
 
+      <form action="" method="post">
 
-        <a href="" class="button">Continuar</a>
+        <fieldset> <!-- Rita -->
+          <legend class="title">Datos personales</legend>
 
-        <a href="" class="button buttonGoBack">Volver</a>
-
-        <form action="" method="post"> <!-- Agrupar formularios con legend... -->
           <label class="label-form" for="firstname">Nombre</label>
           <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
-        </form>
-      </section>
 
-      <aside>
-        <div class="cv-left">
-          <h2 class="cv-name">NOMBRE <br> APELLIDO <br> APELLIDO</h2>
-          <h3 class="cv-position">Profesión</h3>
-          <div class="cv-contact">
-            <h3>Contact</h3>
-            <h4>Correo electrónico</h4>
-            <h4>Teléfono</h4>
-            <h4>Ciudad</h4>
-            <h4>Dirección web</h4>
-            <h4>Perfil github</h4>
-          </div>
-          <div class="cv-description">
-            <h3>Descripción</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+          <label class="label-form" for="profession">Profesión actual</label>
+          <input class="input-form" id="profession" type="text" name="profession" placeholder="Profesión actual" required>
+
+          <label class="label-form" for="residence">Lugar de residencia</label>
+          <input class="input-form" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
+
+          <label class="label-form" for="telephone">Teléfono</label>
+          <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
+
+          <label class="label-form" for="social">Redes sociales</label>
+          <input class="input-form" id="social" type="url" name="social" placeholder="Redes sociales" required>
+
+          <label class="label-form" for="personal-website">Web personal</label>
+          <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal" required>
+
+          <textarea class="input-form"  id="contact-text" name="comments" rows="8" cols="80" placeholder="Sobre mi"></textarea>
+        </fieldset>
+
+        <fieldset>  <!-- Anita -->
+          <legend class="title">Proyectos</legend>
+
+          <label class="label-form" for="name-project">
+            Nombre del proyecto
+          </label>
+          <input class="input-form" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
+
+          <label class="label-form" for="company-project">
+            Empresa o proyecto personal
+          </label>
+          <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
+
+          <label class="label-form" for="date-project">
+            Fecha de realización
+          </label>
+          <input class="input-form" id="date-project" type="month" name="date-realization" placeholder="Mes y año del proyecto">
+
+          <label for="description-project">
+            Descripción del proyecto :
+          </label>
+          <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
+        </fieldset>
+      </form>
+
+
+      <p>Rellena tu proyecto</p>
+      <div class="add-project">
+        <a href="#">Añadir proyecto</a>
+        <div class="buttons-project-container">
+          <img class="buttons-project" src="img/trash.png" alt="Icono de papelera">
+          <img class="buttons-project" src="img/arrowup.png" alt="Flecha hacia arriba">
+          <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
 
         </div>
-        <div class="cv-right">
+      </div>
 
+
+
+      <a href="" class="button">Continuar</a>
+
+      <a href="" class="button buttonGoBack">Volver</a>
+
+    </form>
+  </section>
+
+
+
+  <!-- Currículum -->
+
+  <aside>
+    <div class="cv-left">
+      <h2 class="cv-name">NOMBRE <br> APELLIDO <br> APELLIDO</h2>
+      <h3 class="cv-position">Profesión</h3>
+      <div class="cv-contact">
+        <h3>Contact</h3>
+        <h4>Correo electrónico</h4>
+        <h4>Teléfono</h4>
+        <h4>Ciudad</h4>
+        <h4>Dirección web</h4>
+        <h4>Perfil github</h4>
+      </div>
+      <div class="cv-description">
+        <h3>Descripción</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+    </div>
+    <div class="cv-right">
+      <aside>
+        <div class="cv-left">
+        </div>
+        <div class="cv-right">
         </div>
       </aside>
 
@@ -77,4 +145,4 @@
 
 
   </body>
-</html>
+  </html>
