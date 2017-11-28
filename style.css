@@ -108,8 +108,21 @@ form {
 
 /* Projects */
 
+.add-project {
+  margin-bottom: 24px;
+  border: 1px #576490 solid;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.buttons-project {
+  width: 20px;
+}
 
+.buttons-project-container {
+
+}
 
 
 /* ==============
