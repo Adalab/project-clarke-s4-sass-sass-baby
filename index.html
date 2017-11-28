@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Crea tu CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <main>
-      <section>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li>
-              <a href="#" class="main-nav-link">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Crea tu CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <main>
+    <section>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link">
               <img src="img/personal.png" alt="icon personal data" class="nav-icon icon-personal">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="main-nav-link">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
               <img src="img/education.png" alt="icon education" class="nav-icon icon-education">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="main-nav-link">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
               <img src="img/experience.png" alt="icon experience" class="nav-icon icon-experience">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="main-nav-link">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
               <img src="img/projects.png" alt="icon projects" class="nav-icon icon-projects">
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <h2 class="title personal-data-title">Datos personales</h2>
-        <form action="" method="post">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+<!-- Formulario -->
+
+      <form action="" method="post">
+
+        <fieldset> <!-- Rita -->
+          <legend class="title">Datos personales</legend>
+
           <label class="label-form" for="firstname">Nombre</label>
           <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
 
@@ -55,31 +61,60 @@
           <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal" required>
 
           <textarea class="input-form"  id="contact-text" name="comments" rows="8" cols="80" placeholder="Sobre mi"></textarea>
-        </form>
+        </fieldset>
+
+        <fieldset>  <!-- Anita -->
+          <legend class="title">Proyectos</legend>
+
+          <label class="label-form" for="name-project">
+            Nombre del proyecto
+          </label>
+          <input class="input-form" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
+
+          <label class="label-form" for="company-project">
+            Empresa o proyecto personal
+          </label>
+          <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
+
+          <label class="label-form" for="date-project">
+            Fecha de realización
+          </label>
+          <input class="input-form" id="date-project" type="month" name="date-realization" placeholder="Mes y año del proyecto">
+
+          <label for="description-project">
+            Descripción del proyecto :
+          </label>
+          <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
+        </fieldset>
+      </form>
 
 
-        <a href="" class="button">Continuar</a>
-
-        <a href="" class="button buttonGoBack">Volver</a>
-
-        <!-- <form action="" method="post"> Agrupar formularios con legend...
-          <label class="label-form" for="firstname">Nombre</label>
-          <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required> -->
-
-        </form>
-      </section>
-
-      <aside>
-        <div class="cv-left">
-        </div>
-        <div class="cv-right">
-        </div>
-      </aside>
-
-    </main>
+    
 
 
 
+      <a href="" class="button">Continuar</a>
 
-  </body>
+      <a href="" class="button buttonGoBack">Volver</a>
+
+    </form>
+  </section>
+
+
+
+  <!-- Currículum -->
+
+  <aside>
+    <div class="cv-left">
+    </div>
+    <div class="cv-right">
+    </div>
+  </aside>
+
+</main>
+
+
+
+
+</body>
 </html>

@@ -11,15 +11,55 @@ body {
   line-height: 1.4;
 }
 
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+
+
 /* ==============
 FORMULARIO
 ================== */
 
-/* Clases generales */
+/* ClASES GENERALES */
+
+.button {   /*Referencia : http://www.jobandtalent.com/es */
+  padding: 10px 25px;
+  background-image: linear-gradient(to right, #576490 0%, #707da9 51%, #576490 100%);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  background-size: 200% auto;
+  background-position: -100px center;
+  transition: background-position 0.5s;
+}
+
+.button:hover {
+  background-position: 0 center;
+}
+
+.buttonGoBack {
+  background-size: 200% auto;
+  background: linear-gradient(to right, #ff9900 0%, #ffad33 51%, #ff9900 100%);
+}
+
+.buttonGoBack:hover {
+  background: linear-gradient(to right, #ffb84d 0%, #ffb84d 100%);
+}
+
+
+/* FORMULARIO */
 
 .title {
   font-size: 1.15em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .label-form {
@@ -43,34 +83,6 @@ FORMULARIO
   width: 100%;
 }
 
-
-.button {   /*Referencia : http://www.jobandtalent.com/es */
-  padding: 10px 25px;
-  background-image: linear-gradient(to right, #576490 0%, #707da9 51%, #576490 100%);
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 10px;
-  background-size: 200% auto;
-  background-position: -100px center;
-  transition: background-position 0.5s;
-}
-
-.button:hover {
-  background-position: 0 center;
-}
-
-.buttonGoBack {
-  background-size: 200% auto;
-  background: linear-gradient(to right, #ff9900 0%, #ffad33 51%, #ff9900 100%);
-
-}
-
-.buttonGoBack:hover {
-  background: linear-gradient(to right, #ffb84d 0%, #ffb84d 100%);
-
-}
-
 /* NAVIGATION BAR */
 
 .main-nav-list { /* No funciona el justify content */
@@ -88,14 +100,15 @@ FORMULARIO
 }
 
 /* DATOS PERSONALES */
-.personal-data-title  {
-  text-align: center;
-  text-transform: uppercase;
-}
 
 form {
   margin: 5% 2%;
 }
+
+
+/* Projects */
+
+
 
 
 
