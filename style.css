@@ -73,3 +73,31 @@ FORMULARIO
 /* ==============
 CV
 ================== */
+
+/* Clases generales */
+
+aside {
+width: 595px;
+height: 842px;
+display: flex;
+}
+
+.cv-left {
+  padding: 20px;
+  max-width: 30%;
+  height: 100%;
+  background-color: #1D1E2C;
+  color: white;
+}
+
+.cv-contact {
+  line-height: 0.2;
+
+}
+
+.cv-right {
+  max-width: 70%;
+  height: 100%;
+  background-color: green;
+
+}
