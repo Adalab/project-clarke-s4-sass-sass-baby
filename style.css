@@ -17,8 +17,8 @@ FORMULARIO
 
 /* Clases generales */
 
-.tittle {
-  font-size: 1.25em;
+.title {
+  font-size: 1.15em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -40,6 +40,7 @@ FORMULARIO
   font-weight: 300;
   color: #1D1E2C;
   line-height: 1.4;
+  width: 100%;
 }
 
 
@@ -72,9 +73,31 @@ FORMULARIO
 
 /* NAVIGATION BAR */
 
-.nav-icon {
-  width: 40px;
+.main-nav-list { /* No funciona el justify content */
+  margin: 5% 0;
+  list-style: none;
+  display: flex;
 }
+
+.nav-icon { /* Cuando uso iconos svg al hacer flex al su contenedor su tamaño varía */
+  width: 40%;
+}
+
+.icon-education {
+  width: 45%;
+}
+
+/* DATOS PERSONALES */
+.personal-data-title  {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form {
+  margin: 5% 2%;
+}
+
+
 
 /* ==============
 CV

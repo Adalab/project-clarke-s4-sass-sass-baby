@@ -10,41 +10,62 @@
   <body>
     <main>
       <section>
-        <nav class="main-navigation">
-          <ul>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
             <li>
-              <a href="#" class="link-personal-data">
-              <img src="img/personal-data.svg" alt="icon personal data" class="nav-icon">
+              <a href="#" class="main-nav-link">
+              <img src="img/personal.png" alt="icon personal data" class="nav-icon icon-personal">
               </a>
             </li>
             <li>
-              <a href="#" class="link-education">
-              <img src="img/education.svg" alt="icon education" class="nav-icon">
+              <a href="#" class="main-nav-link">
+              <img src="img/education.png" alt="icon education" class="nav-icon icon-education">
               </a>
             </li>
             <li>
-              <a href="#" class="link-experience">
-              <img src="img/experience.svg" alt="icon experience" class="nav-icon">
+              <a href="#" class="main-nav-link">
+              <img src="img/experience.png" alt="icon experience" class="nav-icon icon-experience">
               </a>
             </li>
             <li>
-              <a href="#" class="link-projects">
-              <img src="img/projects.svg" alt="icon projects" class="nav-icon">
+              <a href="#" class="main-nav-link">
+              <img src="img/projects.png" alt="icon projects" class="nav-icon icon-projects">
               </a>
             </li>
           </ul>
-
         </nav>
-        <h2 class="tittle">Datos personales</h2>
+        <h2 class="title personal-data-title">Datos personales</h2>
+        <form action="" method="post">
+          <label class="label-form" for="firstname">Nombre</label>
+          <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
+
+          <label class="label-form" for="profession">Profesión actual</label>
+          <input class="input-form" id="profession" type="text" name="profession" placeholder="Profesión actual" required>
+
+          <label class="label-form" for="residence">Lugar de residencia</label>
+          <input class="input-form" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
+
+          <label class="label-form" for="telephone">Teléfono</label>
+          <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
+
+          <label class="label-form" for="social">Redes sociales</label>
+          <input class="input-form" id="social" type="url" name="social" placeholder="Redes sociales" required>
+
+          <label class="label-form" for="personal-website">Web personal</label>
+          <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal" required>
+
+          <textarea class="input-form"  id="contact-text" name="comments" rows="8" cols="80" placeholder="Sobre mi"></textarea>
+        </form>
 
 
         <a href="" class="button">Continuar</a>
 
         <a href="" class="button buttonGoBack">Volver</a>
 
-        <form action="" method="post"> <!-- Agrupar formularios con legend... -->
+        <!-- <form action="" method="post"> Agrupar formularios con legend...
           <label class="label-form" for="firstname">Nombre</label>
-          <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
+          <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required> -->
+
         </form>
       </section>
 
