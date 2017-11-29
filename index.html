@@ -41,6 +41,7 @@
 
         <fieldset> <!-- Rita -->
           <legend class="title">Datos personales</legend>
+          <hr>
 
           <label class="label-form" for="firstname">Nombre</label>
           <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
@@ -55,16 +56,21 @@
           <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
 
           <label class="label-form" for="social">Redes sociales</label>
-          <input class="input-form" id="social" type="url" name="social" placeholder="Redes sociales" required>
+          <input class="input-form" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
 
           <label class="label-form" for="personal-website">Web personal</label>
-          <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal" required>
+          <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
 
-          <textarea class="input-form"  id="contact-text" name="comments" rows="8" cols="80" placeholder="Sobre mi"></textarea>
+
+          <label for="personal-description">
+            Descripción personal:
+          </label>
+          <textarea class="input-form"  name="personal-description" rows="8" cols="80"></textarea>
         </fieldset>
 
         <fieldset>  <!-- Anita -->
           <legend class="title">Proyectos</legend>
+          <hr>
 
           <label class="label-form" for="name-project">
             Nombre del proyecto
@@ -96,7 +102,6 @@
           <img class="buttons-project" src="img/trash.png" alt="Icono de papelera">
           <img class="buttons-project" src="img/arrowup.png" alt="Flecha hacia arriba">
           <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
-
         </div>
       </div>
 
@@ -104,7 +109,7 @@
 
       <a href="" class="button">Continuar</a>
 
-      <a href="" class="button buttonGoBack">Volver</a>
+      <a href="" class="buttonGoBack">Volver</a>
 
     </form>
   </section>

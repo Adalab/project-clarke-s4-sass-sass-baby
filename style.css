@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -10,6 +11,7 @@ body {
   color: #1D1E2C;
   line-height: 1.4;
 }
+
 
 fieldset {
   border: 0;
@@ -19,52 +21,92 @@ fieldset {
 }
 
 
+section {
+  margin-bottom: 10%;
+}
 
 /* ==============
 FORMULARIO
 ================== */
 
-/* ClASES GENERALES */
+/* ----- ClASES GENERALES -----  */
 
 .button {   /*Referencia : http://www.jobandtalent.com/es */
+  background-color: #4d6292;
   padding: 10px 25px;
-  background-image: linear-gradient(to right, #576490 0%, #707da9 51%, #576490 100%);
   color: white;
   text-decoration: none;
   text-align: center;
-  border-radius: 10px;
-  background-size: 200% auto;
-  background-position: -100px center;
-  transition: background-position 0.5s;
+  border-radius: 8px;
 }
+
 
 .button:hover {
-  background-position: 0 center;
+  background-color: #344263;
 }
+
 
 .buttonGoBack {
-  background-size: 200% auto;
-  background: linear-gradient(to right, #ff9900 0%, #ffad33 51%, #ff9900 100%);
+  color: #4d6292;
+  padding: 8px 35px;
+  background-color: #fff;
+  border: 2px solid #4d6292;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
 }
 
-.buttonGoBack:hover {
-  background: linear-gradient(to right, #ffb84d 0%, #ffb84d 100%);
+
+hr {
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color: #1D1E2C;
 }
 
 
-/* FORMULARIO */
+/* ----- NAVIGATION BAR ----- */
+
+.main-nav-list { /* No funciona el justify content */
+  margin: 5% 0;
+  list-style: none;
+  display: flex;
+}
+
+
+.nav-icon { /* Cuando uso iconos svg al hacer flex al su contenedor su tamaño varía */
+  width: 40%;
+}
+
+
+.icon-education {
+  width: 45%;
+}
+
+
+
+/* -----  FORMULARIO -----  */
+
+form {
+  margin: 5% 5%;
+}
 
 .title {
   font-size: 1.15em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+
 .label-form {
   display: none;
 }
+
 
 .input-form {
   appearance: none;
@@ -83,27 +125,6 @@ FORMULARIO
   width: 100%;
 }
 
-/* NAVIGATION BAR */
-
-.main-nav-list { /* No funciona el justify content */
-  margin: 5% 0;
-  list-style: none;
-  display: flex;
-}
-
-.nav-icon { /* Cuando uso iconos svg al hacer flex al su contenedor su tamaño varía */
-  width: 40%;
-}
-
-.icon-education {
-  width: 45%;
-}
-
-/* DATOS PERSONALES */
-
-form {
-  margin: 5% 2%;
-}
 
 
 /* Projects */
