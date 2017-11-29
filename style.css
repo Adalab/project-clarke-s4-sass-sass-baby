@@ -89,16 +89,16 @@ section {
 }
 
 .nav-icon {
-  width: 20%;
-}
-
-.icon-projects,
-.icon-education {
-  width: 35%;
+  width: 30%;
 }
 
 .main-nav-button {
   border: none;
+
+}
+
+.main-nav-button:focus {
+  outline:0;
 }
 
 
