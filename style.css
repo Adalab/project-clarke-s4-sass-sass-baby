@@ -78,6 +78,13 @@ FORMULARIO
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 32px;
+  padding-top: 24px;
+}
+
+.main-form {
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .label-form {
@@ -99,6 +106,7 @@ FORMULARIO
   color: #1D1E2C;
   line-height: 1.4;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 /* NAVIGATION BAR */
