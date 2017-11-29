@@ -84,8 +84,9 @@ section {
 
 /* -----  FORMULARIO -----  */
 
-form {
-  margin: 5% 5%;
+.main-form {
+  margin: 0 5%;
+  max-width: 500px;
 }
 
 fieldset {
@@ -140,6 +141,13 @@ hr {
   width: 100%;
   margin-bottom: 20px;
   color: #7C7E83;
+}
+
+@media all and (min-width:500px) {
+  .main-form {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* Projects */
