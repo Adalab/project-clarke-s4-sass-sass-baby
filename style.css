@@ -10,6 +10,7 @@ body {
   font-weight: 300;
   color: #1D1E2C;
   line-height: 1.4;
+  margin: 0;
 }
 
 
@@ -100,6 +101,14 @@ form {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 32px;
+  padding-top: 24px;
+}
+
+.main-form {
+  margin-left: 40px;
+  margin-right: 40px;
+
 }
 
 
@@ -123,6 +132,8 @@ form {
   color: #1D1E2C;
   line-height: 1.4;
   width: 100%;
+  margin-bottom: 20px;
+  color: #7C7E83;
 }
 
 
@@ -130,25 +141,40 @@ form {
 /* Projects */
 
 .add-project {
-  margin-bottom: 24px;
   border: 1px #576490 solid;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.add-project a {
+  text-decoration: none;
+  color: #1D1E2C;
 }
 
 .buttons-project {
   width: 20px;
 }
 
-.buttons-project-container {
-
+.margin-right-buttons {
+  margin-right: 5px;
 }
 
 
 /* ==============
 CV
 ================== */
+
+
+/* ==============
+.display-none {
+  display:
+}
+================== */
+
 
 /* Clases generales */
 
@@ -164,11 +190,24 @@ display: flex;
   height: 100%;
   background-color: #1D1E2C;
   color: white;
+  font-size: 14px;
+
+}
+.cv-name {
+padding-bottom: 2px;
+
+}
+
+.cv-position {
+padding-bottom: 2px;
+
 }
 
 .cv-contact {
-  line-height: 0.2;
-
+  padding-bottom: 2px;
+}
+.cv-contact h4{
+  margin:0;
 }
 
 .cv-right {
