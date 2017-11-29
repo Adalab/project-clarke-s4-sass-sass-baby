@@ -73,19 +73,29 @@ section {
 /* ----- NAVIGATION BAR ----- */
 
 .main-nav-list {
-  margin: 5% 0;
+  margin: 5% auto;
   list-style: none;
   display: flex;
+  justify-content: space-around;
+}
+
+.main-nav ul {
+  padding-left: 0;
 }
 
 .main-nav-list li {
   width: 20%;
+  text-align: center;
 }
 
 .nav-icon {
-  width: 40%;
+  width: 20%;
 }
 
+.icon-projects,
+.icon-education {
+  width: 35%;
+}
 
 .main-nav-button {
   border: none;
