@@ -83,8 +83,9 @@ FORMULARIO
 }
 
 .main-form {
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: 40px;
+  margin-right: 40px;
+
 }
 
 .label-form {
@@ -128,27 +129,30 @@ FORMULARIO
 
 /* DATOS PERSONALES */
 
-form {
-  margin: 5% 2%;
-}
-
 
 /* Projects */
 
 .add-project {
-  margin-bottom: 24px;
   border: 1px #576490 solid;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.add-project a {
+  text-decoration: none;
+  color: #1D1E2C;
 }
 
 .buttons-project {
   width: 20px;
 }
 
-.buttons-project-container {
-
+.margin-right-buttons {
+  margin-right: 5px;
 }
 
 
