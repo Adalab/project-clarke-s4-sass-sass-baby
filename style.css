@@ -13,39 +13,44 @@ body {
   margin: 0;
 }
 
-
-fieldset {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  min-width: 0;
-}
-
+/* ==============
+FORMULARIO
+================== */
 
 section {
   margin-bottom: 10%;
 }
 
-/* ==============
-FORMULARIO
-================== */
 
-/* ----- ClASES GENERALES -----  */
+/* ----- Header -----  */
 
-.button {   /*Referencia : http://www.jobandtalent.com/es */
+.header {
+  border-bottom: 1px solid #1D1E2C;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
   background-color: #4d6292;
-  padding: 10px 25px;
+  padding: 8px 10px;
   color: white;
   text-decoration: none;
   text-align: center;
   border-radius: 8px;
+  font-size: 14px;
+  margin-right: 24px;
 }
-
 
 .button:hover {
   background-color: #344263;
 }
 
+.logo {
+  width: 30%;
+  margin-left: 24px;
+}
 
 .buttonGoBack {
   color: #4d6292;
@@ -55,18 +60,6 @@ FORMULARIO
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
-}
-
-
-hr {
-  display: block;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  color: #1D1E2C;
 }
 
 
@@ -89,11 +82,17 @@ hr {
 }
 
 
-
 /* -----  FORMULARIO -----  */
 
 form {
   margin: 5% 5%;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
 }
 
 .title {
@@ -101,21 +100,28 @@ form {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 32px;
   padding-top: 24px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color: #1D1E2C;
 }
 
 .main-form {
   margin-left: 40px;
   margin-right: 40px;
-
 }
-
 
 .label-form {
   display: none;
 }
-
 
 .input-form {
   appearance: none;
@@ -135,8 +141,6 @@ form {
   margin-bottom: 20px;
   color: #7C7E83;
 }
-
-
 
 /* Projects */
 
@@ -169,11 +173,11 @@ CV
 ================== */
 
 
-/* ==============
+
 .display-none {
-  display:
+  display:none;
 }
-================== */
+
 
 
 /* Clases generales */
