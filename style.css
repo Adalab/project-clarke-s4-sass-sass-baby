@@ -9,6 +9,7 @@ body {
   font-weight: 300;
   color: #1D1E2C;
   line-height: 1.4;
+  margin: 0;
 }
 
 fieldset {
@@ -26,21 +27,6 @@ FORMULARIO
 
 /* ClASES GENERALES */
 
-.button {   /*Referencia : http://www.jobandtalent.com/es */
-  padding: 10px 25px;
-  background-image: linear-gradient(to right, #576490 0%, #707da9 51%, #576490 100%);
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 10px;
-  background-size: 200% auto;
-  background-position: -100px center;
-  transition: background-position 0.5s;
-}
-
-.button:hover {
-  background-position: 0 center;
-}
 
 .buttonGoBack {
   background-size: 200% auto;
@@ -51,6 +37,38 @@ FORMULARIO
   background: linear-gradient(to right, #ffb84d 0%, #ffb84d 100%);
 }
 
+/* Cabecera */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid #576490 1px;
+  height: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.button {
+  padding: 6px 10px;
+  background-image: linear-gradient(to right, #576490 0%, #707da9 51%, #576490 100%);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  background-size: 200% auto;
+  background-position: -100px center;
+  transition: background-position 0.5s;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-position: 0 center;
+}
+
+.logo {
+  width: 35%;
+}
 
 /* FORMULARIO */
 
@@ -60,6 +78,14 @@ FORMULARIO
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 32px;
+  padding-top: 24px;
+}
+
+.main-form {
+  margin-left: 40px;
+  margin-right: 40px;
+
 }
 
 .label-form {
@@ -81,6 +107,8 @@ FORMULARIO
   color: #1D1E2C;
   line-height: 1.4;
   width: 100%;
+  margin-bottom: 20px;
+  color: #7C7E83;
 }
 
 /* NAVIGATION BAR */
@@ -101,33 +129,37 @@ FORMULARIO
 
 /* DATOS PERSONALES */
 
-form {
-  margin: 5% 2%;
-}
-
 
 /* Projects */
 
 .add-project {
-  margin-bottom: 24px;
   border: 1px #576490 solid;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.add-project a {
+  text-decoration: none;
+  color: #1D1E2C;
 }
 
 .buttons-project {
   width: 20px;
 }
 
-.buttons-project-container {
-
+.margin-right-buttons {
+  margin-right: 5px;
 }
 
 
 /* ==============
 CV
 ================== */
+
 
 /* ==============
 .display-none {

@@ -10,7 +10,12 @@
 <body>
   <main>
     <section>
-      <h2 class="tittle">Datos personales</h2>
+
+      <div class="header">
+        <img class="logo" src="img/logo.png" alt="logo">
+        <a class="button" href="">Previsualizar</a>
+      </div>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
@@ -38,7 +43,7 @@
 
       <!-- Formulario -->
 
-      <form action="" method="post">
+      <form class="main-form" action="" method="post">
 
         <fieldset> <!-- Rita -->
           <legend class="title">Datos personales</legend>
@@ -67,6 +72,15 @@
         <fieldset>  <!-- Anita -->
           <legend class="title">Proyectos</legend>
 
+          <div class="add-project">
+            <a href="#">Añadir proyecto</a>
+            <div class="buttons-project-container">
+              <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
+              <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
+              <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+            </div>
+          </div>
+
           <label class="label-form" for="name-project">
             Nombre del proyecto
           </label>
@@ -80,7 +94,21 @@
           <label class="label-form" for="date-project">
             Fecha de realización
           </label>
-          <input class="input-form" id="date-project" type="month" name="date-realization" placeholder="Mes y año del proyecto">
+          <select class="input-form" name="date-project">
+            <option class="option-form" disabled selected>Elige un mes</option>
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+          </select>
 
           <label for="description-project">
             Descripción del proyecto :
@@ -90,26 +118,12 @@
       </form>
 
 
-      <p>Rellena tu proyecto</p>
-      <div class="add-project">
-        <a href="#">Añadir proyecto</a>
-        <div class="buttons-project-container">
-          <img class="buttons-project" src="img/trash.png" alt="Icono de papelera">
-          <img class="buttons-project" src="img/arrowup.png" alt="Flecha hacia arriba">
-          <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
-
-        </div>
-      </div>
-
-
       <a href="" class="button">Continuar</a>
 
       <a href="" class="button buttonGoBack">Volver</a>
 
     </form>
   </section>
-
-
 
   <!-- Currículum -->
 
@@ -119,7 +133,7 @@
       <h2 class="cv-name">NOMBRE <br> APELLIDO <br> APELLIDO</h2>
 
       <h3 class="cv-position">Profesión actual</h3>
-      
+
       <div class="cv-contact">
         <h3>Contact</h3>
         <h4>Ciudad</h4>
@@ -133,35 +147,64 @@
         <h3>Descripción</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-
     </div>
 
+
     <div class="cv-right">
+      <div class="education">
+        <strong class="seccion">EDUCACIÓN</strong>
+        <p>Educación</p>
 
-        <div class="education">
-          <strong class="seccion">EDUCACIÓN</strong>
-          <p>Educación</p>
+        <p>titulo de la formación</p>
+        <p>centro y ciudad</p>
+        <p> fecha incio y finalización</p>
+        <ul>
+          <li>competencia adquirida</li>
+          <li>competencia adquirida</li>
+          <li>competencia adquirida</li>
+        </ul>
+        <p>titulo de la formación</p>
+        <p>centro y ciudad</p>
+        <p> fecha incio y finalización</p>
+        <ul>
+          <li>competencia adquirida</li>
+          <li>competencia adquirida</li>
+          <li>competencia adquirida</li>
+          <li>competencia adquirida</li>
+        </ul>
+        <p>titulo de la formación</p>
+        <p>centro y ciudad</p>
+        <p> fecha incio y finalización</p>
+        <ul>
+          <li>competencia adquirida</li>
+          <li>competencia adquirida</li>
+          <li>competencia adquirida</li>
+        </ul>
+        <br>
+        <br>
+    </div>
 
-          <p>titulo de la formación</p>
-          <p>centro y ciudad</p>
+        <div class="proyects">
+          <strong class="seccion">PROYECTOS</strong>
+          <p>nombre del proyecto</p>
+          <p>empresa</p>
           <p> fecha incio y finalización</p>
+          <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Donec quam felis,
+          </p>
           <ul>
             <li>competencia adquirida</li>
             <li>competencia adquirida</li>
             <li>competencia adquirida</li>
           </ul>
-          <p>titulo de la formación</p>
-          <p>centro y ciudad</p>
+          <p>nombre del proyecto</p>
+          <p>empresa</p>
           <p> fecha incio y finalización</p>
-          <ul>
-            <li>competencia adquirida</li>
-            <li>competencia adquirida</li>
-            <li>competencia adquirida</li>
-            <li>competencia adquirida</li>
-          </ul>
-          <p>titulo de la formación</p>
-          <p>centro y ciudad</p>
-          <p> fecha incio y finalización</p>
+          <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Donec quam felis,
+          </p>
           <ul>
             <li>competencia adquirida</li>
             <li>competencia adquirida</li>
@@ -170,57 +213,28 @@
           <br>
           <br>
 
-          <div class="proyects">
-            <strong class="seccion">PROYECTOS</strong>
-            <p>nombre del proyecto</p>
-            <p>empresa</p>
-            <p> fecha incio y finalización</p>
-            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-              ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-            </p>
-            <ul>
-              <li>competencia adquirida</li>
-              <li>competencia adquirida</li>
-              <li>competencia adquirida</li>
-            </ul>
-            <p>nombre del proyecto</p>
-            <p>empresa</p>
-            <p> fecha incio y finalización</p>
-            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-              ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-            </p>
-            <ul>
-              <li>competencia adquirida</li>
-              <li>competencia adquirida</li>
-              <li>competencia adquirida</li>
-            </ul>
-            <br>
-            <br>
+        </div>
+        <div class="experience">
+          <strong class="seccion">EXPERIENCIA</strong>
+          <p>nombre empresa</p>
+          <p>cargo ejercido</p>
+          <p>fecha inicio fin</p>
+          <ul>
+            <li>tarea realizada</li>
+            <li>tarea realizada</li>
+            <li>tarea realizada</li>
+          </ul>
+          <p>nombre empresa</p>
+          <p>cargo ejercido</p>
+          <p>fecha inicio fin</p>
+          <ul>
+            <li>tarea realizada</li>
+            <li>tarea realizada</li>
+            <li>tarea realizada</li>
+          </ul>
+        </div>
+      </aside>
 
-          </div>
-          <div class="experience">
-            <strong class="seccion">EXPERIENCIA</strong>
-            <p>nombre empresa</p>
-            <p>cargo ejercido</p>
-            <p>fecha inicio fin</p>
-            <ul>
-              <li>tarea realizada</li>
-              <li>tarea realizada</li>
-              <li>tarea realizada</li>
-            </ul>
-            <p>nombre empresa</p>
-            <p>cargo ejercido</p>
-            <p>fecha inicio fin</p>
-            <ul>
-              <li>tarea realizada</li>
-              <li>tarea realizada</li>
-              <li>tarea realizada</li>
-            </ul>
-          </div>
-    </aside>
-
-  </main>
-</body>
-</html>
+    </main>
+  </body>
+  </html>
