@@ -13,24 +13,7 @@ body {
   margin: 0;
 }
 
-/* ==============
-FORMULARIO
-================== */
-
-section {
-  margin-bottom: 10%;
-}
-
-
-/* ----- Header -----  */
-
-.header {
-  border-bottom: 1px solid #1D1E2C;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/* ----- BUTTONS ----- */
 
 .button {
   background-color: #4d6292;
@@ -47,11 +30,34 @@ section {
   background-color: #344263;
 }
 
+/* ==============
+FORMULARIO
+================== */
+
+section {
+  margin-bottom: 10%;
+}
+
+
+
+/* ----- Header -----  */
+
+.header {
+  border-bottom: 1px solid #1D1E2C;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
 .logo {
   width: 30%;
   margin-left: 24px;
   max-width: 150px;
 }
+
 
 .buttonGoBack {
   color: #4d6292;
@@ -66,20 +72,23 @@ section {
 
 /* ----- NAVIGATION BAR ----- */
 
-.main-nav-list { /* No funciona el justify content */
+.main-nav-list {
   margin: 5% 0;
   list-style: none;
   display: flex;
 }
 
+.main-nav-list li {
+  width: 20%;
+}
 
-.nav-icon { /* Cuando uso iconos svg al hacer flex al su contenedor su tamaño varía */
+.nav-icon {
   width: 40%;
 }
 
 
-.icon-education {
-  width: 45%;
+.main-nav-button {
+  border: none;
 }
 
 
