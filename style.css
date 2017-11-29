@@ -50,6 +50,7 @@ section {
 .logo {
   width: 30%;
   margin-left: 24px;
+  max-width: 150px;
 }
 
 .buttonGoBack {
@@ -183,7 +184,7 @@ CV
 
 
 .display-none {
-  display:none;
+  display: none;
 }
 
 
