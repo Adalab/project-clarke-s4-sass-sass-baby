@@ -276,9 +276,9 @@ CV
 
 
 
-.display-none {
+/*.display-none {
   display: none;
-}
+}*/
 
 
 
@@ -326,4 +326,10 @@ padding-bottom: 2px;
   height: 100%;
   background-color: green;
 
+}
+/*right cv*/
+.list-without-style {
+list-style: none;
+margin: 0;
+padding: 0;
 }
