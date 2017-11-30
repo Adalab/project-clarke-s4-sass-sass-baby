@@ -275,10 +275,11 @@ CV
 ================== */
 
 
+
 /*
 .display-none {
-  display: none;
-}
+
+}*/
 
 
 
@@ -340,4 +341,10 @@ padding: 0px;
   height: 100%;
   background-color: green;
 
+}
+/*right cv*/
+.list-without-style {
+list-style: none;
+margin: 0;
+padding: 0;
 }
