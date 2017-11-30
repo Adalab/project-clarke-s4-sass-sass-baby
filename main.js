@@ -4,10 +4,10 @@
 
 function addYears(initYear, currentYear) {
   var acumulador = '';
-  for (var i = initYear; i < currentYear; i++) {
+  for (var i = initYear; i <= currentYear; i++) {
     acumulador = acumulador + '<option>' + i + '</option>';
   }
-  return acumulador;
+  return '<option class="option-form" disabled selected><span class="grey">Elige un año</span></option>' + acumulador;
 }
 
 

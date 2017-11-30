@@ -204,7 +204,10 @@ hr {
   line-height: 1.4;
   width: 100%;
   margin-bottom: 20px;
-  color: #7C7E83;
+}
+
+.grey {
+  color: grey;
 }
 
 @media all and (min-width:500px) {
