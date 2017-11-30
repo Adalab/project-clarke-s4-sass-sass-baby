@@ -295,6 +295,14 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.list-none {
+list-style: none;
+margin: 0px;
+padding: 0px;
+
+}
+/*css cv-left*/
+
 .cv-left {
   padding: 25px;
   max-width: 30%;
@@ -305,46 +313,25 @@ margin-right: auto;
 
 }
 .cv-name {
+  
 padding-bottom: 2px;
-text-transform: uppercase
+text-transform: uppercase;
 
 }
 
-.cv-position {
-padding-bottom: 2px;
-
-}
-
-.cv-contact {
-  padding-bottom: 2px;
-
-}
-
-.list-contact {
-list-style: none;
-margin: 5px;
-padding: 0px;
-
-}
 
 .description-text {
   font-size: 12px;
-  margin: 5px;
+
 }
 
-
+/*css cv-right*/
 
 .cv-right {
 
-  padding: 20px;
+  padding: 25px;
   max-width: 70%;
   height: 100%;
-  background-color: green;
+  background-color: grey;
 
-}
-/*right cv*/
-.list-without-style {
-list-style: none;
-margin: 0;
-padding: 0;
 }
