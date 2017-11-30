@@ -275,7 +275,7 @@ CV
 ================== */
 
 
-
+/*
 .display-none {
   display: none;
 }
@@ -285,6 +285,7 @@ CV
 /* Clases generales */
 
 aside {
+overflow: scroll;
 width: 595px;
 height: 842px;
 display: flex;
@@ -294,7 +295,7 @@ margin-right: auto;
 }
 
 .cv-left {
-  padding: 20px;
+  padding: 25px;
   max-width: 30%;
   height: 100%;
   background-color: #1D1E2C;
@@ -304,6 +305,7 @@ margin-right: auto;
 }
 .cv-name {
 padding-bottom: 2px;
+text-transform: uppercase
 
 }
 
@@ -314,10 +316,22 @@ padding-bottom: 2px;
 
 .cv-contact {
   padding-bottom: 2px;
+
 }
-.cv-contact h4{
-  margin:0;
+
+.list-contact {
+list-style: none;
+margin: 5px;
+padding: 0px;
+
 }
+
+.description-text {
+  font-size: 12px;
+  margin: 5px;
+}
+
+
 
 .cv-right {
 
