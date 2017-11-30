@@ -62,23 +62,23 @@
           <label class="label-form" for="residence">Lugar de residencia</label>
           <input class="input-form" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
 
-        <div id="input_container">
-          <label class="label-form" for="telephone">Teléfono</label>
-          <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
-          <img src="img/phone.png" id="input_img">
-        </div>
+          <div id="input_container">
+            <label class="label-form" for="telephone">Teléfono</label>
+            <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
+            <img src="img/phone.png" id="input_img">
+          </div>
 
-        <div id="input_container">
-          <label class="label-form" for="email">Email</label>
-          <input class="input-form" id="email" type="email" name="email" placeholder="Email" required>
-          <img src="img/email.png" id="input_img">
-        </div>
+          <div id="input_container">
+            <label class="label-form" for="email">Email</label>
+            <input class="input-form" id="email" type="email" name="email" placeholder="Email" required>
+            <img src="img/email.png" id="input_img">
+          </div>
 
-        <div id="input_container">
-          <label class="label-form" for="social">Redes sociales</label>
-          <input class="input-form" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
-          <img src="img/github-logo.png" id="input_img">
-       </div>
+          <div id="input_container">
+            <label class="label-form" for="social">Redes sociales</label>
+            <input class="input-form" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
+            <img src="img/github-logo.png" id="input_img">
+          </div>
 
           <label class="label-form" for="personal-website">Web personal</label>
           <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
@@ -113,10 +113,10 @@
           </label>
           <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
 
-          <label class="label-form" for="date-project">
+          <label class="label-form" for="month-project">
             Fecha de realización
           </label>
-          <select class="input-form" name="date-project">
+          <select class="input-form" name="month-project">
             <option class="option-form" disabled selected>Elige un mes</option>
             <option>Enero</option>
             <option>Febrero</option>
@@ -130,6 +130,9 @@
             <option>Octubre</option>
             <option>Noviembre</option>
             <option>Diciembre</option>
+          </select>
+
+          <select class="input-form" name="year-project" id="selectorYear">
           </select>
 
           <label for="description-project">
@@ -184,34 +187,37 @@
         <ul>
           <li>competencia adquirida</li>
         </ul>
-    </div>
+      </div>
 
-        <div class="proyects">
-          <strong class="seccion">PROYECTOS</strong>
-          <p>nombre del proyecto</p>
-          <p>empresa</p>
-          <p> fecha incio y finalización</p>
-          <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Donec quam felis,
-          </p>
-          <ul>
-            <li>competencia adquirida</li>
-          </ul>
+      <div class="proyects">
+        <strong class="seccion">PROYECTOS</strong>
+        <p>nombre del proyecto</p>
+        <p>empresa</p>
+        <p> fecha incio y finalización</p>
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Donec quam felis,
+        </p>
+        <ul>
+          <li>competencia adquirida</li>
+        </ul>
 
-        </div>
-        <div class="experience">
-          <strong class="seccion">EXPERIENCIA</strong>
-          <p>nombre empresa</p>
-          <p>cargo ejercido</p>
-          <p>fecha inicio fin</p>
-          <ul>
-            <li>tarea realizada</li>
-          </ul>
+      </div>
+      <div class="experience">
+        <strong class="seccion">EXPERIENCIA</strong>
+        <p>nombre empresa</p>
+        <p>cargo ejercido</p>
+        <p>fecha inicio fin</p>
+        <ul>
+          <li>tarea realizada</li>
+        </ul>
 
-        </div>
-      </aside>
+      </div>
+    </aside>
 
-    </main>
-  </body>
-  </html>
+  </main>
+
+  <script type="text/javascript" src="main.js">
+  </script>
+</body>
+</html>
