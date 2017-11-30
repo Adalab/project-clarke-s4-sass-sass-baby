@@ -13,7 +13,53 @@ body {
   margin: 0;
 }
 
-/* ----- BUTTONS ----- */
+/*
+BUTTONS
+Here I've included all the buttons of the site
+
+*/
+
+/* BUTTON CONTINUE AND BACK */
+
+.buttonsChangeForm {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonContinue {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  padding: 8px 30px;
+  background-color: #4d6292;
+  border: 2px solid #4d6292;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.buttonContinue:hover {
+  background-color: #344263;
+}
+
+
+.buttonGoBack {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #4d6292;
+  padding: 8px 45px;
+  background-color: #fff;
+  border: 2px solid #4d6292;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* BUTTON IN HEADER */
 
 .button {
   background-color: #4d6292;
@@ -29,6 +75,19 @@ body {
 .button:hover {
   background-color: #344263;
 }
+
+/* BUTTON IN NAV */
+
+.main-nav-button {
+  border: none;
+  background: none;
+}
+
+.main-nav-button:focus {
+  outline:0;
+}
+
+
 
 /* ==============
 FORMULARIO
@@ -51,22 +110,10 @@ section {
 }
 
 
-
 .logo {
   width: 30%;
   margin-left: 24px;
   max-width: 150px;
-}
-
-
-.buttonGoBack {
-  color: #4d6292;
-  padding: 8px 35px;
-  background-color: #fff;
-  border: 2px solid #4d6292;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
 }
 
 
@@ -79,12 +126,20 @@ section {
   justify-content: space-around;
 }
 
+.nav-text {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #1D1E2C;
+}
+
+
 .main-nav ul {
   padding-left: 0;
 }
 
 .main-nav-list li {
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 
@@ -92,20 +147,12 @@ section {
   width: 30%;
 }
 
-.main-nav-button {
-  border: none;
-
-}
-
-.main-nav-button:focus {
-  outline:0;
-}
-
 
 /* -----  FORMULARIO -----  */
 
 .main-form {
-  margin: 0 5%;
+  margin-left: 40px;
+  margin-right: 40px;
   max-width: 500px;
 }
 
@@ -135,10 +182,7 @@ hr {
   color: #1D1E2C;
 }
 
-.main-form {
-  margin-left: 40px;
-  margin-right: 40px;
-}
+
 
 .label-form {
   display: none;
@@ -170,6 +214,28 @@ hr {
   }
 }
 
+
+@media all and (max-width:500px) {
+  .nav-text {
+    display: none;
+  }
+}
+
+/* Personal Data */
+
+#input_container {
+    position:relative;
+    padding:0;
+    margin:0;
+}
+
+#input_img {
+    position:absolute;
+    bottom: 42%;
+    left: 92%;
+    width: 20px;
+}
+
 /* Projects */
 
 .add-project {
@@ -194,6 +260,8 @@ hr {
 .margin-right-buttons {
   margin-right: 5px;
 }
+
+
 
 
 /* ==============

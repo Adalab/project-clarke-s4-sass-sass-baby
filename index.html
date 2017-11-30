@@ -21,21 +21,25 @@
           <li>
             <button class="main-nav-button">
               <img src="img/woman-avatar.png" alt="icon personal data" class="nav-icon icon-personal">
+              <p class="nav-text nav-personalData">Datos personales</p>
             </button>
           </li>
           <li>
             <button class="main-nav-button">
-              <img src="img/hateducation.png" alt="icon education" class="nav-icon icon-education">
+              <img src="img/hat-education.png" alt="icon education" class="nav-icon icon-education">
+              <p class="nav-text nav-education">Formación</p>
             </button>
           </li>
           <li>
             <button class="main-nav-button">
               <img src="img/suitcase.png" alt="icon experience" class="nav-icon icon-experience">
+              <p class="nav-text nav-experience">Experiencia Laboral</p>
             </button>
           </li>
           <li>
             <button class="main-nav-button">
               <img src="img/presentation.png" alt="icon projects" class="nav-icon icon-projects">
+              <p class="nav-text nav-project">Proyectos</p>
             </button>
           </li>
         </ul>
@@ -58,11 +62,23 @@
           <label class="label-form" for="residence">Lugar de residencia</label>
           <input class="input-form" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
 
+        <div id="input_container">
           <label class="label-form" for="telephone">Teléfono</label>
           <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
+          <img src="img/phone.png" id="input_img">
+        </div>
 
+        <div id="input_container">
+          <label class="label-form" for="email">Email</label>
+          <input class="input-form" id="email" type="email" name="email" placeholder="Email" required>
+          <img src="img/email.png" id="input_img">
+        </div>
+
+        <div id="input_container">
           <label class="label-form" for="social">Redes sociales</label>
           <input class="input-form" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
+          <img src="img/github-logo.png" id="input_img">
+       </div>
 
           <label class="label-form" for="personal-website">Web personal</label>
           <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
@@ -123,9 +139,11 @@
         </fieldset>
       </form>
 
+      <div class="buttonsChangeForm">
+        <button class="buttonGoBack">Volver</button>
+        <button class="buttonContinue">Continuar</button>
+      </div>
 
-      <a href="" class="buttonGoBack">Volver</a>
-      <a href="" class="button">Continuar</a>
 
     </form>
   </section>
