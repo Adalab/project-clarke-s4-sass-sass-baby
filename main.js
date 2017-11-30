@@ -10,7 +10,6 @@ function addYears(initYear, currentYear) {
   return '<option class="option-form" disabled selected>Elige un año</option>' + acumulador;
 }
 
-
 var selectYears = document.querySelector('#selectorYear');
 
 selectorYear.innerHTML = addYears(1950, 2017);
