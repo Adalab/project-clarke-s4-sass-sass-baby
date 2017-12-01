@@ -83,14 +83,52 @@
           <label class="label-form" for="personal-website">Web personal</label>
           <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
 
-
           <label for="personal-description">
             Descripción personal:
           </label>
           <textarea class="input-form"  name="personal-description" rows="8" cols="80"></textarea>
         </fieldset>
 
-        <fieldset>  <!-- Anita Proyectos-->
+        <fieldset>  <!--- Rita Educación ---->
+          <legend class="title">Formación</legend>
+          <hr>
+
+          <div class="add-project">
+            <a href="#">Añadir formación</a>
+            <div class="buttons-project-container">
+              <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
+              <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
+              <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+            </div>
+          </div>
+
+          <label class="label-form" for="title-education">
+            Título
+          </label>
+          <input class="input-form" id="title-education" type="text" name="title-education" placeholder="Título" required>
+
+          <label class="label-form" for="center-education">
+            Centro de formación
+          </label>
+          <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Centro de formación" required>
+
+          <label class="label-form" for="date-start-education">
+            Fecha de inicio
+          </label>
+          <input class="input-form" id="date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
+
+          <label class="label-form" for="date-end-education">
+            Fecha de finalización
+          </label>
+          <input class="input-form" id="date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
+
+          <label for="description-project">
+            Competencias adquiridas :
+          </label>
+          <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
+        </fieldset>
+
+        <fieldset>
           <legend class="title">Proyectos</legend>
           <hr>
 
@@ -140,6 +178,7 @@
           </label>
           <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
         </fieldset>
+
 
         <fieldset>  <!-- Anita Experiencia -->
           <legend class="title">Experiencia laboral</legend>
@@ -197,59 +236,69 @@
   <aside class="display-none">
 
     <div class="cv-left">
-      <h2 class="cv-name">NOMBRE <br> APELLIDO <br> APELLIDO </h2>
+      <h2 class="cv-name">Nombre <br> Apellido <br> Apellido </h2>
 
       <h3 class="cv-position">Profesión actual</h3>
 
       <div class="cv-contact">
-        <h3>Contact</h3>
-        <h4>Ciudad</h4>
-        <h4>Correo electrónico</h4>
-        <h4>Teléfono</h4>
-        <h4>Redes sociales</h4>
-        <h4>Web personal</h4>
+        <h4>Contact</h4>
+        <ul class="list-none">
+          <li>Ciudad</li>
+          <li>Correo electrónico</li>
+          <li>Teléfono</li>
+          <li>Redes sociales</li>
+          <li>Web personal</li>
+        </ul>
       </div>
 
       <div class="cv-description">
-        <h3>Descripción</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h4>Descripción</h4>
+        <p class= "description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
 
 
     <div class="cv-right">
       <div class="education">
-        <strong class="seccion">EDUCACIÓN</strong>
-        <p>Educación</p>
+        <h3 class="seccion">FORMACIÓN</h3>
 
-        <p>titulo de la formación</p>
-        <p>centro y ciudad</p>
-        <p> fecha incio y finalización</p>
-        <ul>
+        <ul class="list-none">
+          <li>titulo de la formación</li>
+          <li>centro y ciudad</li>
+          <li>fecha incio y finalización</li>
+        </ul>
+
+
+
+        <ul class="list-style">
           <li>competencia adquirida</li>
         </ul>
       </div>
 
       <div class="proyects">
-        <strong class="seccion">PROYECTOS</strong>
-        <p>nombre del proyecto</p>
-        <p>empresa</p>
-        <p> fecha incio y finalización</p>
+        <h3 class="seccion">PROYECTOS</h3>
+        <ul class="list-none">
+
+          <li>nombre del proyecto</li>
+          <li>empresa</li>
+          <li> fecha incio y finalización</li>
+        </ul>
         <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
           ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
           parturient montes, nascetur ridiculus mus. Donec quam felis,
         </p>
-        <ul>
+        <ul class="list-style">
           <li>competencia adquirida</li>
         </ul>
 
       </div>
       <div class="experience">
-        <strong class="seccion">EXPERIENCIA</strong>
-        <p>nombre empresa</p>
-        <p>cargo ejercido</p>
-        <p>fecha inicio fin</p>
-        <ul>
+        <h3 class="seccion">EXPERIENCIA</h3>
+        <ul class="list-none">
+          <li>nombre empresa</li>
+          <li>cargo ejercido</li>
+          <li>fecha inicio fin</li>
+          <ulclass="list-style">
           <li>tarea realizada</li>
         </ul>
 
