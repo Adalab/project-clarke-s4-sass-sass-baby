@@ -7,12 +7,12 @@ function addYears(initYear, currentYear) {
   for (var i = initYear; i <= currentYear; i++) {
     acumulador = acumulador + '<option>' + i + '</option>';
   }
-  return '<option class="option-form" disabled selected>Año</option>' + acumulador;
+  return  acumulador;
 }
 
 var selectYears = document.querySelector('#selectorYear');
 
-selectorYear.innerHTML = addYears(1950, 2017);
+selectorYear.innerHTML = selectorYear.innerHTML + addYears(1950, 2017);
 
 
 //Función para prompt en cv primera versión
