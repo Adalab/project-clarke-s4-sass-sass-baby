@@ -296,7 +296,8 @@ CV
 
 aside {
 overflow: scroll;
-width: 595px;
+width:100%;
+max-width: 595px;
 height: 842px;
 display: flex;
 font-size: 14px;
@@ -341,6 +342,6 @@ text-transform: uppercase;
   padding: 25px;
   max-width: 70%;
   height: 100%;
-  background-color: grey;
+  background-color: #F5F0EF;
 
 }
