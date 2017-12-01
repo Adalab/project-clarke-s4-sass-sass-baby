@@ -267,6 +267,15 @@ hr {
   margin-right: 5px;
 }
 
+.containter-data-project {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.selector-project {
+  width: 45%;
+}
 
 
 
@@ -313,7 +322,7 @@ padding: 0px;
 
 }
 .cv-name {
-  
+
 padding-bottom: 2px;
 text-transform: uppercase;
 
