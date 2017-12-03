@@ -2,18 +2,17 @@
 
 //Función para selector Year en formulario
 
-function addYears(selector, initYear, currentYear) {
-  var selectYears = document.querySelector(selector);
+function addValues(selector, initValue, currentValue) {
+  var selectValues = document.querySelector(selector);
   var acumulador = '';
-  for (var i = initYear; i <= currentYear; i++) {
+  for (var i = initValue; i <= currentValue; i++) {
     acumulador = acumulador + '<option>' + i + '</option>';
   }
-  selectorYear.innerHTML = selectorYear.innerHTML + acumulador;
+  selectValues.innerHTML = selectValues.innerHTML + acumulador;
 }
 
 
-
-addYears('#selectorYear', 1950, 2017);
+addValues('#selectorYear', 1950, 2017);
 
 
 
@@ -42,3 +41,4 @@ var email = prompt('Dime tu email');
 var emailCV = document.querySelector('#email-cv');
 
 emailCV.innerHTML = email;
+*/
