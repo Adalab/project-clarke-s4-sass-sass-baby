@@ -348,3 +348,37 @@ text-transform: uppercase;
   background-color: #F5F0EF;
 
 }
+
+/*RESPONSIVE*/
+
+@media all and (min-width:500px) {
+
+  .formandcv {
+    display: flex;
+
+}
+aside {
+
+padding-left: 40px;
+padding-top: 120px;
+
+}
+
+section {
+width: 60%;
+min-width: 275px;
+ padding-left: 40px;
+  padding-right: 40px;
+ border-right: 1px solid black
+}
+
+.button-CV {
+display: none;
+
+}
+
+
+
+
+
+}
