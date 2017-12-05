@@ -14,6 +14,20 @@ function addValues(selector, initValue, currentValue) {
 
 addValues('#selectorYear', 1950, 2017);
 
+//MENÚ DE NAVEGACIÓN POR PESTAÑAS
+
+function showFieldsets() {
+  var fieldsetData = document.querySelector('#fieldset-data');
+  fieldsetData.classList.remove('display-none');
+}
+
+var personalDataButton = document.querySelector('#personal-data');
+personalDataButton.addEventListener('click', showFieldsets);
+
+
+
+//FIN MENÚ NAVEGACIÓN POR PESTAÑAS
+
 
 
 //Función para prompt en cv primera versión
