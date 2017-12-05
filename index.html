@@ -19,28 +19,28 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li id="personal-data">
+          <li class="button-menu" data-id="0">
             <button class="main-nav-button">
               <img src="img/woman-avatar.png" alt="icon personal data" class="nav-icon icon-personal">
               <p class="nav-text nav-personalData">Datos personales</p>
             </button>
           </li>
-          <li>
+          <li class="button-menu" data-id="1">
             <button class="main-nav-button">
               <img src="img/hat-education.png" alt="icon education" class="nav-icon icon-education">
               <p class="nav-text nav-education">Formación</p>
             </button>
           </li>
-          <li>
-            <button class="main-nav-button">
-              <img src="img/suitcase.png" alt="icon experience" class="nav-icon icon-experience">
-              <p class="nav-text nav-experience">Experiencia Laboral</p>
-            </button>
-          </li>
-          <li>
+          <li class="button-menu" data-id="2">
             <button class="main-nav-button">
               <img src="img/presentation.png" alt="icon projects" class="nav-icon icon-projects">
               <p class="nav-text nav-project">Proyectos</p>
+            </button>
+          </li>
+          <li class="button-menu" data-id="3">
+            <button class="main-nav-button">
+              <img src="img/suitcase.png" alt="icon experience" class="nav-icon icon-experience">
+              <p class="nav-text nav-experience">Experiencia Laboral</p>
             </button>
           </li>
         </ul>
@@ -50,7 +50,7 @@
 
       <form class="main-form" action="" method="post">
 
-        <fieldset id="fieldset-data" class="display-none"> <!-- Rita -->
+        <fieldset class="fieldset-information display-none"> <!-- Rita -->
           <legend class="title">Datos personales</legend>
           <hr>
 
@@ -90,7 +90,7 @@
           <textarea class="input-form"  name="personal-description" rows="8" cols="80"></textarea>
         </fieldset>
 
-        <fieldset>  <!--- Rita Educación ---->
+        <fieldset class="fieldset-information display-none">  <!--- Rita Educación ---->
           <legend class="title">Formación</legend>
           <hr>
 
@@ -130,7 +130,7 @@
         </fieldset>
 
     <!--- Ana Proyectos ---->
-        <fieldset>
+        <fieldset class="fieldset-information display-none">
           <legend class="title">Proyectos</legend>
           <hr>
 
@@ -184,7 +184,7 @@
         </fieldset>
 
 
-        <fieldset>  <!-- Anita Experiencia -->
+        <fieldset class="fieldset-information display-none">  <!-- Anita Experiencia -->
           <legend class="title">Experiencia laboral</legend>
           <hr>
 

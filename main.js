@@ -14,15 +14,18 @@ function addValues(selector, initValue, currentValue) {
 
 addValues('#selectorYear', 1950, 2017);
 
-//MENÚ DE NAVEGACIÓN POR PESTAÑAS
+//MENÚ DE NAVEGACIÓN POR PESTAÑAS 
 
-function showFieldsets() {
-  var fieldsetData = document.querySelector('#fieldset-data');
-  fieldsetData.classList.remove('display-none');
+function showFieldsets(event) {
+  var fieldsetInformation = document.querySelectorAll ('.fieldset-information');
+  var id = event.currentTarget.getAttribute('data-id');
+  fieldsetInformation[id].classList.remove('display-none');
 }
 
-var personalDataButton = document.querySelector('#personal-data');
-personalDataButton.addEventListener('click', showFieldsets);
+var buttonsMenu = document.querySelectorAll ('.button-menu');
+for (var i = 0; i < buttonsMenu.length; i++) {
+  buttonsMenu[i].addEventListener('click', showFieldsets);
+};
 
 
 
