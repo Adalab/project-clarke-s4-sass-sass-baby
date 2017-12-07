@@ -44,7 +44,7 @@ newField.addEventListener('click', acordeon);
 saveButton.addEventListener('click', acordeon);
 
 function saveMain () {
-    var titleEducation = document.querySelector ('.title-education')
+    var titleEducation = document.querySelector ('.main-value')
     var textadd = document.querySelector ('.textadd')
     textadd.innerHTML = titleEducation.value;
 }
@@ -53,13 +53,12 @@ saveButton.addEventListener('click', saveMain);
 
 
 
-
-
-
 //FIN MENÚ DESPLEGABLE
 
+//IMPRIMIR CV
 
 
+// FIN IMPRIMIR CV
 
 
 //Función para prompt en cv primera versión

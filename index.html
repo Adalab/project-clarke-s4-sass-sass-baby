@@ -108,7 +108,7 @@
               <label class="label-form" for="title-education">
                 Título
               </label>
-              <input class="input-form title-education" id="title-education" type="text" name="title-education" placeholder="Título" required>
+              <input class="input-form main-value" id="title-education" type="text" name="title-education" placeholder="Título" required>
 
               <label class="label-form" for="center-education">
                 Centro de formación
@@ -153,7 +153,7 @@
               <label class="label-form" for="name-project">
                 Nombre del proyecto
               </label>
-              <input class="input-form" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
+              <input class="input-form main-value" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
 
               <label class="label-form" for="company-project">
                 Empresa o proyecto personal
@@ -212,7 +212,7 @@
               <label class="label-form" for="company">
                 Empresa
               </label>
-              <input class="input-form" id="company" type="text" name="company" placeholder="Empresa" required>
+              <input class="input-form main-value" id="company" type="text" name="company" placeholder="Empresa" required>
 
               <label class="label-form" for="position">
                 Puesto de trabajo
@@ -253,7 +253,7 @@
     <div class="cv-content">
 
 
-      <aside>
+      <aside class="print-cv">
 
         <div class="cv-left">
           <h2 class="cv-name">Nombre <br> Apellido <br> Apellido </h2>
@@ -310,7 +310,6 @@
             <ul class="list-style">
               <li>competencia adquirida</li>
             </ul>
-
           </div>
           <div class="experience">
             <h3 class="seccion">EXPERIENCIA</h3>
@@ -321,9 +320,10 @@
               <ulclass="list-style">
               <li>tarea realizada</li>
             </ul>
-
           </div>
+
         </aside>
+        <input type="button" class= "buttonPrint" value="Imprimir" />
       </div>
     </div>
 
