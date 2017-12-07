@@ -15,303 +15,317 @@
     </header>
     <div class="formandcv">
 
-    <section>
+      <section>
 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li class="button-menu" data-id="0">
-            <button class="main-nav-button">
-              <img src="img/woman-avatar.png" alt="icon personal data" class="nav-icon icon-personal">
-              <p class="nav-text nav-personalData">Datos personales</p>
-            </button>
-          </li>
-          <li class="button-menu" data-id="1">
-            <button class="main-nav-button">
-              <img src="img/hat-education.png" alt="icon education" class="nav-icon icon-education">
-              <p class="nav-text nav-education">Formación</p>
-            </button>
-          </li>
-          <li class="button-menu" data-id="2">
-            <button class="main-nav-button">
-              <img src="img/presentation.png" alt="icon projects" class="nav-icon icon-projects">
-              <p class="nav-text nav-project">Proyectos</p>
-            </button>
-          </li>
-          <li class="button-menu" data-id="3">
-            <button class="main-nav-button">
-              <img src="img/suitcase.png" alt="icon experience" class="nav-icon icon-experience">
-              <p class="nav-text nav-experience">Experiencia Laboral</p>
-            </button>
-          </li>
-        </ul>
-      </nav>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="button-menu" data-id="0">
+              <button class="main-nav-button">
+                <img src="img/woman-avatar.png" alt="icon personal data" class="nav-icon icon-personal">
+                <p class="nav-text nav-personalData">Datos personales</p>
+              </button>
+            </li>
+            <li class="button-menu" data-id="1">
+              <button class="main-nav-button">
+                <img src="img/hat-education.png" alt="icon education" class="nav-icon icon-education">
+                <p class="nav-text nav-education">Formación</p>
+              </button>
+            </li>
+            <li class="button-menu" data-id="2">
+              <button class="main-nav-button">
+                <img src="img/presentation.png" alt="icon projects" class="nav-icon icon-projects">
+                <p class="nav-text nav-project">Proyectos</p>
+              </button>
+            </li>
+            <li class="button-menu" data-id="3">
+              <button class="main-nav-button">
+                <img src="img/suitcase.png" alt="icon experience" class="nav-icon icon-experience">
+                <p class="nav-text nav-experience">Experiencia Laboral</p>
+              </button>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- Formulario -->
+        <!-- Formulario -->
 
-      <form class="main-form" action="" method="post">
+        <form class="main-form" action="" method="post">
 
-        <fieldset class="fieldset-information display-none"> <!-- Rita -->
-          <legend class="title">Datos personales</legend>
-          <hr>
+          <fieldset class="fieldset-information display-none"> <!-- Rita -->
+            <legend class="title">Datos personales</legend>
+            <hr>
 
-          <label class="label-form" for="firstname">Nombre</label>
-          <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
+            <label class="label-form" for="firstname">Nombre</label>
+            <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
 
-          <label class="label-form" for="profession">Profesión actual</label>
-          <input class="input-form" id="profession" type="text" name="profession" placeholder="Profesión actual" required>
+            <label class="label-form" for="profession">Profesión actual</label>
+            <input class="input-form" id="profession" type="text" name="profession" placeholder="Profesión actual" required>
 
-          <label class="label-form" for="residence">Lugar de residencia</label>
-          <input class="input-form" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
+            <label class="label-form" for="residence">Lugar de residencia</label>
+            <input class="input-form" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
 
-          <div id="input_container">
-            <label class="label-form" for="telephone">Teléfono</label>
-            <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
-            <img src="img/phone.png" id="input_img">
-          </div>
-
-          <div id="input_container">
-            <label class="label-form" for="email">Email</label>
-            <input class="input-form" id="email" type="email" name="email" placeholder="Email" required>
-            <img src="img/email.png" id="input_img">
-          </div>
-
-          <div id="input_container">
-            <label class="label-form" for="social">Redes sociales</label>
-            <input class="input-form" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
-            <img src="img/github-logo.png" id="input_img">
-          </div>
-
-          <label class="label-form" for="personal-website">Web personal</label>
-          <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
-
-          <label for="personal-description">
-            Descripción personal:
-          </label>
-          <textarea class="input-form"  name="personal-description" rows="8" cols="80"></textarea>
-        </fieldset>
-
-        <fieldset class="fieldset-information display-none">  <!--- Rita Educación ---->
-          <legend class="title">Formación</legend>
-          <hr>
-
-          <div class="add-project">
-            <a href="#">Añadir formación</a>
-            <div class="buttons-project-container">
-              <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
-              <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
-              <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+            <div id="input_container">
+              <label class="label-form" for="telephone">Teléfono</label>
+              <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
+              <img src="img/phone.png" id="input_img">
             </div>
-          </div>
 
-          <label class="label-form" for="title-education">
-            Título
-          </label>
-          <input class="input-form" id="title-education" type="text" name="title-education" placeholder="Título" required>
-
-          <label class="label-form" for="center-education">
-            Centro de formación
-          </label>
-          <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Centro de formación" required>
-
-          <label class="label-form" for="date-start-education">
-            Fecha de inicio
-          </label>
-          <input class="input-form" id="date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
-
-          <label class="label-form" for="date-end-education">
-            Fecha de finalización
-          </label>
-          <input class="input-form" id="date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
-
-          <label for="description-project">
-            Competencias adquiridas :
-          </label>
-          <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
-        </fieldset>
-
-    <!--- Ana Proyectos ---->
-        <fieldset class="fieldset-information display-none">
-          <legend class="title">Proyectos</legend>
-          <hr>
-
-          <div class="add-project">
-            <a href="#">Añadir proyecto</a>
-            <div class="buttons-project-container">
-              <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
-              <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
-              <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+            <div id="input_container">
+              <label class="label-form" for="email">Email</label>
+              <input class="input-form" id="email" type="email" name="email" placeholder="Email" required>
+              <img src="img/email.png" id="input_img">
             </div>
-          </div>
 
-          <label class="label-form" for="name-project">
-            Nombre del proyecto
-          </label>
-          <input class="input-form" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
-
-          <label class="label-form" for="company-project">
-            Empresa o proyecto personal
-          </label>
-          <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
-
-          <label for="month-project">
-            Fecha de realización:
-          </label>
-          <div class="containter-data-project">
-            <select class="input-form selector-project" name="month-project">
-              <option class="option-form grey" disabled selected>Mes</option>
-              <option>Enero</option>
-              <option>Febrero</option>
-              <option>Marzo</option>
-              <option>Abril</option>
-              <option>Mayo</option>
-              <option>Junio</option>
-              <option>Julio</option>
-              <option>Agosto</option>
-              <option>Septiembre</option>
-              <option>Octubre</option>
-              <option>Noviembre</option>
-              <option>Diciembre</option>
-            </select>
-            <select class="input-form selector-project" name="year-project" id="selectorYear">
-              <option class="option-form" disabled selected>Año</option>
-            </select>
-          </div>
-
-          <label for="description-project">
-            Descripción del proyecto :
-          </label>
-          <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
-        </fieldset>
-
-
-        <fieldset class="fieldset-information display-none">  <!-- Anita Experiencia -->
-          <legend class="title">Experiencia laboral</legend>
-          <hr>
-
-          <div class="add-project">
-            <a href="#">Añadir experiencia</a>
-            <div class="buttons-project-container">
-              <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
-              <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
-              <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+            <div id="input_container">
+              <label class="label-form" for="social">Redes sociales</label>
+              <input class="input-form" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
+              <img src="img/github-logo.png" id="input_img">
             </div>
-          </div>
 
-          <label class="label-form" for="company">
-            Empresa
-          </label>
-          <input class="input-form" id="company" type="text" name="company" placeholder="Empresa" required>
+            <label class="label-form" for="personal-website">Web personal</label>
+            <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
 
-          <label class="label-form" for="position">
-            Puesto de trabajo
-          </label>
-          <input class="input-form" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
+            <label for="personal-description">
+              Descripción personal:
+            </label>
+            <textarea class="input-form"  name="personal-description" rows="8" cols="80"></textarea>
+          </fieldset>
 
-          <label for="init-data-experience">
-            Fecha de inicio:
-          </label>
-          <input class="input-form" id="init-data-experience" type="date" name="init-data-experience" required>
+          <fieldset class="fieldset-information display-none">  <!--- Rita Educación ---->
+            <legend class="title">Formación</legend>
+            <hr>
 
-          <label for="finish-data-experience">
-            Fecha fin:
-          </label>
-          <input class="input-form" id="finish-data-experience" type="date" name="finish-data-experience" required>
+            <div class="add-project">
+              <div class="addfield">
+                <a href="#" class="textadd">Añadir formación</a>
+              </div>
+              <div class="buttons-project-container">
+                <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
+                <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
+                <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+              </div>
+            </div>
+            <div class="drop-down hidden">
+              <label class="label-form" for="title-education">
+                Título
+              </label>
+              <input class="input-form title-education" id="title-education" type="text" name="title-education" placeholder="Título" required>
 
-          <label for="description-experience">
-            Descripción del puesto:
-          </label>
-          <textarea class="input-form"  name="description-experience" rows="8" cols="80">
-          </textarea>
-        </fieldset>
+              <label class="label-form" for="center-education">
+                Centro de formación
+              </label>
+              <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Centro de formación" required>
+
+              <label class="label-form" for="date-start-education">
+                Fecha de inicio
+              </label>
+              <input class="input-form" id="date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
+
+              <label class="label-form" for="date-end-education">
+                Fecha de finalización
+              </label>
+              <input class="input-form" id="date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
+
+              <label for="description-project">
+                Competencias adquiridas :
+              </label>
+              <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
+            </div>
+          </fieldset>
+
+          <!--- Ana Proyectos ---->
+          <fieldset class="fieldset-information display-none">
+            <legend class="title">Proyectos</legend>
+            <hr>
+
+            <div class="add-project">
+              <div class="addfield">
+                <a href="#" class="textadd">Añadir proyecto</a>
+              </div>
+
+              <div class="buttons-project-container">
+                <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
+                <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
+                <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+              </div>
+            </div>
+            <div class="drop-down hidden">
+
+              <label class="label-form" for="name-project">
+                Nombre del proyecto
+              </label>
+              <input class="input-form" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
+
+              <label class="label-form" for="company-project">
+                Empresa o proyecto personal
+              </label>
+              <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
+
+              <label for="month-project">
+                Fecha de realización:
+              </label>
+              <div class="containter-data-project">
+                <select class="input-form selector-project" name="month-project">
+                  <option class="option-form grey" disabled selected>Mes</option>
+                  <option>Enero</option>
+                  <option>Febrero</option>
+                  <option>Marzo</option>
+                  <option>Abril</option>
+                  <option>Mayo</option>
+                  <option>Junio</option>
+                  <option>Julio</option>
+                  <option>Agosto</option>
+                  <option>Septiembre</option>
+                  <option>Octubre</option>
+                  <option>Noviembre</option>
+                  <option>Diciembre</option>
+                </select>
+                <select class="input-form selector-project" name="year-project" id="selectorYear">
+                  <option class="option-form" disabled selected>Año</option>
+                </select>
+              </div>
+
+              <label for="description-project">
+                Descripción del proyecto :
+              </label>
+              <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="fieldset-information display-none">  <!-- Anita Experiencia -->
+            <legend class="title">Experiencia laboral</legend>
+            <hr>
+
+            <div class="add-project">
+              <div class="addfield">
+                <a href="#" class="textadd">Añadir experiencia</a>
+              </div>
+
+              <div class="buttons-project-container">
+                <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
+                <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
+                <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
+              </div>
+            </div>
+
+            <div class="drop-down hidden">
+              <label class="label-form" for="company">
+                Empresa
+              </label>
+              <input class="input-form" id="company" type="text" name="company" placeholder="Empresa" required>
+
+              <label class="label-form" for="position">
+                Puesto de trabajo
+              </label>
+              <input class="input-form" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
+
+              <label for="init-data-experience">
+                Fecha de inicio:
+              </label>
+              <input class="input-form" id="init-data-experience" type="date" name="init-data-experience" required>
+
+              <label for="finish-data-experience">
+                Fecha fin:
+              </label>
+              <input class="input-form" id="finish-data-experience" type="date" name="finish-data-experience" required>
+
+              <label for="description-experience">
+                Descripción del puesto:
+              </label>
+              <textarea class="input-form"  name="description-experience" rows="8" cols="80">
+              </textarea>
+            </div>
+          </fieldset>
+
+        </form>
+
+        <div class="buttonsChangeForm">
+          <button class="buttonGoBack">Volver</button>
+          <button class="buttonSave hidden">Guardar</button>
+          <button class="buttonContinue">Continuar</button>
+        </div>
+
 
       </form>
+    </section>
 
-      <div class="buttonsChangeForm">
-        <button class="buttonGoBack">Volver</button>
-        <button class="buttonContinue">Continuar</button>
-      </div>
-
-
-    </form>
-  </section>
-
-  <!-- Currículum -->
-<div class="cv-content">
+    <!-- Currículum -->
+    <div class="cv-content">
 
 
-  <aside>
+      <aside>
 
-    <div class="cv-left">
-      <h2 class="cv-name">Nombre <br> Apellido <br> Apellido </h2>
+        <div class="cv-left">
+          <h2 class="cv-name">Nombre <br> Apellido <br> Apellido </h2>
 
-      <h3 class="cv-position">Profesión actual</h3>
+          <h3 class="cv-position">Profesión actual</h3>
 
-      <div class="cv-contact">
-        <h4>Contact</h4>
-        <ul class="list-none">
-          <li id="city-cv">Ciudad</li>
-          <li id="email-cv">Correo electrónico</li>
-          <li id="tel-cv">Teléfono</li>
-          <li id="rrss-cv">Redes sociales</li>
-          <li id="web-cv">Web personal</li>
-        </ul>
-      </div>
+          <div class="cv-contact">
+            <h4>Contact</h4>
+            <ul class="list-none">
+              <li id="city-cv">Ciudad</li>
+              <li id="email-cv">Correo electrónico</li>
+              <li id="tel-cv">Teléfono</li>
+              <li id="rrss-cv">Redes sociales</li>
+              <li id="web-cv">Web personal</li>
+            </ul>
+          </div>
 
-      <div class="cv-description">
-        <h4>Descripción</h4>
-        <p class= "description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="cv-description">
+            <h4>Descripción</h4>
+            <p class= "description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+
+        <div class="cv-right">
+          <div class="education">
+            <h3 class="seccion">FORMACIÓN</h3>
+
+            <ul class="list-none">
+              <li>titulo de la formación</li>
+              <li>centro y ciudad</li>
+              <li>fecha incio y finalización</li>
+            </ul>
+
+
+
+            <ul class="list-style">
+              <li>competencia adquirida</li>
+            </ul>
+          </div>
+
+          <div class="proyects">
+            <h3 class="seccion">PROYECTOS</h3>
+            <ul class="list-none">
+
+              <li>nombre del proyecto</li>
+              <li>empresa</li>
+              <li> fecha incio y finalización</li>
+            </ul>
+            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+            </p>
+            <ul class="list-style">
+              <li>competencia adquirida</li>
+            </ul>
+
+          </div>
+          <div class="experience">
+            <h3 class="seccion">EXPERIENCIA</h3>
+            <ul class="list-none">
+              <li>nombre empresa</li>
+              <li>cargo ejercido</li>
+              <li>fecha inicio fin</li>
+              <ulclass="list-style">
+              <li>tarea realizada</li>
+            </ul>
+
+          </div>
+        </aside>
       </div>
     </div>
-
-
-    <div class="cv-right">
-      <div class="education">
-        <h3 class="seccion">FORMACIÓN</h3>
-
-        <ul class="list-none">
-          <li>titulo de la formación</li>
-          <li>centro y ciudad</li>
-          <li>fecha incio y finalización</li>
-        </ul>
-
-
-
-        <ul class="list-style">
-          <li>competencia adquirida</li>
-        </ul>
-      </div>
-
-      <div class="proyects">
-        <h3 class="seccion">PROYECTOS</h3>
-        <ul class="list-none">
-
-          <li>nombre del proyecto</li>
-          <li>empresa</li>
-          <li> fecha incio y finalización</li>
-        </ul>
-        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Donec quam felis,
-        </p>
-        <ul class="list-style">
-          <li>competencia adquirida</li>
-        </ul>
-
-      </div>
-      <div class="experience">
-        <h3 class="seccion">EXPERIENCIA</h3>
-        <ul class="list-none">
-          <li>nombre empresa</li>
-          <li>cargo ejercido</li>
-          <li>fecha inicio fin</li>
-          <ulclass="list-style">
-          <li>tarea realizada</li>
-        </ul>
-
-      </div>
-    </aside>
-    </div>
-      </div>
 
   </main>
 

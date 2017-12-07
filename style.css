@@ -12,6 +12,9 @@ body {
   line-height: 1.4;
   margin: 0;
 }
+.hidden {
+  display:none;
+}
 
 /*
 BUTTONS
@@ -19,13 +22,25 @@ Here I've included all the buttons of the site
 
 */
 
-/* BUTTON CONTINUE AND BACK */
+/* BUTTON CONTINUE SAVE AND BACK */
 
 .buttonsChangeForm {
   margin: auto;
   max-width: 500px;
   display: flex;
   justify-content: space-evenly;
+}
+.buttonSave {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  padding: 8px 30px;
+  background-color: #4d6292;
+  border: 2px solid #4d6292;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .buttonContinue {
@@ -380,9 +395,5 @@ min-width: 275px;
 display: none;
 
 }
-
-
-
-
 
 }
