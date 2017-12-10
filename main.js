@@ -14,12 +14,12 @@ function addValues(selector, initValue, currentValue) {
 
 addValues('#selectorYear', 1950, 2017);
 
-//MENÚ DE NAVEGACIÓN POR PESTAÑAS 
+//MENÚ DE NAVEGACIÓN POR PESTAÑAS
 
 function showFieldsets(event) {
   var fieldsetInformation = document.querySelectorAll ('.fieldset-information');
   var id = event.currentTarget.getAttribute('data-id');
-  fieldsetInformation[id].classList.remove('display-none');
+  fieldsetInformation[id].classList.toggle('display-none');
 }
 
 var buttonsMenu = document.querySelectorAll ('.button-menu');
