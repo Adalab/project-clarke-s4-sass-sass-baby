@@ -27,10 +27,38 @@ for (var i = 0; i < buttonsMenu.length; i++) {
   buttonsMenu[i].addEventListener('click', showFieldsets);
 };
 
-
-
 //FIN MENÚ NAVEGACIÓN POR PESTAÑAS
 
+//MENÚ DESPLEGABLE (Gemma)
+var newField = document.querySelector ('.addfield');
+var openInput = document.querySelector ('.drop-down');
+var saveButton = document.querySelector ('.buttonSave');
+
+function acordeon (event){
+  openInput.classList.toggle('hidden');
+  saveButton.classList.toggle ('hidden');
+
+}
+
+newField.addEventListener('click', acordeon);
+saveButton.addEventListener('click', acordeon);
+
+function saveMain () {
+    var titleEducation = document.querySelector ('.main-value')
+    var textadd = document.querySelector ('.textadd')
+    textadd.innerHTML = titleEducation.value;
+}
+
+saveButton.addEventListener('click', saveMain);
+
+
+
+//FIN MENÚ DESPLEGABLE
+
+//IMPRIMIR CV
+
+
+// FIN IMPRIMIR CV
 
 
 //Función para prompt en cv primera versión
