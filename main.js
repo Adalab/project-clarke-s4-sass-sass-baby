@@ -51,6 +51,56 @@ function saveMain () {
 
 saveButton.addEventListener('click', saveMain);
 
+/* ===============================
+IMPRIMIR DATOS PERSONALES EN CV
+================================= */
+//VARIABLES
+var dayStartEducation = document.querySelector('.cv-date-start-education');
+
+function userAnswer(className) {
+  var inputAnswer = document.querySelector('input.'+ className);
+  document.querySelector('.cv-' + className).textContent = inputAnswer.value;
+}
+
+function textAreaAnswer (className) {
+  var textAnswer = document.querySelector('textarea.'+ className);
+  document.querySelector('.cv-' + className).textContent = textAnswer.value;
+}
+
+var buttonContinue = document.querySelector('.buttonContinue');
+buttonContinue.addEventListener('click', function(){
+  //DATOS GENERALES
+  userAnswer('firstname');
+  userAnswer('profession');
+  userAnswer('residence');
+  userAnswer('email');
+  userAnswer('telephone');
+  userAnswer('social');
+  userAnswer('personal-website');
+  textAreaAnswer('personal-description');
+  //EDUCACIÓN
+  userAnswer('title-education');
+  userAnswer('center-education');
+  //fecha inicio y fin
+  textAreaAnswer('description-studies');
+
+  /*
+
+  //PROYECTOS
+  userAnswer('name-project');
+  userAnswer('company-project');
+  //fecha proyecto
+  textAreaAnswer('description-project');
+
+  //EXPERIENCIA
+  userAnswer('name-company');
+  userAnswer('position');
+  //fecha inicio y fin
+  textAreaAnswer('description-experience');
+  */
+
+});
+
 
 
 //FIN MENÚ DESPLEGABLE

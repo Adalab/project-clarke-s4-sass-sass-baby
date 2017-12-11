@@ -46,51 +46,59 @@
           </ul>
         </nav>
 
-        <!-- Formulario -->
+        <!-- =================
+         FORM
+        ================== -->
 
-        <form class="main-form" action="" method="post">
-
-          <fieldset class="fieldset-information display-none"> <!-- Rita -->
+        <form class="main-form" id="main-form" action="" method="post">
+        <!--
+         PERSONAL DATA FORM - RITA
+         -->
+          <fieldset class="fieldset-information display-none">
             <legend class="title">Datos personales</legend>
             <hr>
 
-            <label class="label-form" for="firstname">Nombre</label>
-            <input class="input-form" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
+            <label class="label-form firstname" for="firstname">Nombre</label>
+            <input class="input-form firstname" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required>
 
-            <label class="label-form" for="profession">Profesión actual</label>
-            <input class="input-form" id="profession" type="text" name="profession" placeholder="Profesión actual" required>
+            <label class="label-form profession" for="profession">Profesión actual</label>
+            <input class="input-form profession" id="profession" type="text" name="profession" placeholder="Profesión actual" required>
 
-            <label class="label-form" for="residence">Lugar de residencia</label>
-            <input class="input-form" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
+            <label class="label-form residence" for="residence">Lugar de residencia</label>
+            <input class="input-form residence" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required>
 
             <div id="input_container">
-              <label class="label-form" for="telephone">Teléfono</label>
-              <input class="input-form" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
+              <label class="label-form telephone" for="telephone">Teléfono</label>
+              <input class="input-form telephone" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required>
               <img src="img/phone.png" id="input_img">
             </div>
 
             <div id="input_container">
-              <label class="label-form" for="email">Email</label>
-              <input class="input-form" id="email" type="email" name="email" placeholder="Email" required>
+              <label class="label-form email" for="email">Email</label>
+              <input class="input-form email" id="email" type="email" name="email" placeholder="Email" required>
               <img src="img/email.png" id="input_img">
             </div>
 
             <div id="input_container">
-              <label class="label-form" for="social">Redes sociales</label>
-              <input class="input-form" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
+              <label class="label-form social" for="social">Redes sociales</label>
+              <input class="input-form social" id="social" type="url" name="social"  placeholder="Red social - https://miredsocial.com">
               <img src="img/github-logo.png" id="input_img">
             </div>
 
-            <label class="label-form" for="personal-website">Web personal</label>
-            <input class="input-form" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
+            <label class="label-form personal-website" for="personal-website">Web personal</label>
+            <input class="input-form personal-website" id="personal-website" type="url" name="personal-website" placeholder="Web personal- https://miwebpersonal.com" >
 
             <label for="personal-description">
               Descripción personal:
             </label>
-            <textarea class="input-form"  name="personal-description" rows="8" cols="80"></textarea>
+            <textarea class="input-form personal-description"  name="personal-description" rows="8" cols="80"></textarea>
           </fieldset>
 
-          <fieldset class="fieldset-information display-none">  <!--- Rita Educación ---->
+          <!--
+           EDUCATION DATA FORM - RITA
+           -->
+
+          <fieldset class="fieldset-information display-none">
             <legend class="title">Formación</legend>
             <hr>
 
@@ -108,31 +116,33 @@
               <label class="label-form" for="title-education">
                 Título
               </label>
-              <input class="input-form main-value" id="title-education" type="text" name="title-education" placeholder="Título" required>
+              <input class="input-form title-education" id="title-education" type="text" name="title-education" placeholder="Título" required>
 
               <label class="label-form" for="center-education">
                 Centro de formación
               </label>
-              <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Centro de formación" required>
+              <input class="input-form center-education" id="center-education" type="text" name="company-project" placeholder="Centro de formación" required>
 
               <label class="label-form" for="date-start-education">
                 Fecha de inicio
               </label>
-              <input class="input-form" id="date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
+              <input class="input-form date-start-education" id="date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
 
               <label class="label-form" for="date-end-education">
                 Fecha de finalización
               </label>
-              <input class="input-form" id="date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
+              <input class="input-form date-end-education" id="date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
 
-              <label for="description-project">
+              <label for="description-studies">
                 Competencias adquiridas :
               </label>
-              <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
+              <textarea class="input-form description-studies"  name="description-studies" rows="8" cols="80"></textarea>
             </div>
           </fieldset>
 
-          <!--- Ana Proyectos ---->
+          <!--
+           PROJECTS DATA FORM - ANA
+           -->
           <fieldset class="fieldset-information display-none">
             <legend class="title">Proyectos</legend>
             <hr>
@@ -153,12 +163,12 @@
               <label class="label-form" for="name-project">
                 Nombre del proyecto
               </label>
-              <input class="input-form main-value" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
+              <input class="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
 
               <label class="label-form" for="company-project">
                 Empresa o proyecto personal
               </label>
-              <input class="input-form" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
+              <input class="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
 
               <label for="month-project">
                 Fecha de realización:
@@ -187,11 +197,13 @@
               <label for="description-project">
                 Descripción del proyecto :
               </label>
-              <textarea class="input-form"  name="description-project" rows="8" cols="80"></textarea>
+              <textarea class="input-form description-project"  name="description-project" rows="8" cols="80"></textarea>
             </div>
           </fieldset>
 
-
+          <!--
+           EXPERIENCE DATA FORM - ANA
+           -->
           <fieldset class="fieldset-information display-none">  <!-- Anita Experiencia -->
             <legend class="title">Experiencia laboral</legend>
             <hr>
@@ -200,7 +212,9 @@
               <div class="addfield">
                 <a href="#" class="textadd">Añadir experiencia</a>
               </div>
-
+              <!--
+               BUTTONS INSIDE EDUCATION, EXPERIENCE AND PROJECTS - ANA
+               -->
               <div class="buttons-project-container">
                 <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
                 <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
@@ -212,12 +226,12 @@
               <label class="label-form" for="company">
                 Empresa
               </label>
-              <input class="input-form main-value" id="company" type="text" name="company" placeholder="Empresa" required>
+              <input class="input-form main-value name-company" id="company" type="text" name="company" placeholder="Empresa" required>
 
               <label class="label-form" for="position">
                 Puesto de trabajo
               </label>
-              <input class="input-form" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
+              <input class="input-form position" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
 
               <label for="init-data-experience">
                 Fecha de inicio:
@@ -232,13 +246,15 @@
               <label for="description-experience">
                 Descripción del puesto:
               </label>
-              <textarea class="input-form"  name="description-experience" rows="8" cols="80">
+              <textarea class="input-form description-experience"  name="description-experience" rows="8" cols="80">
               </textarea>
             </div>
           </fieldset>
 
         </form>
-
+        <!--
+         BUTTONS FORM - ANA
+         -->
         <div class="buttonsChangeForm">
           <button class="buttonGoBack">Volver</button>
           <button class="buttonSave hidden">Guardar</button>
@@ -256,24 +272,25 @@
       <aside class="print-cv">
 
         <div class="cv-left">
-          <h2 class="cv-name">Nombre <br> Apellido <br> Apellido </h2>
+          <h2 class="cv-name cv-firstname">Nombre <br> Apellido <br> Apellido
+          </h2>
 
-          <h3 class="cv-position">Profesión actual</h3>
+          <h3 class="cv-position cv-profession">Profesión actual</h3>
 
           <div class="cv-contact">
             <h4>Contact</h4>
             <ul class="list-none">
-              <li id="city-cv">Ciudad</li>
-              <li id="email-cv">Correo electrónico</li>
-              <li id="tel-cv">Teléfono</li>
-              <li id="rrss-cv">Redes sociales</li>
-              <li id="web-cv">Web personal</li>
+              <li id="city-cv" class="cv-residence">Ciudad</li>
+              <li id="email-cv" class="cv-telephone">Correo electrónico</li>
+              <li id="tel-cv" class="cv-email">Teléfono</li>
+              <li id="rrss-cv" class="cv-social">Redes sociales</li>
+              <li id="web-cv" class="cv-personal-website">Web personal</li>
             </ul>
           </div>
 
           <div class="cv-description">
             <h4>Descripción</h4>
-            <p class= "description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="description-text cv-personal-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
 
@@ -283,15 +300,15 @@
             <h3 class="seccion">FORMACIÓN</h3>
 
             <ul class="list-none">
-              <li>titulo de la formación</li>
-              <li>centro y ciudad</li>
-              <li>fecha incio y finalización</li>
+              <li class="cv-title-education">titulo de la formación</li>
+              <li class="cv-center-education">centro y ciudad</li>
+              <li class="cv-date-start-education cv-date-end-education">fecha incio y finalización</li>
             </ul>
 
 
 
             <ul class="list-style">
-              <li>competencia adquirida</li>
+              <li class="cv-description-studies">competencias adquiridas</li>
             </ul>
           </div>
 
@@ -299,26 +316,26 @@
             <h3 class="seccion">PROYECTOS</h3>
             <ul class="list-none">
 
-              <li>nombre del proyecto</li>
-              <li>empresa</li>
-              <li> fecha incio y finalización</li>
+              <li class="cv-name-project">nombre del proyecto</li>
+              <li class="cv-company-project">empresa</li>
+              <li class=""> fecha incio y finalización</li>
             </ul>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
               ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
               parturient montes, nascetur ridiculus mus. Donec quam felis,
             </p>
             <ul class="list-style">
-              <li>competencia adquirida</li>
+              <li class="cv-description-project">competencia adquirida</li>
             </ul>
           </div>
           <div class="experience">
             <h3 class="seccion">EXPERIENCIA</h3>
             <ul class="list-none">
-              <li>nombre empresa</li>
-              <li>cargo ejercido</li>
+              <li class="cv-name-company">nombre empresa</li>
+              <li class="cv-position">cargo ejercido</li>
               <li>fecha inicio fin</li>
-              <ulclass="list-style">
-              <li>tarea realizada</li>
+              <ul class="list-style">
+              <li class="cv-description-experience">tarea realizada</li>
             </ul>
           </div>
 
