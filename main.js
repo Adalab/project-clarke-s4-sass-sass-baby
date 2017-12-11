@@ -45,27 +45,6 @@ function nextStep(){
 }
 //FIN MENÚ NAVEGACIÓN POR PESTAÑAS
 
-//MENÚ DESPLEGABLE (Gemma)
-var newField = document.querySelector ('.addfield');
-var openInput = document.querySelector ('.drop-down');
-var saveButton = document.querySelector ('.buttonSave');
-
-function acordeon (event){
-  openInput.classList.toggle('hidden');
-  saveButton.classList.toggle ('hidden');
-
-}
-
-newField.addEventListener('click', acordeon);
-saveButton.addEventListener('click', acordeon);
-
-function saveMain () {
-    var titleEducation = document.querySelector ('.main-value')
-    var textadd = document.querySelector ('.textadd')
-    textadd.innerHTML = titleEducation.value;
-}
-
-saveButton.addEventListener('click', saveMain);
 
 /* ===============================
 IMPRIMIR DATOS PERSONALES EN CV
@@ -117,6 +96,36 @@ buttonContinue.addEventListener('click', function(){
 
 });
 
+
+
+var newField = document.querySelectorAll ('.addfield');
+var openInput = document.querySelectorAll ('.drop-down');
+var saveButton = document.querySelectorAll ('.buttonSave');
+var mainValue = document.querySelectorAll ('.main-value');
+var textAdd = document.querySelectorAll ('.textadd');
+
+function acordeon (event){
+  var newFieldId = event.currentTarget.getAttribute('data-id');
+  openInput[newFieldId].classList.toggle('hidden');
+  saveButton[newFieldId].classList.toggle ('hidden');
+
+
+}
+
+for (var i = 0; i < newField.length; i++) {
+  newField[i].addEventListener('click', acordeon);
+  saveButton[i].addEventListener('click', acordeon);
+}
+
+function saveMain () {
+    var iDen = event.currentTarget.getAttribute('data-id');
+    textAdd[iDen].innerHTML =  mainValue[iDen].value;
+
+}
+
+for (var i = 0; i <=saveButton.length; i++) {
+  saveButton[i].addEventListener('click', saveMain);
+}
 
 
 //FIN MENÚ DESPLEGABLE
