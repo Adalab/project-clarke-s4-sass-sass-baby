@@ -15,18 +15,34 @@ function addValues(selector, initValue, currentValue) {
 addValues('#selectorYear', 1950, 2017);
 
 //MENÚ DE NAVEGACIÓN POR PESTAÑAS
+var currentStep = 0;
+var fieldsetInformation = document.querySelectorAll ('.fieldset-information');
+var buttonsMenu = document.querySelectorAll ('.button-menu');
 
 function showFieldsets(event) {
-  var fieldsetInformation = document.querySelectorAll ('.fieldset-information');
   var id = event.currentTarget.getAttribute('data-id');
-  fieldsetInformation[id].classList.toggle('display-none');
+  for(var i = 0; i < fieldsetInformation.length; i++){
+    fieldsetInformation[i].classList.add('display-none');
+  }
+  fieldsetInformation[id].classList.remove('display-none');
+ currentStep = id;
+  console.log("click en ",currentStep);
 }
 
-var buttonsMenu = document.querySelectorAll ('.button-menu');
 for (var i = 0; i < buttonsMenu.length; i++) {
   buttonsMenu[i].addEventListener('click', showFieldsets);
 };
 
+var buttonContinue = document.querySelector(".buttonContinue");
+buttonContinue.addEventListener('click',nextStep);
+function nextStep(){
+  console.log("current en continue",currentStep);
+  for(var i= 0; i< fieldsetInformation.length;i++){
+    fieldsetInformation[i].classList.add('display-none');
+  }
+  currentStep++;
+  fieldsetInformation[currentStep].classList.remove('display-none');
+}
 //FIN MENÚ NAVEGACIÓN POR PESTAÑAS
 
 //MENÚ DESPLEGABLE (Gemma)
