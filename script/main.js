@@ -126,7 +126,7 @@ function saveMain () {
 
 }
 
-for (var i = 0; i <=saveButton.length; i++) {
+for (var i = 0; i <saveButton.length; i++) {
   saveButton[i].addEventListener('click', saveMain);
 }
 
