@@ -97,6 +97,9 @@ buttonContinue.addEventListener('click', function(){
 });
 
 
+/* ===============================
+ACORDEON
+================================= */
 
 var newField = document.querySelectorAll ('.addfield');
 var openInput = document.querySelectorAll ('.drop-down');
@@ -127,13 +130,18 @@ for (var i = 0; i <=saveButton.length; i++) {
   saveButton[i].addEventListener('click', saveMain);
 }
 
+/* ===============================
+FIN ACORDEON
+================================= */
 
-//FIN MENÚ DESPLEGABLE
+/* ===============================
+IMPRIMIR
+================================= */
+/* ===============================
+FIN IMPRIMIR
+================================= */
 
-//IMPRIMIR CV
 
-
-// FIN IMPRIMIR CV
 
 
 //Función para prompt en cv primera versión
