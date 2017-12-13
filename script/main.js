@@ -153,7 +153,8 @@ var buttonPreview = document.querySelector('.button-CV');
 buttonPreview.addEventListener('click', toogleClass);
 
 function toogleClass() {
-  alert('Hola');
+  sectionForm.classList.toggle('display-none');
+  sectionCV.classList.toggle('display-none');
 };
 
 
