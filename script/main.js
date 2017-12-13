@@ -53,7 +53,7 @@ IMPRIMIR DATOS PERSONALES EN CV
 
 function dateDisplay(className){
   var dayStartEducation = document.querySelector('.date-start-education');
-  var dayEndEducation = document.querySelector('#date-end-education');
+  var dayEndEducation = document.querySelector('.date-end-education');
 
   document.querySelector('.cv-' + className).textContent= dayStartEducation.value + " al " + dayEndEducation.value;
 }
@@ -84,7 +84,7 @@ buttonContinue.addEventListener('click', function(){
   userAnswer('title-education');
   userAnswer('center-education');
   dateDisplay("date-start-education");
-  textAreaAnswer('description-studies');
+  textAreaAnswer('description-project');
 
   //PROYECTOS
   userAnswer('name-project');
