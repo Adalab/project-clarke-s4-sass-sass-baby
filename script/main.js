@@ -89,6 +89,8 @@ buttonContinue.addEventListener('click', function(){
   userAnswer('center-education1');
   dateDisplay('date-start-education1');
   //textAreaAnswer('description-studies1');
+  dateDisplay("date-start-education");
+  textAreaAnswer('description-project');
 
   //PROYECTOS
   userAnswer('name-project');
