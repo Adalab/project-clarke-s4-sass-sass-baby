@@ -146,10 +146,10 @@
               </div>
             </div>
             <div class="drop-down hidden">
-              <label class="label-form" for="title-education">
+              <label class="label-form" for="title-education1">
                 Título
               </label>
-              <input class="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required>
+              <input class="input-form title-education1 main-value" type="text" name="title-education1" placeholder="Título" required>
 
               <label class="label-form" for="center-education">
                 Centro de formación
@@ -183,7 +183,7 @@
               </div>
             </div>
             <div class="drop-down hidden">
-              <label class="label-form" for="title-education">
+              <label class="label-form" for="title-education1">
                 Título
               </label>
               <input class="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required>
@@ -489,60 +489,83 @@
 
       </section>
 
-      <!-- Currículum -->
-      <div class="cv-content display-none">
+      <!---
+      ======================
+      CURRICULUM
+      ======================
+    -->
+    <div class="cv-content display-none">
 
 
-        <aside>
-          <div class="print-cv" id= "areatoprint">
+      <aside>
+        <div class="print-cv" id= "areatoprint">
 
+          <!--   GENERAL INFO    --------------->
+
+        </div>
+        <div class="cv-left">
+          <h2 class="cv-name cv-firstname">Nombre <br> Apellido <br> Apellido
+          </h2>
+
+          <h3 class="cv-position cv-profession">Profesión actual</h3>
+
+          <div class="cv-contact">
+            <h4>Contact</h4>
+            <ul class="list-none">
+              <li id="city-cv" class="cv-residence">Ciudad</li>
+              <li id="email-cv" class="cv-telephone">Correo electrónico</li>
+              <li id="tel-cv" class="cv-email">Teléfono</li>
+              <li id="rrss-cv" class="cv-social">Redes sociales</li>
+              <li id="web-cv" class="cv-personal-website">Web personal</li>
+            </ul>
           </div>
-          <div class="cv-left">
-            <h2 class="cv-name cv-firstname">Nombre <br> Apellido <br> Apellido
-            </h2>
 
-            <h3 class="cv-position cv-profession">Profesión actual</h3>
+          <div class="cv-description">
+            <h4>Descripción</h4>
+            <p class="description-text cv-personal-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
 
-            <div class="cv-contact">
-              <h4>Contact</h4>
-              <ul class="list-none">
-                <li id="city-cv" class="cv-residence">Ciudad</li>
-                <li id="email-cv" class="cv-telephone">Correo electrónico</li>
-                <li id="tel-cv" class="cv-email">Teléfono</li>
-                <li id="rrss-cv" class="cv-social">Redes sociales</li>
-                <li id="web-cv" class="cv-personal-website">Web personal</li>
-              </ul>
-            </div>
+        <!--   FORMACIÓN   --------------->
 
-            <div class="cv-description">
-              <h4>Descripción</h4>
-              <p class="description-text cv-personal-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+        <div class="cv-right">
+          <div class="education">
+            <h3 class="seccion">FORMACIÓN</h3>
+
+            <!--   FORMACIÓN 1   --------------->
+            <ul class="list-none">
+              <li class="cv-title-education">titulo de la formación</li>
+              <li class="cv-center-education">centro y ciudad</li>
+              <li class="cv-date-start-education cv-date-end-education">fecha incio y finalización</li>
+            </ul>
+
+            <ul class="list-style">
+              <li class="cv-description-studies">competencia adquirida</li>
+            </ul>
+
+            <!--   FORMACIÓN 2   --------------->
+            <ul class="list-none">
+              <li class="cv-title-education1">titulo de la formación</li>
+              <li class="cv-center-education1">centro y ciudad</li>
+              <li class="cv-date-start-education1 cv-date-end-education1">fecha incio y finalización</li>
+            </ul>
+            <ul class="list-style">
+              <li class="cv-description-studies1">competencia adquirida</li>
+            </ul>
           </div>
 
-
-          <div class="cv-right">
-            <div class="education">
-              <h3 class="seccion">FORMACIÓN</h3>
-
-              <ul class="list-none">
-                <li class="cv-title-education">titulo de la formación</li>
-                <li class="cv-center-education">centro y ciudad</li>
-                <li class="cv-date-start-education cv-date-end-education">fecha incio y finalización</li>
-              </ul>
-
-              <ul class="list-style">
-                <li class="cv-description-project">competencia adquirida</li>
-              </ul>
-            </div>
+          <!--   PROJECTS  --------------->
 
           <div class="proyects">
             <h3 class="seccion">PROYECTOS</h3>
             <ul class="list-none">
 
+              <!--   PROJECTS 1  --------------->
+
+
               <li class="cv-name-project">nombre del proyecto</li>
               <li class="cv-company-project">empresa</li>
-              <li class="date"> fecha incio y finalización</li>
+              <li class="date"> fecha inicio y finalización</li>
             </ul>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
               ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
@@ -551,24 +574,54 @@
             <ul class="list-style">
               <li class="cv-description-project">competencia adquirida</li>
             </ul>
-          </div>
-          <div class="experience">
-            <h3 class="seccion">EXPERIENCIA</h3>
-            <ul class="list-none">
-              <li class="cv-name-company">nombre empresa</li>
-              <li class="cv-position">cargo ejercido</li>
-              <li>fecha inicio fin</li>
-                <ul class="list-style">
-                  <li class="cv-description-experience">tarea realizada</li>
-                </ul>
-              </div>
-            </div>
-          </aside>
-          <input type="button" class= "buttonPrint" value="Imprimir">
+
+            <!--   PROJECTS 2  --------------->
+            <li class="cv-name-project">nombre del proyecto</li>
+            <li class="cv-company-project">empresa</li>
+            <li class="date"> fecha inicio y finalización</li>
+          </ul>
+          <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Donec quam felis,
+          </p>
+          <ul class="list-style">
+            <li class="cv-description-project">competencia adquirida</li>
+          </ul>
+
+        </div>
+
+
+        <!--   EXPERIENCE  --------------->
+        <div class="experience">
+          <h3 class="seccion">EXPERIENCIA</h3>
+
+          <!--   EXPERIENCE 1 --------------->
+          <ul class="list-none">
+            <li class="cv-name-company">nombre empresa</li>
+            <li class="cv-position">cargo ejercido</li>
+            <li>fecha inicio fin</li>
+          </ul>
+          <ul class="list-style">
+            <li class="cv-description-experience">tarea realizada</li>
+          </ul>
+
+          <!--   EXPERIENCE 2 --------------->
+          <ul class="list-none">
+            <li class="cv-name-company">nombre empresa</li>
+            <li class="cv-position">cargo ejercido</li>
+            <li>fecha inicio fin</li>
+          </ul>
+          <ul class="list-style">
+            <li class="cv-description-experience">tarea realizada</li>
+          </ul>
         </div>
       </div>
-    </main>
-    <script type="text/javascript" src="script/main.js">
-    </script>
-  </body>
-  </html>
+    </aside>
+    <input type="button" class= "buttonPrint" value="Imprimir">
+  </div>
+</div>
+</main>
+<script type="text/javascript" src="script/main.js">
+</script>
+</body>
+</html>

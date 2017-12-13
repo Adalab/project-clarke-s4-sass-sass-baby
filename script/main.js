@@ -53,8 +53,7 @@ IMPRIMIR DATOS PERSONALES EN CV
 
 function dateDisplay(className){
   var dayStartEducation = document.querySelector('.date-start-education');
-  var dayEndEducation = document.querySelector('#date-end-education');
-
+  var dayEndEducation = document.querySelector('.date-end-education');
   document.querySelector('.cv-' + className).textContent= dayStartEducation.value + " al " + dayEndEducation.value;
 }
 
@@ -80,23 +79,28 @@ buttonContinue.addEventListener('click', function(){
   userAnswer('social');
   userAnswer('personal-website');
   textAreaAnswer('personal-description');
+
   //EDUCACIÓN
   userAnswer('title-education');
   userAnswer('center-education');
-  dateDisplay("date-start-education");
-  textAreaAnswer('description-studies');
+  dateDisplay('date-start-education');
+  //textAreaAnswer('description-studies');
+  userAnswer('title-education1');
+  userAnswer('center-education1');
+  dateDisplay('date-start-education1');
+  //textAreaAnswer('description-studies1');
 
   //PROYECTOS
   userAnswer('name-project');
   userAnswer('company-project');
   //fecha proyecto
-  textAreaAnswer('description-project');
+  //textAreaAnswer('description-project');
 
   //EXPERIENCIA
   userAnswer('name-company');
   userAnswer('position');
   //fecha inicio y fin
-  textAreaAnswer('description-experience');
+  //textAreaAnswer('description-experience');
 
 
 });
