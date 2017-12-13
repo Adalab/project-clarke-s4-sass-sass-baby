@@ -57,6 +57,10 @@ function dateDisplay(className){
   document.querySelector('.cv-' + className).textContent= dayStartEducation.value + " al " + dayEndEducation.value;
 }
 
+function selectDateDisplay(className) {
+  var monthDisplay = document.querySelector('.')
+}
+
 
 function userAnswer(className) {
   var inputAnswer = document.querySelector('input.'+ className);
