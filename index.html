@@ -172,9 +172,16 @@
               <textarea class="input-form description-studies"  name="description-studies" rows="8" cols="80"></textarea>
             </div>
 
+
+          </fieldset>
+
+          <!--PROJECTS DATA FORM - ANA  -->
+          <fieldset class="fieldset-information display-none">
+            <legend class="title">Proyectos</legend>
+            <hr>
             <div class="add-project">
               <div class="addfield" data-id= "2">
-                <a href="#" class="textadd">Añadir formación</a>
+                <a href="#" class="textadd">Añadir proyecto</a>
               </div>
               <div class="buttons-project-container">
                 <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
@@ -183,37 +190,42 @@
               </div>
             </div>
             <div class="drop-down hidden">
-              <label class="label-form" for="title-education">
-                Título
+              <label class="label-form" for="name-project">
+                Nombre del proyecto
               </label>
-              <input class="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required>
-
-              <label class="label-form" for="center-education">
-                Centro de formación
+              <input class="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
+              <label class="label-form" for="company-project">
+                Empresa o proyecto personal
               </label>
-              <input class="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required>
-
-              <label for="date-start-education">
-                Fecha de inicio
+              <input class="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
+              <label for="month-project">
+                Fecha de realización:
               </label>
-              <input class="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
-
-              <label for="date-end-education">
-                Fecha de finalización
+              <div class="containter-data-project">
+                <select class="input-form selector-project" name="month-project">
+                  <option class="option-form grey" disabled selected>Mes</option>
+                  <option>Enero</option>
+                  <option>Febrero</option>
+                  <option>Marzo</option>
+                  <option>Abril</option>
+                  <option>Mayo</option>
+                  <option>Junio</option>
+                  <option>Julio</option>
+                  <option>Agosto</option>
+                  <option>Septiembre</option>
+                  <option>Octubre</option>
+                  <option>Noviembre</option>
+                  <option>Diciembre</option>
+                </select>
+                <select class="input-form selector-project" name="year-project" id="selectorYear">
+                  <option class="option-form" disabled selected>Año</option>
+                </select>
+              </div>
+              <label for="description-project">
+                Descripción del proyecto :
               </label>
-              <input class="input-form date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
-
-              <label for="description-studies">
-                Competencias adquiridas :
-              </label>
-              <textarea class="input-form description-studies"  name="description-studies" rows="8" cols="80"></textarea>
+              <textarea class="input-form description-project"  name="description-project" rows="8" cols="80"></textarea>
             </div>
-          </fieldset>
-
-          <!--PROJECTS DATA FORM - ANA  -->
-          <fieldset class="fieldset-information display-none">
-            <legend class="title">Proyectos</legend>
-            <hr>
             <div class="add-project">
               <div class="addfield" data-id= "3">
                 <a href="#" class="textadd">Añadir proyecto</a>
@@ -261,101 +273,7 @@
               </label>
               <textarea class="input-form description-project"  name="description-project" rows="8" cols="80"></textarea>
             </div>
-            <div class="add-project">
-              <div class="addfield" data-id= "4">
-                <a href="#" class="textadd">Añadir proyecto</a>
-              </div>
-              <div class="buttons-project-container">
-                <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
-                <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
-                <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
-              </div>
-            </div>
-            <div class="drop-down hidden">
-              <label class="label-form" for="name-project">
-                Nombre del proyecto
-              </label>
-              <input class="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
-              <label class="label-form" for="company-project">
-                Empresa o proyecto personal
-              </label>
-              <input class="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
-              <label for="month-project">
-                Fecha de realización:
-              </label>
-              <div class="containter-data-project">
-                <select class="input-form selector-project" name="month-project">
-                  <option class="option-form grey" disabled selected>Mes</option>
-                  <option>Enero</option>
-                  <option>Febrero</option>
-                  <option>Marzo</option>
-                  <option>Abril</option>
-                  <option>Mayo</option>
-                  <option>Junio</option>
-                  <option>Julio</option>
-                  <option>Agosto</option>
-                  <option>Septiembre</option>
-                  <option>Octubre</option>
-                  <option>Noviembre</option>
-                  <option>Diciembre</option>
-                </select>
-                <select class="input-form selector-project" name="year-project" id="selectorYear">
-                  <option class="option-form" disabled selected>Año</option>
-                </select>
-              </div>
-              <label for="description-project">
-                Descripción del proyecto :
-              </label>
-              <textarea class="input-form description-project"  name="description-project" rows="8" cols="80"></textarea>
-            </div>
 
-            <div class="add-project">
-              <div class="addfield" data-id= "5">
-                <a href="#" class="textadd">Añadir proyecto</a>
-              </div>
-              <div class="buttons-project-container">
-                <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
-                <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
-                <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
-              </div>
-            </div>
-            <div class="drop-down hidden">
-              <label class="label-form" for="name-project">
-                Nombre del proyecto
-              </label>
-              <input class="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required>
-              <label class="label-form" for="company-project">
-                Empresa o proyecto personal
-              </label>
-              <input class="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required>
-              <label for="month-project">
-                Fecha de realización:
-              </label>
-              <div class="containter-data-project">
-                <select class="input-form selector-project" name="month-project">
-                  <option class="option-form grey" disabled selected>Mes</option>
-                  <option>Enero</option>
-                  <option>Febrero</option>
-                  <option>Marzo</option>
-                  <option>Abril</option>
-                  <option>Mayo</option>
-                  <option>Junio</option>
-                  <option>Julio</option>
-                  <option>Agosto</option>
-                  <option>Septiembre</option>
-                  <option>Octubre</option>
-                  <option>Noviembre</option>
-                  <option>Diciembre</option>
-                </select>
-                <select class="input-form selector-project" name="year-project" id="selectorYear">
-                  <option class="option-form" disabled selected>Año</option>
-                </select>
-              </div>
-              <label for="description-project">
-                Descripción del proyecto :
-              </label>
-              <textarea class="input-form description-project"  name="description-project" rows="8" cols="80"></textarea>
-            </div>
           </fieldset>
 
           <!--EXPERIENCE DATA FORM - ANA-->
@@ -363,7 +281,7 @@
             <legend class="title">Experiencia laboral</legend>
             <hr>
             <div class="add-project">
-              <div class="addfield" data-id="6">
+              <div class="addfield" data-id="4">
                 <a href="#" class="textadd">Añadir experiencia</a>
               </div>
               <!--BUTTONS INSIDE EDUCATION, EXPERIENCE AND PROJECTS -->
@@ -399,46 +317,10 @@
             </div>
 
             <div class="add-project">
-              <div class="addfield" data-id="7">
+              <div class="addfield" data-id="5">
                 <a href="#" class="textadd">Añadir experiencia</a>
               </div>
               <!--BUTTONS INSIDE EDUCATION, EXPERIENCE AND PROJECTS  -->
-              <div class="buttons-project-container">
-                <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
-                <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
-                <img class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia arriba">
-              </div>
-            </div>
-
-            <div class="drop-down hidden">
-              <label class="label-form" for="company">
-                Empresa
-              </label>
-              <input class="input-form main-value name-company" id="company" type="text" name="company" placeholder="Empresa" required>
-              <label class="label-form" for="position">
-                Puesto de trabajo
-              </label>
-              <input class="input-form position" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
-              <label for="init-data-experience">
-                Fecha de inicio:
-              </label>
-              <input class="input-form" id="init-data-experience" type="date" name="init-data-experience" required>
-              <label for="finish-data-experience">
-                Fecha fin:
-              </label>
-              <input class="input-form" id="finish-data-experience" type="date" name="finish-data-experience" required>
-              <label for="description-experience">
-                Descripción del puesto:
-              </label>
-              <textarea class="input-form description-experience"  name="description-experience" rows="8" cols="80">
-              </textarea>
-            </div>
-
-            <div class="add-project">
-              <div class="addfield" data-id="8">
-                <a href="#" class="textadd">Añadir experiencia</a>
-              </div>
-              <!--  BUTTONS INSIDE EDUCATION, EXPERIENCE AND PROJECTS - ANA-->
               <div class="buttons-project-container">
                 <img class="buttons-project margin-right-buttons" src="img/trash.png" alt="Icono de papelera">
                 <img class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
@@ -481,9 +363,6 @@
           <button class="buttonSave hidden" data-id="3">Guardar</button>
           <button class="buttonSave hidden" data-id="4">Guardar</button>
           <button class="buttonSave hidden" data-id="5">Guardar</button>
-          <button class="buttonSave hidden" data-id="6">Guardar</button>
-          <button class="buttonSave hidden" data-id="7">Guardar</button>
-          <button class="buttonSave hidden" data-id="8">Guardar</button>
           <button class="buttonContinue">Continuar</button>
         </div>
 
