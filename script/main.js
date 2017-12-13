@@ -50,7 +50,14 @@ function nextStep(){
 IMPRIMIR DATOS PERSONALES EN CV
 ================================= */
 //VARIABLES
-var dayStartEducation = document.querySelector('.cv-date-start-education');
+
+function dateDisplay(className){
+  var dayStartEducation = document.querySelector('#date-start-education');
+  var dayEndEducation = document.querySelector('#date-end-education');
+
+  document.querySelector('.cv-' + className).textContent= dayStartEducation.value + " al " + dayEndEducation.value;
+}
+
 
 function userAnswer(className) {
   var inputAnswer = document.querySelector('input.'+ className);
@@ -76,10 +83,8 @@ buttonContinue.addEventListener('click', function(){
   //EDUCACIÓN
   userAnswer('title-education');
   userAnswer('center-education');
-  //fecha inicio y fin
+  dateDisplay("date-start-education");
   textAreaAnswer('description-studies');
-
-  /*
 
   //PROYECTOS
   userAnswer('name-project');
@@ -92,10 +97,9 @@ buttonContinue.addEventListener('click', function(){
   userAnswer('position');
   //fecha inicio y fin
   textAreaAnswer('description-experience');
-  */
+
 
 });
-
 
 /* ===============================
 ACORDEON
