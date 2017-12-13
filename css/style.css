@@ -18,8 +18,6 @@ body {
 
 /*
 BUTTONS
-Here I've included all the buttons of the site
-
 */
 
 /* BUTTON CONTINUE SAVE PRINT AND BACK */
@@ -28,8 +26,9 @@ Here I've included all the buttons of the site
   margin: auto;
   max-width: 500px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
+
 .buttonPrint {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -41,7 +40,6 @@ Here I've included all the buttons of the site
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
-
 }
 
 .buttonSave {
@@ -72,20 +70,6 @@ Here I've included all the buttons of the site
 
 .buttonContinue:hover {
   background-color: #344263;
-}
-
-
-.buttonGoBack {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #4d6292;
-  padding: 8px 45px;
-  background-color: #fff;
-  border: 2px solid #4d6292;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
 }
 
 /* BUTTON IN HEADER */
