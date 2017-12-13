@@ -66,6 +66,7 @@ BUTTONS
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
+  margin-right: 24px;
 }
 
 .buttonContinue:hover {
@@ -129,7 +130,7 @@ section {
 
 
 .logo {
-  width: 30%;
+  width: 70%;
   margin-left: 24px;
   max-width: 150px;
 }
@@ -254,7 +255,7 @@ hr {
 #input_img {
   position:absolute;
   bottom: 42%;
-  left: 92%;
+  left: 90%;
   width: 20px;
 }
 
