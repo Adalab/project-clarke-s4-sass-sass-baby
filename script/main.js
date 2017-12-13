@@ -142,31 +142,21 @@ FIN IMPRIMIR
 ================================= */
 
 
+/* ===============================
+Botón previsualizar
+================================= */
+
+var sectionForm = document.querySelector('#section-form');
+var sectionCV = document.querySelector('.cv-content');
+var buttonPreview = document.querySelector('.button-CV');
+
+buttonPreview.addEventListener('click', toogleClass);
+
+function toogleClass() {
+  alert('Hola');
+};
 
 
-//Función para prompt en cv primera versión
-
-    //Nombre y apellidos
-/*
-var name = prompt('Dime tu nombre y dos apellidos');
-
-var nameCV = document.querySelector('.cv-name');
-
-nameCV.innerHTML = name;
-
-    //Ciudad
-
-var city = prompt('Dime tu ciudad');
-
-var cityCV = document.querySelector('#city-cv');
-
-cityCV.innerHTML = city;
-
-    //Correo electrónico
-
-var email = prompt('Dime tu email');
-
-var emailCV = document.querySelector('#email-cv');
-
-emailCV.innerHTML = email;
-*/
+/* ===============================
+Botón previsualizar
+================================= */
