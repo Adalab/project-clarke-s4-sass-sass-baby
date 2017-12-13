@@ -84,17 +84,20 @@ buttonContinue.addEventListener('click', function(){
   userAnswer('title-education');
   userAnswer('center-education');
   dateDisplay('date-start-education');
-  //textAreaAnswer('description-studies');
   userAnswer('title-education1');
   userAnswer('center-education1');
   dateDisplay('date-start-education1');
-  //textAreaAnswer('description-studies1');
-  dateDisplay("date-start-education");
-  textAreaAnswer('description-project');
+
 
   //PROYECTOS
   userAnswer('name-project');
   userAnswer('company-project');
+  userAnswer('name-project1');
+  userAnswer('company-project');
+  //fecha proyecto
+  //textAreaAnswer('description-project');
+  //userAnswer('name-project');
+  //userAnswer('company-project');
   //fecha proyecto
   //textAreaAnswer('description-project');
 
