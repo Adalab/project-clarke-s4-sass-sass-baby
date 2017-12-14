@@ -63,21 +63,6 @@ function dateEndDisplay(className){
 
 }
 
-/*
-function dateExperienceDisplay(className){
-  var dayStartExperience = document.querySelector('input.' + className);
-  var dayEndExperience = document.querySelector('input.' + className);
-  document.querySelector('.cv-' + className).textContent= dayStartExperience.value + " al " + dayEndExperience.value;
-}
-
-
-function selectDateDisplay(className) {
-  var monthDisplay = document.querySelector('.data-month');
-  var yearDisplay = document.querySelector('.data-month');
-  document.querySelector('.cv-' + className).textContent = monthDisplay.value + yearDisplay.value;
-} */
-
-
 function userAnswer(className) {
   var inputAnswer = document.querySelector('input.'+ className);
   document.querySelector('.cv-' + className).textContent = inputAnswer.value;
