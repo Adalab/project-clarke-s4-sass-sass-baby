@@ -414,7 +414,8 @@ h3.seccion {
   font-weight: bold;
 }
 
-.cv-description-project,.cv-description-project1{
+.cv-description-project,
+.cv-description-project1{
   margin-top: 0;
   margin-bottom: 12px;
 }
@@ -439,6 +440,10 @@ h3.seccion {
 .ul-experience {
   padding: 0;
   list-style-type: none;
+}
+
+.put-inline {
+  display: inline-block;
 }
 
 /*RESPONSIVE*/
@@ -476,5 +481,13 @@ h3.seccion {
 @media all and (max-width:750px) {
   .cv-content{
     display: none;
+  }
+}
+
+
+@media print {
+  .print-cv {
+    display: flex;
+    page-break-inside: avoid;
   }
 }
