@@ -374,6 +374,44 @@ aside {
 
 }
 
+h3.seccion {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tittle-education {
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.tittle-projects {
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.tittle-experience {
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cv-description-project,.cv-description-project1{
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.margin-top {
+  margin-top: 12px;
+}
+
+.margin-bottom {
+  margin-bottom: 8px;
+}
+
 /*RESPONSIVE*/
 
 @media all and (min-width:750px) {
