@@ -206,40 +206,48 @@ Flechas
 ================================= */
 
 
-var educacionNodes = document.querySelectorAll(".caja-educacion");
-var educacionNodes = document.querySelectorAll(".caja-proyectos");
 var educacionNodes = document.querySelectorAll(".caja-experiencia");
 var eliminarElemento = document.querySelectorAll(".papelera");
-var subirElemento = document.querySelectorAll(".flecha-arriba");
-var bajarElemento = document.querySelectorAll(".flecha-abajo");
-var educacionPadre = document.querySelector(".fieldset-background");
-var projectsPadre = document.querySelector(".fieldset-projects");
-var experiencePadre = document.querySelector(".fieldset-experience");
+var arrowDownFirstElement = document.querySelector("#arrowDownFirstElement");
+var arrowDownSecondElement = document.querySelector("#arrowDownSecondElement");
+var arrowUpFirstElement = document.querySelector("#arrowUpFirstElement");
+var arrowUpSecondElement = document.querySelector("#arrowUpSecondElement");
+
+var firstEducationBox= document.querySelector("#firstEducationBox");
+var secondEducationBox= document.querySelector("#secondEducationBox");
 
 function borrar(event) {
-
  event.currentTarget.closest('.caja-educacion').remove();
  event.currentTarget.closest('.caja-proyectos').remove();
  event.currentTarget.closest('.caja-experiencia').remove();
-
 };
-/*
-function subir(event) {
- debugger
-var cambio = Array.from(document.querySelectorAll('.caja-educacion')).reverse();
- for(var i=0; cambio.length < i; i++) {
-   educacionPadre.innerHTML = cambio[i];
- };
-
-*/
 
 for (var i = 0; i < educacionNodes.length; i++) {
-
  eliminarElemento[i].addEventListener ('click',borrar);
- /*subirElemento[i].addEventListener ('click',subir);
- bajarElemento[i].addEventListener ('click',subir);
-*/
 }
+
+arrowDownFirstElement.addEventListener('click',function () {
+  if(firstEducationBox.nextElementSibling)
+      firstEducationBox.parentNode.insertBefore(firstEducationBox.nextElementSibling, firstEducationBox);
+});
+arrowDownSecondElement.addEventListener('click',function () {
+    if(secondEducationBox.nextElementSibling)
+        secondEducationBox.parentNode.insertBefore(secondEducationBox.nextElementSibling,secondEducationBox);
+});
+
+arrowUpFirstElement.addEventListener('click',function () {
+    if(firstEducationBox.previousElementSibling)
+        firstEducationBox.parentNode.insertBefore( firstEducationBox,firstEducationBox.previousElementSibling);
+});
+arrowUpSecondElement.addEventListener('click',function () {
+    if(secondEducationBox.previousElementSibling)
+        secondEducationBox.parentNode.insertBefore(secondEducationBox,secondEducationBox.previousElementSibling);
+});
+
+
+
+
+
 
 /* ===============================
 Fin flechas

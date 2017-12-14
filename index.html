@@ -97,46 +97,49 @@
           <fieldset class="fieldset-information fieldset-background display-none">
             <legend class="title">Formación</legend>
             <hr>
-            <div class="add-project caja-educacion">
-              <div class="addfield" data-id= "0">
-                <a href="#" class="textadd">Añadir formación</a>
+            <div>
+            <div id="firstEducationBox">
+              <div class="add-project caja-educacion">
+                <div class="addfield" data-id= "0">
+                  <a href="#" class="textadd">Añadir formación 1</a>
+                </div>
+                <div class="buttons-project-container">
+                  <img class="buttons-project margin-right-buttons papelera" src="img/trash.png" alt="Icono de papelera">
+                  <img id="arrowUpFirstElement" class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
+                  <img id="arrowDownFirstElement" class="buttons-project flecha-abajo" src="img/arrowdown.png" alt="Flecha hacia abajo">
+                </div>
               </div>
-              <div class="buttons-project-container">
-                <img class="buttons-project margin-right-buttons papelera" src="img/trash.png" alt="Icono de papelera">
-                <img class="buttons-project margin-right-buttons flecha-arriba" src="img/arrowup.png" alt="Flecha hacia arriba">
-                <img class="buttons-project flecha-abajo" src="img/arrowdown.png" alt="Flecha hacia abajo">
+              <div class="drop-down hidden">
+                <label class="label-form" for="title-education">
+                  Título
+                </label>
+                <input class="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required>
+
+                <label class="label-form" for="center-education">
+                  Centro de formación
+                </label>
+                <input class="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required>
+
+                <label for="date-start-education">
+                  Fecha de inicio
+                </label>
+                <input class="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
+
+                <label for="date-end-education">
+                  Fecha de finalización
+                </label>
+                <input class="input-form date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
               </div>
             </div>
-            <div class="drop-down hidden">
-              <label class="label-form" for="title-education">
-                Título
-              </label>
-              <input class="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required>
-
-              <label class="label-form" for="center-education">
-                Centro de formación
-              </label>
-              <input class="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required>
-
-              <label for="date-start-education">
-                Fecha de inicio
-              </label>
-              <input class="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required>
-
-              <label for="date-end-education">
-                Fecha de finalización
-              </label>
-              <input class="input-form date-end-education" type="date" name="company-project" placeholder="Fecha inicio" required>
-            </div>
-
+            <div id="secondEducationBox">
             <div class="add-project caja-educacion">
               <div class="addfield" data-id= "1">
-                <a href="#" class="textadd">Añadir formación</a>
+                <a href="#" class="textadd">Añadir formación 2</a>
               </div>
               <div class="buttons-project-container">
                 <img class="buttons-project margin-right-buttons papelera" src="img/trash.png" alt="Icono de papelera">
-                <img class="buttons-project margin-right-buttons flecha-arriba" src="img/arrowup.png" alt="Flecha hacia arriba">
-                <img class="buttons-project flecha-abajo" src="img/arrowdown.png" alt="Flecha hacia abajo">
+                <img id="arrowUpSecondElement" class="buttons-project margin-right-buttons" src="img/arrowup.png" alt="Flecha hacia arriba">
+                <img id="arrowDownSecondElement" class="buttons-project" src="img/arrowdown.png" alt="Flecha hacia abajo">
               </div>
             </div>
             <div class="drop-down hidden">
@@ -160,8 +163,8 @@
               </label>
               <input class="input-form date-end-education-1" type="date" name="company-project" placeholder="Fecha inicio" required>
             </div>
-
-
+            </div>
+            </div>
           </fieldset>
 
           <!--PROJECTS DATA FORM - ANA  -->
