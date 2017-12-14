@@ -196,3 +196,41 @@ function toogleClass() {
 /* ===============================
 Botón previsualizar
 ================================= */
+
+
+
+
+var educacionNodes = document.querySelectorAll(".caja-educacion");
+var educacionNodes = document.querySelectorAll(".caja-proyectos");
+var educacionNodes = document.querySelectorAll(".caja-experiencia");
+var eliminarElemento = document.querySelectorAll(".papelera");
+var subirElemento = document.querySelectorAll(".flecha-arriba");
+var bajarElemento = document.querySelectorAll(".flecha-abajo");
+var educacionPadre = document.querySelector(".fieldset-background");
+var projectsPadre = document.querySelector(".fieldset-projects");
+var experiencePadre = document.querySelector(".fieldset-experience");
+
+function borrar(event) {
+
+ event.currentTarget.closest('.caja-educacion').remove();
+ event.currentTarget.closest('.caja-proyectos').remove();
+ event.currentTarget.closest('.caja-experiencia').remove();
+
+};
+/*
+function subir(event) {
+ debugger
+var cambio = Array.from(document.querySelectorAll('.caja-educacion')).reverse();
+ for(var i=0; cambio.length < i; i++) {
+   educacionPadre.innerHTML = cambio[i];
+ };
+
+*/
+
+for (var i = 0; i < educacionNodes.length; i++) {
+
+ eliminarElemento[i].addEventListener ('click',borrar);
+ /*subirElemento[i].addEventListener ('click',subir);
+ bajarElemento[i].addEventListener ('click',subir);
+*/
+}
