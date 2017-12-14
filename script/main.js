@@ -202,7 +202,7 @@ Fin Botón previsualizar
 ================================= */
 
 /* ===============================
-Flechas
+Flechas y Papelera
 ================================= */
 
 
@@ -212,7 +212,6 @@ var arrowDownFirstElement = document.querySelector("#arrowDownFirstElement");
 var arrowDownSecondElement = document.querySelector("#arrowDownSecondElement");
 var arrowUpFirstElement = document.querySelector("#arrowUpFirstElement");
 var arrowUpSecondElement = document.querySelector("#arrowUpSecondElement");
-
 var firstEducationBox= document.querySelector("#firstEducationBox");
 var secondEducationBox= document.querySelector("#secondEducationBox");
 
@@ -225,6 +224,8 @@ function borrar(event) {
 for (var i = 0; i < educacionNodes.length; i++) {
  eliminarElemento[i].addEventListener ('click',borrar);
 }
+
+//Mover flechas en Formación
 
 arrowDownFirstElement.addEventListener('click',function () {
   if(firstEducationBox.nextElementSibling)
@@ -244,14 +245,64 @@ arrowUpSecondElement.addEventListener('click',function () {
         secondEducationBox.parentNode.insertBefore(secondEducationBox,secondEducationBox.previousElementSibling);
 });
 
+//Mover flechas en Proyectos
 
+var arrowUpFirstProject = document.querySelector(".arrowUpFirstProject");
+var arrowDownFirstProject = document.querySelector(".arrowDownFirstProject");
+var arrowUpSecondProject = document.querySelector(".arrowUpSecondProject");
+var arrowDownSecondProject = document.querySelector(".arrowDownSecondProject");
+var firstProyectBox= document.querySelector("#firstProyectBox");
+var secondProyectBox= document.querySelector("#secondProyectBox");
 
+arrowDownFirstProject.addEventListener('click',function () {
+    if(firstProyectBox.nextElementSibling)
+        firstProyectBox.parentNode.insertBefore(firstProyectBox.nextElementSibling, firstProyectBox);
+});
+arrowDownSecondProject.addEventListener('click',function () {
+    if(secondProyectBox.nextElementSibling)
+        secondProyectBox.parentNode.insertBefore(secondProyectBox.nextElementSibling,secondProyectBox);
+});
 
+arrowUpFirstProject.addEventListener('click',function () {
+    if(firstProyectBox.previousElementSibling)
+        firstProyectBox.parentNode.insertBefore( firstProyectBox,firstProyectBox.previousElementSibling);
+});
+arrowUpSecondProject.addEventListener('click',function () {
+    if(secondEducationBox.previousElementSibling)
+        secondProyectBox.parentNode.insertBefore(secondProyectBox,secondProyectBox.previousElementSibling);
+});
 
+//Mover flechas en Experiencia Laboral
+
+var arrowUpFirstExperience = document.querySelector(".arrowUpFirstExperience");
+var arrowDownFirstExperience = document.querySelector(".arrowDownFirstExperience");
+var arrowUpSecondExperience = document.querySelector(".arrowUpSecondExperience");
+var arrowDownSecondExperience = document.querySelector(".arrowDownSecondExperience");
+var firstExperienceBox= document.querySelector("#firstExperienceBox");
+var secondExperienceBox= document.querySelector("#secondExperienceBox");
+
+arrowDownFirstExperience.addEventListener('click',function () {
+    if(firstExperienceBox.nextElementSibling)
+        firstExperienceBox.parentNode.insertBefore(firstExperienceBox.nextElementSibling, firstExperienceBox);
+});
+arrowDownSecondExperience.addEventListener('click',function () {
+    if(secondExperienceBox.nextElementSibling)
+        secondExperienceBox.parentNode.insertBefore(secondExperienceBox.nextElementSibling,secondExperienceBox);
+});
+
+arrowUpFirstExperience.addEventListener('click',function () {
+    if(firstExperienceBox.previousElementSibling)
+        firstExperienceBox.parentNode.insertBefore( firstExperienceBox,firstExperienceBox.previousElementSibling);
+});
+arrowUpSecondExperience.addEventListener('click',function () {
+    if(secondExperienceBox.previousElementSibling)
+        secondExperienceBox.parentNode.insertBefore(secondExperienceBox,secondExperienceBox.previousElementSibling);
+});
 
 /* ===============================
 Fin flechas
 ================================= */
+
 
 /* ===============================
 Imprimir
