@@ -341,18 +341,11 @@ function showSelectedButton(event) {
     }
 }
 
-for (var j= 0; j < allButtonsNavigation.length; j++) {
-    allButtonsNavigation[j].addEventListener('click', showSelectedButton);
-}
-
 /* ===============================
 Fin Pestañas de navegación, elemento seleccionado
 ================================= */
 
 
-<<<<<<< HEAD
 for (var j= 0; j < allButtonsNavigation.length; j++) {
     allButtonsNavigation[j].addEventListener('click', showSelectedButton);
 }
-=======
->>>>>>> 585b121bdb6088679ce33c5211f9f2db977df447
