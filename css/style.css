@@ -484,10 +484,24 @@ h3.seccion {
   }
 }
 
+<<<<<<< HEAD
 
 @media print {
   .print-cv {
     display: flex;
     page-break-inside: avoid;
+=======
+@media print {
+  .cv-left {
+    float: left;
+    background-color: #1D1E2C;
+    -webkit-print-color-adjust:exact;
+    height: 842px;
+  }
+
+  .cv-right {
+    float: right;
+    height: 842px;
+>>>>>>> 77f35c378ed86c799fccaf3ad0015ebf1e03bbeb
   }
 }
