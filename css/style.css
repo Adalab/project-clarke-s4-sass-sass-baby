@@ -30,6 +30,10 @@ BUTTONS
 }
 
 .buttonPrint {
+  position: absolute;
+  bottom:-37%;
+  margin-bottom: 10px;
+    right: 10%;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -40,9 +44,11 @@ BUTTONS
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
+
 }
 
 .buttonSave {
+  margin-right: 40px;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -107,7 +113,8 @@ BUTTONS
 }
 
 .active {
-  background-color: grey;
+  background-color: rgba(77, 98, 146, 0.5);
+
 }
 
 /* ==============
@@ -324,13 +331,17 @@ CV
 }
 
 aside {
-
-  width: 595px;
-  height: 842px;
-  display: flex;
   font-size: 14px;
   margin-left: auto;
   margin-right: auto;
+
+}
+
+.print-cv {
+  display: flex;
+  width: 595px;
+  height: 842px;
+
 }
 
 .list-none {
@@ -347,7 +358,6 @@ aside {
   height: 100%;
   background-color: #1D1E2C;
   color: white;
-
 
 }
 .cv-name {
@@ -419,8 +429,15 @@ h3.seccion {
   .formandcv {
     display: flex;
   }
+  .buttonPrint {
+    bottom:90%;
+    margin-bottom: 0px;
+
+    right: 10%;
+  }
 
   aside {
+    position: relative;
     padding-left: 40px;
     padding-top: 120px;
   }
