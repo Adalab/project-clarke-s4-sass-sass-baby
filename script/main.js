@@ -54,7 +54,6 @@ IMPRIMIR DATOS PERSONALES EN CV
 
 function dateStartDisplay(className){
   var dayStart = document.querySelector('input.' + className);
-  var dayEnd = document.querySelector('input.' + className);
   document.querySelector('.cv-' + className).textContent= dayStart.value;
 }
 
@@ -113,29 +112,29 @@ buttonContinue.addEventListener('click', function(){
   dateEndDisplay('date-end-education1');
 
 
-  //PROYECTOS
+  //PROYECTO 1
   userAnswer('name-project');
   userAnswer('company-project');
   textAreaAnswer('description-project');
+
+  //PROYECTO 2
   userAnswer('name-project1');
   userAnswer('company-project1');
   textAreaAnswer('description-project1');
 
-  //fecha proyecto cv-date
-  //textAreaAnswer('description-project');
-  //userAnswer('name-project');
-  //userAnswer('company-project');
-  //fecha proyecto
-  //textAreaAnswer('description-project');
 
-  //EXPERIENCIA
+  //EXPERIENCIA 1
   userAnswer('name-company');
   userAnswer('name-position');
-  //dateExperienceDisplay('start-experience');
+  dateStartDisplay('date-start-experience');
+  dateEndDisplay('date-end-experience');
   textAreaAnswer('description-experience');
+
+  //EXPERIENCIA 2
   userAnswer('name-company1');
   userAnswer('name-position1');
-  //dateExperienceDisplay('start-experience1');
+  dateStartDisplay('date-start-experience1');
+  dateEndDisplay('date-end-experience1');
   textAreaAnswer('description-experience1');
 
 
@@ -156,13 +155,13 @@ function acordeon (event){
   openInput[newFieldId].classList.toggle('hidden');
   saveButton[newFieldId].classList.toggle ('hidden');
 
-
 }
 
 for (var i = 0; i < newField.length; i++) {
   newField[i].addEventListener('click', acordeon);
   saveButton[i].addEventListener('click', acordeon);
 }
+
 
 function saveMain () {
     var iDen = event.currentTarget.getAttribute('data-id');
