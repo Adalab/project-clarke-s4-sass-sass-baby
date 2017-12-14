@@ -283,14 +283,15 @@
             </div>
 
             <div class="drop-down hidden">
-              <label class="label-form" for="company">
+              <label class="label-form" for="name-company">
                 Empresa
               </label>
               <input class="input-form main-value name-company" id="company" type="text" name="company" placeholder="Empresa" required>
-              <label class="label-form" for="position">
+
+              <label class="label-form" for="name-position">
                 Puesto de trabajo
               </label>
-              <input class="input-form position" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
+              <input class="input-form name-position" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
               <label for="init-data-experience">
                 Fecha de inicio:
               </label>
@@ -299,6 +300,7 @@
                 Fecha fin:
               </label>
               <input class="input-form date-start-experience" id="finish-data-experience" type="date" name="finish-data-experience" required>
+
               <label for="description-experience">
                 Descripción del puesto:
               </label>
@@ -319,14 +321,15 @@
             </div>
 
             <div class="drop-down hidden">
-              <label class="label-form" for="company">
+              <label class="label-form" for="name-company1">
                 Empresa
               </label>
-              <input class="input-form main-value name-company1" id="company" type="text" name="company" placeholder="Empresa" required>
-              <label class="label-form" for="position">
+              <input class="input-form main-value name-company1" id="company" type="text" name="name-company1" placeholder="Empresa" required>
+
+              <label class="label-form" for="name-position1">
                 Puesto de trabajo
               </label>
-              <input class="input-form position1" id="position" type="text" name="position" placeholder="Puesto de trabajo" required>
+              <input class="input-form name-position1" id="position" type="text" name="name-position1" placeholder="Puesto de trabajo" required>
               <label for="date-end-experience">
                 Fecha de inicio:
               </label>
@@ -335,10 +338,10 @@
                 Fecha fin:
               </label>
               <input class="input-form date-end-experience" id="finish-data-experience" type="date" name="finish-data-experience" required>
-              <label for="description-experience">
+              <label for="description-experience1">
                 Descripción del puesto:
               </label>
-              <textarea class="input-form description-experience1"  name="description-experience" rows="8" cols="80">
+              <textarea class="input-form description-experience1"  name="description-experience1" rows="8" cols="80">
               </textarea>
             </div>
           </fieldset>
@@ -454,17 +457,15 @@
           <!--   EXPERIENCE 1 --------------->
           <ul class="list-none">
             <li class="cv-name-company">nombre empresa</li>
-            <li class="cv-position">cargo ejercido</li>
+            <li class="cv-name-position">cargo ejercido</li>
             <li>fecha inicio fin</li>
-          </ul>
-          <ul class="list-style">
-            <li class="cv-description-experience">tarea realizada</li>
-          </ul>
-
+            <ul class="list-style cv-description-experience">
+              <li class="cv-description-experience">tarea realizada</li>
+            </ul>
           <!--   EXPERIENCE 2 --------------->
           <ul class="list-none">
             <li class="cv-name-company1">nombre empresa</li>
-            <li class="cv-position1">cargo ejercido</li>
+            <li class="cv-name-position1">cargo ejercido</li>
             <li class="date-start-experience date-end-experience">fecha inicio fin</li>
           </ul>
           <ul class="list-style">

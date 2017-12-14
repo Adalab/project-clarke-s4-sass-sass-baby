@@ -51,20 +51,21 @@ IMPRIMIR DATOS PERSONALES EN CV
 ================================= */
 //VARIABLES
 
+/*
 function dateDisplay(className){
   var dayStartEducation = document.querySelector('.date-start-education');
   var dayEndEducation = document.querySelector('.date-end-education');
   document.querySelector('.cv-' + className).textContent= dayStartEducation.value + " al " + dayEndEducation.value;
 }
 
+
 function dateExperienceDisplay(className){
   var dayStartExperience = document.querySelector('input.' + className);
   var dayEndExperience = document.querySelector('input.' + className);
   document.querySelector('.cv-' + className).textContent= dayStartExperience.value + " al " + dayEndExperience.value;
-
 }
 
-/*
+
 function selectDateDisplay(className) {
   var monthDisplay = document.querySelector('.data-month');
   var yearDisplay = document.querySelector('.data-month');
@@ -97,10 +98,10 @@ buttonContinue.addEventListener('click', function(){
   //EDUCACIÓN
   userAnswer('title-education');
   userAnswer('center-education');
-  dateDisplay('date-start-education');
+  //dateDisplay('date-start-education');
   userAnswer('title-education1');
   userAnswer('center-education1');
-  dateDisplay('date-start-education1');
+  //dateDisplay('date-start-education1');
 
 
   //PROYECTOS
@@ -120,12 +121,13 @@ buttonContinue.addEventListener('click', function(){
 
   //EXPERIENCIA
   userAnswer('name-company');
-  userAnswer('position');
-  dateExperienceDisplay('start-experience');
+  userAnswer('name-position');
+  //dateExperienceDisplay('start-experience');
   textAreaAnswer('description-experience');
-
-  //fecha inicio y fin
-  //textAreaAnswer('description-experience');
+  userAnswer('name-company1');
+  userAnswer('name-position1');
+  //dateExperienceDisplay('start-experience1');
+  textAreaAnswer('description-experience1');
 
 
 });
