@@ -301,9 +301,19 @@ Fin flechas
 Imprimir
 ================================= */
 var buttonprint = document.querySelector('.buttonPrint');
-buttonprint.addEventListener('click',function printlistener() {
+function printlistener() {
+  var printpdf = document.querySelector('.print-cv')
+  printpdf.style.display = "block";
+  var transform = printpdf.innerHTML;
+   var transformPdf = document.body.innerHTML;
+   document.body.innerHTML= transform;
+
   window.print();
-})
+  document.body.innerHTML=transformPdf;
+
+}
+
+buttonprint.addEventListener('click',printlistener);
 
 /* ===============================
 Fin imprimir

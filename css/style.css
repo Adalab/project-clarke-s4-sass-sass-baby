@@ -339,8 +339,11 @@ aside {
 
 .print-cv {
   display: flex;
+  height:  842px;
   width: 595px;
-  height: 842px;
+  min-width: 595px;
+  margin: 0;
+
 
 }
 
@@ -355,7 +358,8 @@ aside {
 .cv-left {
   padding: 25px;
   max-width: 30%;
-  height: 100%;
+  min-width: 30%;
+  max-height: 100%;
   background-color: #1D1E2C;
   color: white;
 
@@ -378,8 +382,9 @@ aside {
 .cv-right {
 
   padding: 25px;
+  min-width: 70%;
   max-width: 70%;
-  height: 100%;
+  max-height: 100%;
   background-color: #F5F0EF;
 
 }
@@ -460,15 +465,15 @@ h3.seccion {
   }
 }
 
-@media print {
+/*@media print {
   body * {
     visibility: hidden;
   }
-  .cv-content, .cv-content * {
+  .print-cv, .print-cv * {
     visibility: visible;
     display: block;
   }
-  .cv-content{
+  .print-cv{
     position: absolute;
     left: 0;
     top: 0;
