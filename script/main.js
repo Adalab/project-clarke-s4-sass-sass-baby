@@ -315,3 +315,28 @@ buttonprint.addEventListener('click',function printlistener() {
 /* ===============================
 Fin imprimir
 ================================= */
+
+/* ===============================
+Pestañas de navegación, elemento seleccionado
+================================= */
+
+var allButtonsNavigation = document.querySelectorAll('.main-nav-button');
+
+function showSelectedButton(event) {
+
+    for(var i= 0; i< allButtonsNavigation.length;i++){
+        allButtonsNavigation[i].classList.remove('active');
+        if (allButtonsNavigation[i] != allButtonsNavigation.currentTarget) {
+            event.currentTarget.classList.add('active')
+        }
+    }
+}
+
+/* ===============================
+Fin Pestañas de navegación, elemento seleccionado
+================================= */
+
+
+for (var j= 0; j < allButtonsNavigation.length; j++) {
+    allButtonsNavigation[j].addEventListener('click', showSelectedButton);
+}

@@ -106,7 +106,9 @@ BUTTONS
   outline:0;
 }
 
-
+.active {
+  background-color: grey;
+}
 
 /* ==============
 FORMULARIO
