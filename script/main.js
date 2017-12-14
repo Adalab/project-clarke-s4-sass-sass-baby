@@ -51,6 +51,17 @@ IMPRIMIR DATOS PERSONALES EN CV
 ================================= */
 //VARIABLES
 
+function displaySelect () {
+  var allSelects = document.querySelectorAll('.select-date');
+  var writeDate = document.querySelectorAll('.write-date');
+  for(var i = 0; i < allSelects.length; i++) { //Leerlos
+    var select = allSelects[i];
+    var dateDisplay = writeDate[i];
+    var value = select.options[select.selectedIndex].value; //de las opciones del select quiero que me des el valor de aquellas que esta seleccionada
+    writeDate[i].textContent = value;
+  }
+}
+
 
 function dateStartDisplay(className){
   var dayStart = document.querySelector('input.' + className);
@@ -101,11 +112,13 @@ buttonContinue.addEventListener('click', function(){
   userAnswer('name-project');
   userAnswer('company-project');
   textAreaAnswer('description-project');
+  displaySelect();
 
   //PROYECTO 2
   userAnswer('name-project1');
   userAnswer('company-project1');
   textAreaAnswer('description-project1');
+  displaySelect();
 
 
   //EXPERIENCIA 1
