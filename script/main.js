@@ -51,14 +51,20 @@ IMPRIMIR DATOS PERSONALES EN CV
 ================================= */
 //VARIABLES
 
-/*
-function dateDisplay(className){
-  var dayStartEducation = document.querySelector('.date-start-education');
-  var dayEndEducation = document.querySelector('.date-end-education');
-  document.querySelector('.cv-' + className).textContent= dayStartEducation.value + " al " + dayEndEducation.value;
+
+function dateStartDisplay(className){
+  var dayStart = document.querySelector('input.' + className);
+  var dayEnd = document.querySelector('input.' + className);
+  document.querySelector('.cv-' + className).textContent= dayStart.value;
 }
 
+function dateEndDisplay(className){
+  var dayEnd = document.querySelector('input.' + className);
+  document.querySelector('.cv-' + className).textContent= dayEnd.value;
 
+}
+
+/*
 function dateExperienceDisplay(className){
   var dayStartExperience = document.querySelector('input.' + className);
   var dayEndExperience = document.querySelector('input.' + className);
@@ -95,13 +101,16 @@ buttonContinue.addEventListener('click', function(){
   userAnswer('personal-website');
   textAreaAnswer('personal-description');
 
-  //EDUCACIÓN
+  //EDUCACIÓN 1
   userAnswer('title-education');
   userAnswer('center-education');
-  //dateDisplay('date-start-education');
+  dateStartDisplay('date-start-education');
+  dateEndDisplay('date-end-education');
+  //EDUCACIÓN 2
   userAnswer('title-education1');
   userAnswer('center-education1');
-  //dateDisplay('date-start-education1');
+  dateStartDisplay('date-start-education1');
+  dateEndDisplay('date-end-education1');
 
 
   //PROYECTOS
