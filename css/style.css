@@ -427,6 +427,10 @@ h3.seccion {
   margin-bottom: 8px;
 }
 
+#tel-cv, #rrss-cv, #web-cv {
+  font-size: 9px;
+}
+
 /*RESPONSIVE*/
 
 @media all and (min-width:750px) {
@@ -462,21 +466,5 @@ h3.seccion {
 @media all and (max-width:750px) {
   .cv-content{
     display: none;
-  }
-}
-
-/*@media print {
-  body * {
-    visibility: hidden;
-  }
-  .print-cv, .print-cv * {
-    visibility: visible;
-    display: block;
-  }
-  .print-cv{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: green;
   }
 }
