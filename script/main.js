@@ -208,12 +208,17 @@ Fin Botón previsualizar
 ================================= */
 
 /* ===============================
-Flechas y Papelera
+Eliminar Elementos
 ================================= */
 
 
-var educacionNodes = document.querySelectorAll(".caja-experiencia");
+var educacionNodes = document.querySelectorAll(".caja-educacion");
+var projectsNodes = document.querySelectorAll(".caja-proyectos");
+var experienceNodes = document.querySelectorAll(".caja-experiencia");
+var educacionNodes = document.querySelectorAll(".caja-educacion");
 var eliminarElemento = document.querySelectorAll(".papelera");
+var removeProject = document.querySelectorAll(".papelerauno");
+var removeExperience = document.querySelectorAll(".papelerados");
 var arrowDownFirstElement = document.querySelector("#arrowDownFirstElement");
 var arrowDownSecondElement = document.querySelector("#arrowDownSecondElement");
 var arrowUpFirstElement = document.querySelector("#arrowUpFirstElement");
@@ -221,15 +226,33 @@ var arrowUpSecondElement = document.querySelector("#arrowUpSecondElement");
 var firstEducationBox= document.querySelector("#firstEducationBox");
 var secondEducationBox= document.querySelector("#secondEducationBox");
 
-function borrar(event) {
+function borrarEducacion(event) {
  event.currentTarget.closest('.caja-educacion').remove();
+
+};
+function borrarProyecto(event) {
  event.currentTarget.closest('.caja-proyectos').remove();
+
+};
+
+function borrarExperiencia(event) {
  event.currentTarget.closest('.caja-experiencia').remove();
+
 };
 
 for (var i = 0; i < educacionNodes.length; i++) {
- eliminarElemento[i].addEventListener ('click',borrar);
+ eliminarElemento[i].addEventListener ('click',borrarEducacion);
 }
+for (var i = 0; i < projectsNodes.length; i++) {
+ removeProject[i].addEventListener ('click',borrarProyecto);
+}
+for (var i = 0; i < experienceNodes.length; i++) {
+ removeExperience[i].addEventListener ('click',borrarExperiencia);
+}
+
+/* ===============================
+Eliminar Elementos
+================================= */
 
 //Mover flechas en Formación
 
