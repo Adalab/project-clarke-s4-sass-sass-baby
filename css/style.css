@@ -478,3 +478,17 @@ h3.seccion {
     display: none;
   }
 }
+
+@media print {
+  .cv-left {
+    float: left;
+    background-color: #1D1E2C;
+    -webkit-print-color-adjust:exact;
+    height: 842px;
+  }
+
+  .cv-right {
+    float: right;
+    height: 842px;
+  }
+}
