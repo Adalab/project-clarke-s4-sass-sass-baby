@@ -189,15 +189,21 @@ buttonPreview.addEventListener('click', toogleClass);
 
 function toogleClass() {
   sectionForm.classList.toggle('display-none');
-  sectionCV.classList.toggle('display-none');
+  if (sectionCV.style.display !== 'block') {
+      sectionCV.style.display = 'block'
+    } else {
+      sectionCV.style.display = 'none'
+    }
 };
 
 
 /* ===============================
-Botón previsualizar
+Fin Botón previsualizar
 ================================= */
 
-
+/* ===============================
+Flechas
+================================= */
 
 
 var educacionNodes = document.querySelectorAll(".caja-educacion");
@@ -234,3 +240,19 @@ for (var i = 0; i < educacionNodes.length; i++) {
  bajarElemento[i].addEventListener ('click',subir);
 */
 }
+
+/* ===============================
+Fin flechas
+================================= */
+
+/* ===============================
+Imprimir
+================================= */
+var buttonprint = document.querySelector('.buttonPrint');
+buttonprint.addEventListener('click',function printlistener() {
+  window.print();
+})
+
+/* ===============================
+Fin imprimir
+================================= */

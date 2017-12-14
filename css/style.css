@@ -396,7 +396,25 @@ aside {
   .button-CV {
     display: none;
   }
+}
+@media all and (max-width:750px) {
+  .cv-content{
+    display: none;
+  }
+}
 
-  .cv-content {
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .cv-content, .cv-content * {
+    visibility: visible;
     display: block;
   }
+  .cv-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: green;
+  }
+}
