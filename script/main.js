@@ -211,7 +211,7 @@ Fin Botón previsualizar
 Eliminar Elementos
 ================================= */
 
-
+var listamarginbottom = document.querySelectorAll(".esconder");
 var educacionNodes = document.querySelectorAll(".caja-educacion");
 var projectsNodes = document.querySelectorAll(".caja-proyectos");
 var experienceNodes = document.querySelectorAll(".caja-experiencia");
@@ -228,6 +228,9 @@ var secondEducationBox= document.querySelector("#secondEducationBox");
 
 function borrarEducacion(event) {
  event.currentTarget.closest('.caja-educacion').remove();
+ var removeId = event.currentTarget.getAttribute('data-id');
+ listamarginbottom[removeId].classList.add('hidden');
+
 
 };
 function borrarProyecto(event) {
@@ -255,21 +258,38 @@ Eliminar Elementos
 ================================= */
 
 //Mover flechas en Formación
+var a = document.querySelector('.formacionuno');
+var b = document.querySelector('.formaciondos')
+var contenedorEducacion = document.querySelector ('.education')
+var firstEducation = a.innerHTML
+var secondEducation = b.innerHTML
 
 arrowDownFirstElement.addEventListener('click',function () {
+  firstEducation = a.innerHTML
+  secondEducation = b.innerHTML
+  contenedorEducacion.innerHTML = secondEducation + firstEducation;
   if(firstEducationBox.nextElementSibling)
       firstEducationBox.parentNode.insertBefore(firstEducationBox.nextElementSibling, firstEducationBox);
 });
 arrowDownSecondElement.addEventListener('click',function () {
+  firstEducation = a.innerHTML
+  secondEducation = b.innerHTML
+  contenedorEducacion.innerHTML = firstEducation + secondEducation;
     if(secondEducationBox.nextElementSibling)
         secondEducationBox.parentNode.insertBefore(secondEducationBox.nextElementSibling,secondEducationBox);
 });
 
 arrowUpFirstElement.addEventListener('click',function () {
+  firstEducation = a.innerHTML
+  secondEducation = b.innerHTML
+  contenedorEducacion.innerHTML = firstEducation + secondEducation;
     if(firstEducationBox.previousElementSibling)
         firstEducationBox.parentNode.insertBefore( firstEducationBox,firstEducationBox.previousElementSibling);
 });
 arrowUpSecondElement.addEventListener('click',function () {
+  firstEducation = a.innerHTML
+  secondEducation = b.innerHTML
+  contenedorEducacion.innerHTML = secondEducation + firstEducation;
     if(secondEducationBox.previousElementSibling)
         secondEducationBox.parentNode.insertBefore(secondEducationBox,secondEducationBox.previousElementSibling);
 });
