@@ -376,6 +376,10 @@ function printlistener() {
 
 }
 
+window.onafterprint = function(){
+ window.location.reload(true);
+};
+
 buttonprint.addEventListener('click',printlistener);
 
 /* ===============================
