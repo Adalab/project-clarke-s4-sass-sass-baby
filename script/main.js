@@ -11,23 +11,27 @@ function addValues(selector, initValue, currentValue) {
   selectValues.innerHTML = selectValues.innerHTML + acumulador;
 }
 
-
 addValues('#selectorYear', 1950, 2017);
 addValues('#selectorYearSecond', 1950, 2017);
 
 //MENÚ DE NAVEGACIÓN POR PESTAÑAS
 var currentStep = 0;
+var currentStepMenu = 0;
 var fieldsetInformation = document.querySelectorAll ('.fieldset-information');
 var buttonsMenu = document.querySelectorAll ('.button-menu');
+var allButtonsNavigation = document.querySelectorAll('.main-nav-button');
 
 function showFieldsets(event) {
   var id = event.currentTarget.getAttribute('data-id');
+  var idMenu = event.currentTarget.getAttribute('data-id');
+
   for(var i = 0; i < fieldsetInformation.length; i++){
     fieldsetInformation[i].classList.add('display-none');
   }
   fieldsetInformation[id].classList.remove('display-none');
  currentStep = id;
-  console.log("click en ",currentStep);
+ currentStepMenu = idMenu;
+  //console.log("click en ",currentStep);
 }
 
 for (var i = 0; i < buttonsMenu.length; i++) {
@@ -37,13 +41,22 @@ for (var i = 0; i < buttonsMenu.length; i++) {
 var buttonContinue = document.querySelector(".buttonContinue");
 buttonContinue.addEventListener('click',nextStep);
 function nextStep(){
-  console.log("current en continue",currentStep);
+  //console.log("current en continue",currentStep);
   for(var i= 0; i< fieldsetInformation.length;i++){
     fieldsetInformation[i].classList.add('display-none');
   }
   currentStep++;
   fieldsetInformation[currentStep].classList.remove('display-none');
+
+  currentStepMenu++;   //Aquí hago que se cambie el color del botón seleccionado
+  for(var p = 0; p < allButtonsNavigation.length; p++) {
+    allButtonsNavigation[p].classList.remove('active');
+    allButtonsNavigation[currentStepMenu].classList.add('active');
+  }
+
 }
+
+
 //FIN MENÚ NAVEGACIÓN POR PESTAÑAS
 
 
@@ -174,13 +187,6 @@ for (var i = 0; i <saveButton.length; i++) {
 
 /* ===============================
 FIN ACORDEON
-================================= */
-
-/* ===============================
-IMPRIMIR
-================================= */
-/* ===============================
-FIN IMPRIMIR
 ================================= */
 
 
