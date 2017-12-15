@@ -13,6 +13,7 @@ function addValues(selector, initValue, currentValue) {
 
 
 addValues('#selectorYear', 1950, 2017);
+addValues('#selectorYearSecond', 1950, 2017);
 
 //MENÚ DE NAVEGACIÓN POR PESTAÑAS
 var currentStep = 0;
