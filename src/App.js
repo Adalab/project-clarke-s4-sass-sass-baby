@@ -349,13 +349,16 @@ class App extends Component {
           <button className="buttonContinue">Continuar</button>
         </div>
       </section>
+
       <div className="cv-content">
         <aside>
           <div className="print-cv">
             <div className="cv-left">
+
               <h2 className="cv-name cv-firstname">Nombre <br /> Apellido <br /> Apellido
               </h2>
               <h3 className="cv-position cv-profession">Profesión actual</h3>
+
               <div className="cv-contact">
                 <h4>Contacto</h4>
                 <ul className="list-none">
@@ -366,10 +369,12 @@ class App extends Component {
                   <li id="web-cv" className="cv-personal-website">Web personal</li>
                 </ul>
               </div>
+
               <div className="cv-description">
                 <h4>Descripción</h4>
                 <p className="description-text cv-personal-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
+
             </div>
             {/*   FORMACIÓN   -------------*/}
             <div className="cv-right">
