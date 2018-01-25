@@ -1,51 +1,21 @@
 import React, { Component } from 'react';
 import './index.css';
+import Header from './components/Header';
+import Tabs from './components/Tabs';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
       <main>
-
-    <header className="header">
-      <a href="#">
-        <img className="logo" src="img/logoCV.png" alt="logo" />
-      </a>
-      <button className="button-CV">Previsualizar</button>
-    </header>
-
+    <Header/>
+//CONTAINER FORM
     <div className="formandcv">
-
+//SECTION FORM
       <section id="section-form">
+  //NAV CON 4 BOTONES
+    <Tabs className="main-nav"/>
 
-        <nav className="main-nav">
-          <ul className="main-nav-list">
-            <li className="button-menu" data-id={0}>
-              <button className="main-nav-button active">
-                <img src="img/woman-avatar.png" alt="icon personal data" className="nav-icon icon-personal" />
-                <p className="nav-text nav-personalData">Datos personales</p>
-              </button>
-            </li>
-            <li className="button-menu" data-id={1}>
-              <button className="main-nav-button">
-                <img src="img/hat-education.png" alt="icon education" className="nav-icon icon-education" />
-                <p className="nav-text nav-education">Formación</p>
-              </button>
-            </li>
-            <li className="button-menu" data-id={2}>
-              <button className="main-nav-button">
-                <img src="img/presentation.png" alt="icon projects" className="nav-icon icon-projects" />
-                <p className="nav-text nav-project">Proyectos</p>
-              </button>
-            </li>
-            <li className="button-menu" data-id={3}>
-              <button className="main-nav-button">
-                <img src="img/suitcase.png" alt="icon experience" className="nav-icon icon-experience" />
-                <p className="nav-text nav-experience">Experiencia Laboral</p>
-              </button>
-            </li>
-          </ul>
-        </nav>
 
         <form className="main-form" id="main-form" action method="post">
           <fieldset className="fieldset-information fieldset-personal">
@@ -58,6 +28,7 @@ class App extends Component {
 
             <label className="label-form profession" htmlFor="profession">Profesión actual</label>
             <input className="input-form profession" id="profession" type="text" name="profession" placeholder="Profesión actual" required />
+
             <label className="label-form residence" htmlFor="residence">Lugar de residencia</label>
             <input className="input-form residence" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required />
 
@@ -87,11 +58,12 @@ class App extends Component {
             </label>
             <textarea className="input-form personal-description" name="personal-description" rows={8} cols={80} defaultValue={""} />
           </fieldset>
-
+      //FIELDSET
           <fieldset className="fieldset-information fieldset-background display-none">
-
+      //LEGEND SECTION
             <legend className="title">Formación</legend>
             <hr />
+      //CONTAINER
             <div>
               <div id="firstEducationBox">
                 <div className="add-project caja-educacion">
