@@ -439,6 +439,7 @@ class App extends Component {
                 </ul>
               </div>
             </div>
+
           </div>
           <input type="button" className="buttonPrint" defaultValue="Imprimir" />
         </aside>
