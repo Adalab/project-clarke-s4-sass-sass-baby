@@ -4,15 +4,17 @@ class PersonalDataBox extends Component {
 	render() {
 	return(
 		<div className="cv-contact">
-               		 <h4>Contacto</h4>
-               		 <ul className="list-none">
-                			 <li id="city-cv" className="cv-residence"> { this.props.value } </li>
-                 			 <li id="email-cv" className="cv-telephone"> { this.props.value } </li>
-                 			 <li id="tel-cv" className="cv-email"> { this.props.value } </li>
-                 			 <li id="rrss-cv" className="cv-social"> { this.props.valuel } </li>
-                 			 <li id="web-cv" className="cv-personal-website"> { this.props.value} </li>
-               		 </ul>
-            	 </div>
+			<h2 className="cv-name cv-firstname">Nombre <br /> Apellido <br /> Apellido</h2>
+			<h3 className="cv-position cv-profession">Profesión actual</h3>
+			<h4>Contacto</h4>
+			<ul className="list-none">
+				<li id="city-cv" className="cv-residence">Ciudad</li>
+				<li id="email-cv" className="cv-telephone">Correo electrónico</li>
+				<li id="tel-cv" className="cv-email">Teléfono</li>
+				<li id="rrss-cv" className="cv-social">Redes sociales</li>
+				<li id="web-cv" className="cv-personal-website">Web personal</li>
+			</ul>
+		</div>
   );
 }
 }
