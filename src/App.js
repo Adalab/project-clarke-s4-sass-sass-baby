@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import RightCv from './components/RightCv';
+import LeftCv from './components/LeftCv';
 
 class App extends Component {
   render() {
@@ -354,32 +355,8 @@ class App extends Component {
       <div className="cv-content">
         <aside>
           <div className="print-cv">
-            <div className="cv-left">
-
-              <h2 className="cv-name cv-firstname">Nombre <br /> Apellido <br /> Apellido
-              </h2>
-              <h3 className="cv-position cv-profession">Profesión actual</h3>
-
-              <div className="cv-contact">
-                <h4>Contacto</h4>
-                <ul className="list-none">
-                  <li id="city-cv" className="cv-residence">Ciudad</li>
-                  <li id="email-cv" className="cv-telephone">Correo electrónico</li>
-                  <li id="tel-cv" className="cv-email">Teléfono</li>
-                  <li id="rrss-cv" className="cv-social">Redes sociales</li>
-                  <li id="web-cv" className="cv-personal-website">Web personal</li>
-                </ul>
-              </div>
-
-              <div className="cv-description">
-                <h4>Descripción</h4>
-                <p className="description-text cv-personal-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-
-            </div>
-            {/*   FORMACIÓN   -------------*/}
+            <LeftCv/>
             <RightCv/>
-
           </div>
           <input type="button" className="buttonPrint" defaultValue="Imprimir" />
         </aside>
