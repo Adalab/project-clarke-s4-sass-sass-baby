@@ -8,11 +8,8 @@ class RightCv extends Component {
   render() {
     return(
       <div className="cv-right">
-        {/*   FORMACIÓN -------------*/}
         <EducationBox/>
-        {/*   PROJECTS  -------------*/}
         <ProjectBox/>
-        {/*   EXPERIENCE  -------------*/}
         <ExperienceBox/>
       </div>
     );
