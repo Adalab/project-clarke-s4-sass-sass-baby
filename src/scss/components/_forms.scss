@@ -1,0 +1,105 @@
+.title {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  height: 1px;
+  color: $color-dark;
+}
+
+
+//sustitir por hidden
+.label-form {
+  display: none;
+}
+
+.input-form {
+  @include noWebKit();
+  border-radius: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  background-color: $color-midtone;
+  border-width: 0;
+  font-size: 16px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $color-dark;
+  line-height: 24px;
+  width: 100%;
+}
+
+// Personal Data Icons
+#input_container {
+  position:relative;
+  padding:0;
+  margin:0;
+}
+
+#input_img {
+  position:absolute;
+  bottom: 47%;
+  left: 90%;
+  width: 7%;
+  opacity: 0.5;
+  @media all and (min-width: 1024px) {
+    width: 5%;
+  }
+}
+
+// Projects
+.add-project {
+  border: 2px $color-primary solid;
+  border-radius: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  &:first-child {
+    margin-top: 32px;
+  }
+  a {
+    text-decoration: none;
+    color: $color-dark;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $color-secondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.buttons-project {
+  width: 20px;
+  flex-grow: 0;
+  opacity: 0.5;
+  transition: opacity ease 1s, color ease 0.5s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+//margin up & down button
+.margin-right-buttons {
+  margin-right: 8px;
+}
+
+// para que se vea año y mes jutos
+.containter-data-project {
+  display: flex;
+  justify-content: space-between;
+}

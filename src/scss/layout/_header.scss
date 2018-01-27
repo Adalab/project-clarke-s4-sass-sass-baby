@@ -1,0 +1,18 @@
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: $sizeL;
+  padding-right: $sizeL;
+  padding-top: $sizeM;
+  padding-bottom: $sizeM;
+  background-color: $color-primary;
+}
+  
+.logo {
+  // width: 70%;
+  width: 100%;
+  max-width: 150px;
+  display: block;
+}

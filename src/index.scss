@@ -1,342 +1,17 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  &:focus { outline: 0; }
-}
-
-/* ----- VARIABLES ----- */
-// COLOR
-$color-primary: #3CDBC0;
-$color-secondary: rgba(#3cdbc0, 0.5);
-
-$color-light: #ffffff;
-$color-midtone: rgba(#999999, 0.2);
-$color-dark-midtone: #333333;
-$color-dark: #111111;
-
-// FONT
-$familyPrimary: 'Roboto', sans-serif;
-
-// test map for practice
-$fontWeight: (
-  light: 300,
-  regular: 400
-);
-
-// SIZES
-$sizeS: 8px;
-$sizeM: 16px;
-$sizeL: 32px;
-$sizeXL: 64px;
-$sizeXXL: 128px;
-$sizeXXXL: 256px;
-
-
-
-
-body {
-  font-size: 16px;
-  font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'light');
-  color: $color-dark;
-  line-height: 1.4;
-  margin: 0;
-}
-.hidden {
-  display:none;
-}
-
-/*
-BUTTONS
-*/
-
-/* BUTTON CONTINUE SAVE PRINT AND BACK */
-
-.buttonsChangeForm {
-  margin: auto;
-  max-width: 500px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.buttonPrint {
-  position: absolute;
-  bottom:-30%;
-  margin-bottom: 10px;
-  right: 10%;
-  font-size: 16px;
-  font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'light');
-  color: $color-light;
-  padding: 8px 30px;
-  background-color: $color-primary;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.buttonSave {
-  margin-right: 40px;
-  font-size: 16px;
-  font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'light');
-  color: $color-light;
-  padding: 8px 30px;
-  background-color: $color-primary;
-  border: 2px solid $color-primary;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.buttonContinue {
-  font-size: 16px;
-  font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'light');
-  color: $color-light;
-  padding: 8px 30px;
-  background-color: $color-primary;
-  border: 2px solid $color-primary;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
-  margin-right: 24px;
-}
-
-.buttonContinue:hover {
-  background-color: $color-primary;
-}
-
-/* BUTTON IN HEADER */
-
-.button-CV {
-  background-color: $color-primary;
-  padding: 8px 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 8px;
-  margin-right: 24px;
-  border: 0;
-  font-size: 13px;
-  font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'light');
-}
-
-.button:hover {
-  background-color: $color-primary;
-}
-
-/* BUTTON IN NAV */
-
-.main-nav-button {
-  border: none;
-  background: none;
-  min-width: 100px;
-  max-width: 150px;
-}
-
-.main-nav-button:focus {
-  outline:0;
-}
-
-.active {
-  background-color: $color-secondary;
-
-}
-
-/* ==============
-FORMULARIO
-================== */
-
-section {
-  margin-bottom: 10%;
-}
-
-
-
-/* ----- Header -----  */
-
-.header {
-  border-bottom: 1px solid $color-dark;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-.logo {
-  width: 70%;
-  margin-left: 24px;
-  max-width: 150px;
-}
-
-
-/* ----- NAVIGATION BAR ----- */
-
-.main-nav-list {
-  margin: 5% auto;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-.nav-text {
-  font-size: 16px;
-  font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'regular');
-  color: $color-dark;
-}
-
-
-.main-nav ul {
-  padding-left: 0;
-}
-
-.main-nav-list li {
-  width: 25%;
-  text-align: center;
-}
-
-.nav-icon {
-  width: 30%;
-}
-
-
-/* -----  FORMULARIO -----  */
-
-.main-form {
-  margin-left: 40px;
-  margin-right: 40px;
-  max-width: 500px;
-  min-width: 250px;
-}
-
-fieldset {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  min-width: 0;
-}
-
-.title {
-  font-size: 1.15em;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-top: 24px;
-}
-
-hr {
-  display: block;
-  margin-top: 0.2em;
-  margin-bottom: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  color: $color-dark;
-}
-
-
-
-.label-form {
-  display: none;
-}
-
-.input-form {
-  appearance: none;
-  padding: 10px;
-  margin: 10px 0px;
-  background-color: $color-midtone;
-  border-width: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'light');
-  color: $color-dark;
-  line-height: 1.4;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.grey {
-  color: grey;
-}
-
-@media all and (min-width:500px) {
-  .main-form {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-
-@media all and (max-width:1100px) {
-  .nav-text {
-    display: none;
-  }
-}
-
-/* Personal Data */
-
-#input_container {
-  position:relative;
-  padding:0;
-  margin:0;
-}
-
-#input_img {
-  position:absolute;
-  bottom: 42%;
-  left: 90%;
-  width: 20px;
-}
-
-/* Projects */
-
-.add-project {
-  border: 1px $color-secondary solid;
-  border-radius: 5px;
-  padding: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
-}
-
-.add-project a {
-  text-decoration: none;
-  color: $color-dark;
-}
-
-.buttons-project {
-  width: 20px;
-  flex-grow: 0;
-}
-
-.addfield {
-  flex-grow: 1;
-}
-
-.margin-right-buttons {
-  margin-right: 5px;
-}
-
-.containter-data-project {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.selector-project {
-  width: 45%;
-}
-
+// Core
+@import 'scss/core/variables'; //
+@import 'scss/core/mixins'; //
+@import 'scss/core/helpers'; //
+
+// Components
+// @import 'scss/components/typography';
+@import 'scss/components/buttons';
+@import 'scss/components/forms';
+
+// Layout
+@import 'scss/layout/header';
+@import 'scss/layout/nav';
+// @import 'scss/layout/cv';
 
 
 /* ==============
@@ -344,35 +19,37 @@ CV
 ================== */
 
 
-
-
 .display-none {
   display: none;
 }
-
-
-
 
 /* Clases generales */
 .cv-content {
   overflow: scroll;
   width:100%;
+  background-image: url('bg.png');
+  background-repeat: repeat;
+  border: 0;
+  border-left: 2px solid $color-primary;
+  border-style: dashed;
+  padding-bottom: 64px;
+  padding-top: 64px;
 }
 
-aside {
-  font-size: 14px;
-  margin-left: auto;
-  margin-right: auto;
-
-}
+// aside {
+//   font-size: 14px;
+// }
 
 .print-cv {
   display: flex;
   height:  842px;
   width: 595px;
   min-width: 595px;
-  margin: 0;
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  border: 2px solid $color-secondary;
+  box-shadow: 10px 10px $color-secondary;
 
 }
 
@@ -391,13 +68,10 @@ aside {
   max-height: 100%;
   background-color: $color-dark-midtone;
   color: white;
-
 }
 .cv-name {
-
   padding-bottom: 2px;
   text-transform: uppercase;
-
 }
 
 
@@ -414,7 +88,7 @@ aside {
   min-width: 70%;
   max-width: 70%;
   max-height: 100%;
-  background-color: $color-midtone;
+  background-color: $color-light;
 
 }
 
@@ -482,6 +156,7 @@ h3.seccion {
   .formandcv {
     display: flex;
   }
+
   .buttonPrint {
     bottom:90%;
     margin-bottom: 0px;
@@ -491,17 +166,15 @@ h3.seccion {
 
   aside {
     position: relative;
-    padding-left: 40px;
-    padding-top: 120px;
+    padding-top: 128px;
   }
 
   section {
     width: 60%;
-    min-width: 275px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-right: 1px solid black
+    // padding-left: 40px;
+    // padding-right: 40px;
   }
+
 
   .button-CV {
     display: none;

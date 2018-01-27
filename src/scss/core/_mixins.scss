@@ -1,0 +1,6 @@
+// REMOVE STYLES
+@mixin noWebKit() {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

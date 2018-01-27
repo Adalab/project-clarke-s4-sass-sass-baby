@@ -1,0 +1,89 @@
+//BUTTON CONTINUE SAVE PRINT AND BACK
+
+.buttonsChangeForm {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonPrint {
+  right: 50%;
+  font-size: 16px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $color-light;
+  padding: 8px 30px;
+  background-color: $color-primary;
+  border-radius: 0;
+  text-align: center;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonSave {
+  // margin-right: 40px;
+  font-size: 16px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $color-light;
+  padding: 8px 30px;
+  background-color: $color-primary;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.buttonContinue {
+  font-size: 16px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $color-light;
+  padding: 8px 30px;
+  background-color: $color-primary;
+  border-radius: 0;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.buttonContinue:hover {
+  background-color: $color-primary;
+}
+
+/* BUTTON IN HEADER */
+
+.button-CV {
+  background-color: $color-primary;
+  padding: 8px 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0px;
+  border: 0;
+  font-size: 13px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+}
+
+.button:hover {
+  background-color: $color-primary;
+}
+
+/* BUTTON IN NAV */
+
+.main-nav-button {
+  border: none;
+  background: none;
+  min-width: 64px;
+  max-width: 150px;
+  height: 96px
+}
+
+.active {
+  background-color: $color-secondary;
+
+}
