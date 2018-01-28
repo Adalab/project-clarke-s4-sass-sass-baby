@@ -39,6 +39,10 @@ section {
   @media all and (min-width: 768px) {
     border: 2px solid $colorSecondary;
     box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
   }
 }
 

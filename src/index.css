@@ -193,7 +193,7 @@ hr {
       left: 90%; } }
 
 .add-project {
-  border: 2px #3661A2 solid;
+  border: 2px rgba(54, 97, 162, 0.5) solid;
   border-radius: 0;
   padding-left: 16px;
   padding-right: 16px;
@@ -334,7 +334,10 @@ section {
   @media all and (min-width: 768px) {
     .print-cv {
       border: 2px solid rgba(54, 97, 162, 0.5);
-      box-shadow: 10px 10px rgba(54, 97, 162, 0.5); } }
+      box-shadow: 10px 10px rgba(54, 97, 162, 0.5);
+      transition: box-shadow ease 0.5s, color ease 0.5s; }
+      .print-cv:hover {
+        box-shadow: none; } }
 
 .list-none {
   list-style: none;
