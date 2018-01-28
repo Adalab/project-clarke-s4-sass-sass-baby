@@ -58,6 +58,7 @@ section {
   background-color: $colorDarkMidtone;
   color: $colorLight;
   font-size: 15px;
+  width: 100%;
   * {
     margin-bottom: $sizeXL;
     margin-top: $sizeM;
@@ -103,8 +104,6 @@ section {
   line-height: 20px;
   padding: $sizeL;
   min-width: 70%;
-  max-width: 70%;
-  max-height: 100%;
   background-color: $colorLight;
   font-size: 14px;
   ul{

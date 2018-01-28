@@ -348,7 +348,8 @@ section {
   padding: 24px;
   background-color: #333333;
   color: #ffffff;
-  font-size: 15px; }
+  font-size: 15px;
+  width: 100%; }
   .cv-left * {
     margin-bottom: 32px;
     margin-top: 16px; }
@@ -382,8 +383,6 @@ section {
   line-height: 20px;
   padding: 24px;
   min-width: 70%;
-  max-width: 70%;
-  max-height: 100%;
   background-color: #ffffff;
   font-size: 14px; }
   .cv-right ul {
