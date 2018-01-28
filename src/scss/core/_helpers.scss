@@ -13,7 +13,7 @@ body {
   font-size: $sizeM;
   font-family: $familyPrimary;
   font-weight: map-get($fontWeight, 'light');
-  color: $color-dark;
+  color: $colorDark;
 }
 
 #section-form {
@@ -23,6 +23,13 @@ body {
   @media all and (min-width: 768px) {
     padding-left: 48px;
     padding-right: 48px;
+  }
+}
+
+.formandcv {
+  display: block;
+  @media all and (min-width: 1024px) {
+    display: flex;
   }
 }
 

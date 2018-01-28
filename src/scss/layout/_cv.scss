@@ -1,0 +1,160 @@
+.display-none { //devderia reutilizarse la class hidden
+  display: none;
+}
+
+// Clases generales
+section {
+  width: 100%;
+  @media all and (min-width: 1024px) {
+    width: 60%;
+  }
+}
+
+.cv-content {
+  overflow: scroll;
+  width:100%;
+  background-image: url('bg.png');
+  background-repeat: repeat;
+  border: 0;
+  padding-bottom: 64px;
+  display: none;
+  @media all and (min-width: 768px) {
+    padding-top: 64px;
+  }
+  @media all and (min-width: 1024px) {
+    padding-top: 128px;
+    border-left: 2px solid $colorPrimary;
+    border-style: dashed;
+    display: block;
+  }
+}
+
+.print-cv {
+  display: flex;
+  height: 842px;
+  width: 595px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  @media all and (min-width: 768px) {
+    border: 2px solid $colorSecondary;
+    box-shadow: 10px 10px $colorSecondary;
+  }
+}
+
+.list-none {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+//css cv-left
+.cv-left {
+  padding: 24px;
+  background-color: $colorDarkMidtone;
+  color: $colorLight;
+}
+.cv-name {
+  margin-bottom: 16px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.cv-position{
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+
+.description-text {
+  font-size: 12px;
+
+}
+
+/*css cv-right*/
+
+.cv-right {
+  line-height: 20px;
+  padding: 24px;
+  min-width: 70%;
+  max-width: 70%;
+  max-height: 100%;
+  background-color: $colorLight;
+}
+
+h3.seccion {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tittle-education {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.tittle-projects {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.tittle-experience {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cv-description-project,
+.cv-description-project1{
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.margin-bottom {
+  margin-bottom: 8px;
+}
+
+#tel-cv, #rrss-cv, #web-cv, #email-cv {
+  font-size: 8px;
+}
+
+.cv-description-experience {
+  padding: 0;
+  list-style-type: none;
+}
+
+.ul-experience {
+  padding: 0;
+  list-style-type: none;
+}
+
+.put-inline {
+  display: inline-block;
+}
+
+
+// PRINT
+@media print {
+  .print-cv {
+    display: flex;
+    page-break-inside: avoid;
+  }
+
+  .cv-left {
+    float: left;
+    background-color: $colorDark;
+    -webkit-print-color-adjust:exact;
+    height: 842px;
+  }
+
+  .cv-right {
+    float: right;
+    height: 842px;
+  }
+}

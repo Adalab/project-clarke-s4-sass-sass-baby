@@ -23,6 +23,12 @@ body {
       padding-left: 48px;
       padding-right: 48px; } }
 
+.formandcv {
+  display: block; }
+  @media all and (min-width: 1024px) {
+    .formandcv {
+      display: flex; } }
+
 fieldset {
   border: 0;
   padding: 0;
@@ -34,7 +40,9 @@ fieldset {
   justify-content: flex-end; }
 
 .buttonPrint {
-  right: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -42,12 +50,25 @@ fieldset {
   padding: 8px 30px;
   background-color: #3661A2;
   border-radius: 0;
-  text-align: center;
-  border: 0;
+  display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  border: 0;
+  transition: color ease 1s, background-color ease 1s; }
+  .buttonPrint:hover {
+    color: #3661A2;
+    background-color: #ffffff; }
+  @media all and (min-width: 1024px) {
+    .buttonPrint {
+      box-shadow: 10px 10px rgba(54, 97, 162, 0.5);
+      transition: box-shadow ease 0.5s, color ease 0.5s; }
+      .buttonPrint:hover {
+        box-shadow: none; } }
 
 .buttonSave {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -59,9 +80,22 @@ fieldset {
   text-decoration: none;
   text-align: center;
   margin-left: 8px;
-  margin-right: 8px; }
+  margin-right: 8px;
+  transition: color ease 1s, background-color ease 1s; }
+  .buttonSave:hover {
+    color: #3661A2;
+    background-color: #ffffff; }
+  @media all and (min-width: 1024px) {
+    .buttonSave {
+      box-shadow: 10px 10px rgba(54, 97, 162, 0.5);
+      transition: box-shadow ease 0.5s, color ease 0.5s; }
+      .buttonSave:hover {
+        box-shadow: none; } }
 
 .buttonContinue {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -72,37 +106,34 @@ fieldset {
   border: 0;
   text-decoration: none;
   text-align: center;
-  margin-left: 8px; }
+  margin-left: 8px;
+  transition: color ease 1s, background-color ease 1s; }
+  .buttonContinue:hover {
+    color: #3661A2;
+    background-color: #ffffff; }
+  @media all and (min-width: 1024px) {
+    .buttonContinue {
+      box-shadow: 10px 10px rgba(54, 97, 162, 0.5);
+      transition: box-shadow ease 0.5s, color ease 0.5s; }
+      .buttonContinue:hover {
+        box-shadow: none; } }
 
-.buttonContinue:hover {
-  background-color: #3661A2; }
-
-/* BUTTON IN HEADER */
 .button-CV {
-  background-color: #3661A2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
   padding: 8px 10px;
-  color: white;
-  text-decoration: none;
+  color: #3661A2;
+  font-weight: 400;
   text-align: center;
   border-radius: 0px;
   border: 0;
-  font-size: 13px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300; }
-
-.button:hover {
-  background-color: #3661A2; }
-
-/* BUTTON IN NAV */
-.main-nav-button {
-  border: none;
-  background: none;
-  min-width: 64px;
-  max-width: 150px;
-  height: 96px; }
-
-.active {
-  background-color: rgba(54, 97, 162, 0.5); }
+  font-size: 12px;
+  font-family: "Roboto", sans-serif; }
+  @media all and (min-width: 1024px) {
+    .button-CV {
+      display: none; } }
 
 .title {
   font-size: 18px;
@@ -150,9 +181,16 @@ hr {
   left: 90%;
   width: 7%;
   opacity: 0.5; }
+  @media all and (min-width: 768px) {
+    #input_img {
+      left: 92%;
+      width: 5%;
+      bottom: 40%; } }
   @media all and (min-width: 1024px) {
     #input_img {
-      width: 5%; } }
+      width: 5%;
+      bottom: 47%;
+      left: 90%; } }
 
 .add-project {
   border: 2px #3661A2 solid;
@@ -193,27 +231,45 @@ hr {
   justify-content: space-between; }
 
 .header {
-  height: 80px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #3661A2; }
+  @media all and (min-width: 1024px) {
+    .header {
+      height: 80px; } }
 
 .logo {
-  width: 100%;
+  width: 70%;
   max-width: 150px;
   display: block; }
+  @media all and (min-width: 1024px) {
+    .logo {
+      width: 90%; } }
 
 .main-nav-list {
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 100%; }
+  .main-nav-list .nav-icon {
+    width: 50%; }
+  @media all and (min-width: 768px) {
+    .main-nav-list {
+      padding-top: 48px;
+      padding-bottom: 48px; }
+      .main-nav-list .nav-icon {
+        width: 40%; } }
+  @media all and (min-width: 1024px) {
+    .main-nav-list .nav-icon {
+      width: 30%; } }
 
 .nav-text {
   font-size: 16px;
@@ -226,62 +282,86 @@ hr {
     .nav-text {
       display: block; } }
 
-.nav-icon {
-  width: 30%; }
+.main-nav-button {
+  border: none;
+  background: none;
+  height: 64px;
+  opacity: 0.5;
+  transition: opacity ease 1s, color ease 0.5s; }
+  .main-nav-button:hover {
+    opacity: 0.75; }
+  @media all and (min-width: 1024px) {
+    .main-nav-button {
+      height: 96px; } }
 
-/* ==============
-CV
-================== */
+.active {
+  opacity: 1; }
+
 .display-none {
   display: none; }
 
-/* Clases generales */
+section {
+  width: 100%; }
+  @media all and (min-width: 1024px) {
+    section {
+      width: 60%; } }
+
 .cv-content {
   overflow: scroll;
   width: 100%;
   background-image: url("bg.png");
   background-repeat: repeat;
   border: 0;
-  border-left: 2px solid #3661A2;
-  border-style: dashed;
   padding-bottom: 64px;
-  padding-top: 64px; }
+  display: none; }
+  @media all and (min-width: 768px) {
+    .cv-content {
+      padding-top: 64px; } }
+  @media all and (min-width: 1024px) {
+    .cv-content {
+      padding-top: 128px;
+      border-left: 2px solid #3661A2;
+      border-style: dashed;
+      display: block; } }
 
 .print-cv {
   display: flex;
   height: 842px;
   width: 595px;
-  min-width: 595px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
-  border: 2px solid rgba(54, 97, 162, 0.5);
-  box-shadow: 10px 10px rgba(54, 97, 162, 0.5); }
+  margin-bottom: 32px; }
+  @media all and (min-width: 768px) {
+    .print-cv {
+      border: 2px solid rgba(54, 97, 162, 0.5);
+      box-shadow: 10px 10px rgba(54, 97, 162, 0.5); } }
 
 .list-none {
   list-style: none;
   margin: 0px;
   padding: 0px; }
 
-/*css cv-left*/
 .cv-left {
-  padding: 25px;
-  max-width: 30%;
-  min-width: 30%;
-  max-height: 100%;
+  padding: 24px;
   background-color: #333333;
-  color: white; }
+  color: #ffffff; }
 
 .cv-name {
-  padding-bottom: 2px;
+  margin-bottom: 16px;
+  line-height: 32px;
   text-transform: uppercase; }
+
+.cv-position {
+  font-size: 16px;
+  padding-bottom: 16px; }
 
 .description-text {
   font-size: 12px; }
 
 /*css cv-right*/
 .cv-right {
-  padding: 25px;
+  line-height: 20px;
+  padding: 24px;
   min-width: 70%;
   max-width: 70%;
   max-height: 100%;
@@ -293,16 +373,16 @@ h3.seccion {
   text-decoration: underline; }
 
 .tittle-education {
-  margin-top: 5px;
-  margin-bottom: 6px; }
+  margin-top: 8px;
+  margin-bottom: 8px; }
 
 .tittle-projects {
-  margin-top: 20px;
-  margin-bottom: 6px; }
+  margin-top: 24px;
+  margin-bottom: 8px; }
 
 .tittle-experience {
-  margin-top: 20px;
-  margin-bottom: 6px; }
+  margin-top: 24px;
+  margin-bottom: 8px; }
 
 .bold {
   font-weight: bold; }
@@ -310,16 +390,16 @@ h3.seccion {
 .cv-description-project,
 .cv-description-project1 {
   margin-top: 0;
-  margin-bottom: 12px; }
+  margin-bottom: 16px; }
 
 .margin-top {
-  margin-top: 12px; }
+  margin-top: 16px; }
 
 .margin-bottom {
   margin-bottom: 8px; }
 
 #tel-cv, #rrss-cv, #web-cv, #email-cv {
-  font-size: 9px; }
+  font-size: 8px; }
 
 .cv-description-experience {
   padding: 0;
@@ -331,26 +411,6 @@ h3.seccion {
 
 .put-inline {
   display: inline-block; }
-
-/*RESPONSIVE*/
-@media all and (min-width: 750px) {
-  .formandcv {
-    display: flex; }
-  .buttonPrint {
-    bottom: 90%;
-    margin-bottom: 0px;
-    right: 10%; }
-  aside {
-    position: relative;
-    padding-top: 128px; }
-  section {
-    width: 60%; }
-  .button-CV {
-    display: none; } }
-
-@media all and (max-width: 750px) {
-  .cv-content {
-    display: none; } }
 
 @media print {
   .print-cv {

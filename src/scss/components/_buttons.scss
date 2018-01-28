@@ -1,89 +1,106 @@
 //BUTTON CONTINUE SAVE PRINT AND BACK
-
-.buttonsChangeForm {
+.buttonsChangeForm { // es un div, para que los botones esten a la derecha
   display: flex;
   justify-content: flex-end;
 }
 
 .buttonPrint {
-  right: 50%;
+  @include noWebKit();
   font-size: 16px;
   font-family: $familyPrimary;
   font-weight: map-get($fontWeight, 'light');
-  color: $color-light;
+  color: $colorLight;
   padding: 8px 30px;
-  background-color: $color-primary;
+  background-color: $colorPrimary;
   border-radius: 0;
-  text-align: center;
-  border: 0;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 0;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover{
+    color: $colorPrimary;
+    background-color: $colorLight;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }
 
 .buttonSave {
+  @include noWebKit();
   // margin-right: 40px;
   font-size: 16px;
   font-family: $familyPrimary;
   font-weight: map-get($fontWeight, 'light');
-  color: $color-light;
+  color: $colorLight;
   padding: 8px 30px;
-  background-color: $color-primary;
+  background-color: $colorPrimary;
   border: 0;
   border-radius: 0;
   text-decoration: none;
   text-align: center;
   margin-left: 8px;
   margin-right: 8px;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover{
+    color: $colorPrimary;
+    background-color: $colorLight;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }
 
 .buttonContinue {
+  @include noWebKit();
   font-size: 16px;
   font-family: $familyPrimary;
   font-weight: map-get($fontWeight, 'light');
-  color: $color-light;
+  color: $colorLight;
   padding: 8px 30px;
-  background-color: $color-primary;
+  background-color: $colorPrimary;
   border-radius: 0;
   border: 0;
   text-decoration: none;
   text-align: center;
   margin-left: 8px;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover{
+    color: $colorPrimary;
+    background-color: $colorLight;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }
 
-.buttonContinue:hover {
-  background-color: $color-primary;
-}
 
-/* BUTTON IN HEADER */
-
+// BUTTON IN HEADER
 .button-CV {
-  background-color: $color-primary;
+  @include noWebKit();
+  background-color: $colorLight;
   padding: 8px 10px;
-  color: white;
-  text-decoration: none;
+  color: $colorPrimary;
+  font-weight: map-get($fontWeight, 'regular');
   text-align: center;
   border-radius: 0px;
   border: 0;
-  font-size: 13px;
+  font-size: 12px;
   font-family: $familyPrimary;
-  font-weight: map-get($fontWeight, 'light');
-}
-
-.button:hover {
-  background-color: $color-primary;
-}
-
-/* BUTTON IN NAV */
-
-.main-nav-button {
-  border: none;
-  background: none;
-  min-width: 64px;
-  max-width: 150px;
-  height: 96px
-}
-
-.active {
-  background-color: $color-secondary;
-
+  @media all and (min-width:1024px) {
+    display: none;
+  }
 }
