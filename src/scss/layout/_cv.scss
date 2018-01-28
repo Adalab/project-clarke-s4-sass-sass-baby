@@ -16,10 +16,10 @@ section {
   background-image: url('bg.png');
   background-repeat: repeat;
   border: 0;
-  padding-bottom: 64px;
+  padding-bottom: $sizeXXXL;
   display: none;
   @media all and (min-width: 768px) {
-    padding-top: 64px;
+    padding-top: $sizeXXXL;
   }
   @media all and (min-width: 1024px) {
     padding-top: 128px;
@@ -35,7 +35,7 @@ section {
   width: 595px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: $sizeXL;
   @media all and (min-width: 768px) {
     border: 2px solid $colorSecondary;
     box-shadow: 10px 10px $colorSecondary;
@@ -50,94 +50,89 @@ section {
 
 //css cv-left
 .cv-left {
-  padding: 24px;
+  padding: $sizeL;
   background-color: $colorDarkMidtone;
   color: $colorLight;
+  font-size: 15px;
+  * {
+    margin-bottom: $sizeXL;
+    margin-top: $sizeM;
+    &:first-child {
+      margin-top: 0;
+    }
+    * {
+      margin-bottom: $sizeS;
+    }
+    ul {
+      margin-top: 12px;
+      font-size: 10px;
+      font-weight: map-get($fontWeight, 'regular');
+    }
+    li {
+      margin-bottom: $sizeS;
+      margin-top: $sizeS;
+    }
+  }
 }
+
 .cv-name {
-  margin-bottom: 16px;
-  line-height: 32px;
+  margin-bottom: $sizeM;
+  font-size: 28px;
+  line-height: 40px;
   text-transform: uppercase;
 }
-.cv-position{
-  font-size: 16px;
-  padding-bottom: 16px;
+
+.cv-description {
+  * {
+    margin-top: 0;
+    margin-bottom: $sizeS;
+  }
+  .description-text {
+    font-size: 12px;
+    line-height: $sizeM;
+  }
 }
 
 
-.description-text {
-  font-size: 12px;
-
-}
-
-/*css cv-right*/
-
+//css cv-right
 .cv-right {
   line-height: 20px;
-  padding: 24px;
+  padding: $sizeL;
   min-width: 70%;
   max-width: 70%;
   max-height: 100%;
   background-color: $colorLight;
-}
-
-h3.seccion {
   font-size: 14px;
-  font-weight: bold;
-  text-decoration: underline;
+  ul{
+    padding: 0;
+    list-style-type: none;
+    margin-top: $sizeM;
+  }
+  h3 {
+    margin-top: $sizeL;
+    margin-bottom: $sizeS;
+    text-decoration: underline;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: $sizeM;
+  }
+  .tittle-education {
+    margin-top: $sizeS;
+  }
+  .list-style {
+    margin-top: 0;
+  }
 }
 
-.tittle-education {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.tittle-projects {
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
-
-.tittle-experience {
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
 
 .bold {
-  font-weight: bold;
-}
-
-.cv-description-project,
-.cv-description-project1{
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.margin-top {
-  margin-top: 16px;
-}
-
-.margin-bottom {
-  margin-bottom: 8px;
-}
-
-#tel-cv, #rrss-cv, #web-cv, #email-cv {
-  font-size: 8px;
-}
-
-.cv-description-experience {
-  padding: 0;
-  list-style-type: none;
-}
-
-.ul-experience {
-  padding: 0;
-  list-style-type: none;
+  font-weight: map-get($fontWeight, 'bold');
 }
 
 .put-inline {
   display: inline-block;
 }
-
 
 // PRINT
 @media print {
