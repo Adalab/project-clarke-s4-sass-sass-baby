@@ -1,0 +1,25 @@
+// COLOR
+$colorPrimary: #3661A2; //or #2793e6
+$colorSecondary: rgba(#3661A2, 0.5);
+
+$colorLight: #ffffff;
+$colorMidtone: rgba(#999999, 0.2);
+$colorDarkMidtone: #333333;
+$colorDark: #111111;
+
+// FONT
+$familyPrimary: 'Roboto', sans-serif;
+
+$fontWeight: (
+  light: 300,
+  regular: 400,
+  bold: 700
+);
+
+// SIZES
+$sizeS: 8px;
+$sizeM: 16px;
+$sizeL: 24px;
+$sizeXL: 32px;
+$sizeXXL: 48px;
+$sizeXXXL: 64px;

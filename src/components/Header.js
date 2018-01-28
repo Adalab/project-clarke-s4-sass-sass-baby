@@ -4,7 +4,7 @@ class Header extends Component {
 render(){
 return (
   <header className="header">
-    <a href="#"><img className="logo" src="img/logoCV.png" alt="logo" /></a>
+    <a href="#"><img className="logo" src="img/logo.svg" alt="logo" /></a>
     <button className="button-CV">Previsualizar</button>
   </header>
 );
