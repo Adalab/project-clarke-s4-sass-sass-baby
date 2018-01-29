@@ -1,43 +1,17 @@
 import React, { Component } from 'react';
+import TabsItem from './TabsItem';
 
 class Tabs extends Component {
   render(){
     return (
       <nav className="main-nav">
       <ul className="main-nav-list">
-
-      <li className="button-menu" data-id={0}>
-      <button className="main-nav-button active">
-      <img src="img/woman-avatar.png" alt="icon personal data" className="nav-icon icon-personal" />
-      <p className="nav-text nav-personalData">Datos personales</p>
-      </button>
-      </li>
-
-      <li className="button-menu" data-id={1}>
-      <button className="main-nav-button">
-      <img src="img/hat-education.png" alt="icon education" className="nav-icon icon-education" />
-      <p className="nav-text nav-education">Formación</p>
-      </button>
-      </li>
-
-      <li className="button-menu" data-id={2}>
-      <button className="main-nav-button">
-      <img src="img/presentation.png" alt="icon projects" className="nav-icon icon-projects" />
-      <p className="nav-text nav-project">Proyectos</p>
-      </button>
-      </li>
-
-      <li className="button-menu" data-id={3}>
-      <button className="main-nav-button">
-      <img src="img/suitcase.png" alt="icon experience" className="nav-icon icon-experience" />
-      <p className="nav-text nav-experience">Experiencia Laboral</p>
-      </button>
-      </li>
-
+      <TabsItem dataid={0} display="active" logo="woman-avatar" alt="icon personal data" className="icon-personal" navClass="nav-personalData" titleTab="Datos personales"/>
+      <TabsItem dataid={1} logo="hat-education" alt="icon education" className="icon-education" navClass="nav-education" titleTab="Formación"/>
+      <TabsItem dataid={2} logo="presentation" alt="icon projects" className="icon-projects" navClass="nav-project" titleTab="Proyectos"/>
+      <TabsItem dataid={3} logo="suitcase" alt="icon experience" className="icon-experience" navClass="nav-experience" titleTab="Experiencia Laboral"/>
       </ul>
-
       </nav>
-
     );
   }
 }

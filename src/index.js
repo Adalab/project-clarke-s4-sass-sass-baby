@@ -5,4 +5,4 @@ import App from './App';
 import legacyCode from './legacy';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-legacyCode();
+// legacyCode();
