@@ -2,6 +2,7 @@
   "name": "clarke-s4-sass-sass-baby",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://adalab.github.io/clarke-s4-SASS-SASS-baby",
   "dependencies": {
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
