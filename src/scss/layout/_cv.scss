@@ -39,6 +39,11 @@ section {
   @media all and (min-width: 768px) {
     border: 2px solid $colorSecondary;
     box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+
   }
 }
 
@@ -54,6 +59,7 @@ section {
   background-color: $colorDarkMidtone;
   color: $colorLight;
   font-size: 15px;
+  width: 100%;
   * {
     margin-bottom: $sizeXL;
     margin-top: $sizeM;
@@ -99,8 +105,6 @@ section {
   line-height: 20px;
   padding: $sizeL;
   min-width: 70%;
-  max-width: 70%;
-  max-height: 100%;
   background-color: $colorLight;
   font-size: 14px;
   ul{
