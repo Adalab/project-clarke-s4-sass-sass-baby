@@ -4,7 +4,7 @@ class EducationBox extends Component {
 	render() {
 	return(
 		<div className="education">
-		<h3 className="seccion tittle-education">FORMACIÓN</h3>
+			<h3 className="seccion tittle-education">FORMACIÓN</h3>
 			{/*   FORMACIÓN 1   -------------*/}
 			<ul className="list-none margin-bottom esconder formacionuno">
 				<li className="cv-title-education bold">Título de la formación</li>

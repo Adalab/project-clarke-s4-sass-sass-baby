@@ -364,22 +364,22 @@ function legacyCode() {
   /* ===============================
   Imprimir
   ================================= */
-  var buttonprint = document.querySelector('.buttonPrint');
-  function printlistener() {
-    var printpdf = document.querySelector('.print-cv')
-    printpdf.style.display = "block";
-    var transform = printpdf.innerHTML;
-    var transformPdf = document.body.innerHTML;
-    document.body.innerHTML= transform;
-    window.print();
-    document.body.innerHTML=transformPdf;
-  }
-
-  window.onafterprint = function(){
-    window.location.reload(true);
-  };
-
-  buttonprint.addEventListener('click',printlistener);
+  // var buttonprint = document.querySelector('.buttonPrint');
+  // function printlistener() {
+  //   var printpdf = document.querySelector('.print-cv')
+  //   printpdf.style.display = "block";
+  //   var transform = printpdf.innerHTML;
+  //   var transformPdf = document.body.innerHTML;
+  //   document.body.innerHTML= transform;
+  //   window.print();
+  //   document.body.innerHTML=transformPdf;
+  // }
+  //
+  // window.onafterprint = function(){
+  //   window.location.reload(true);
+  // };
+  //
+  // buttonprint.addEventListener('click',printlistener);
 
   /* ===============================
   Fin imprimir
