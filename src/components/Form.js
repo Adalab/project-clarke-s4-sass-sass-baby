@@ -3,10 +3,12 @@ import Fieldset from './Fieldset';
 import Colapsable from './Colapsable';
 import PersonalData from './PersonalData';
 
+
 class Form extends Component {
   render(){
     return (
       <form className="main-form" id="main-form" action method="post">
+
       <PersonalData/>
 
       <Fieldset title="Formación">

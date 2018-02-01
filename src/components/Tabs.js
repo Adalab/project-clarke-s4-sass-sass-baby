@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TabsItem from './TabsItem';
 
+
 class Tabs extends Component {
   render(){
     return (

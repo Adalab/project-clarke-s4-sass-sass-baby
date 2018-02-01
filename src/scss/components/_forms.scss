@@ -1,0 +1,111 @@
+.title {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: $sizeS;
+  margin-bottom: $sizeL;
+  height: 1px;
+  color: $colorDark;
+}
+
+//sustitir por hidden
+.label-form {
+  display: none;
+}
+
+.input-form {
+  @include noWebKit();
+  border-radius: 0;
+  padding-left: $sizeM;
+  padding-right: $sizeM;
+  padding-top: $sizeM;
+  padding-bottom: $sizeM;
+  margin-top: $sizeS;
+  margin-bottom: $sizeL;
+  background-color: $colorMidtone;
+  border-width: 0;
+  font-size: $sizeM;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $colorDark;
+  line-height: $sizeL;
+  width: 100%;
+}
+
+// Personal Data Icons
+#input_container {
+  position:relative;
+  padding:0;
+  margin:0;
+}
+
+#input_img {
+  position:absolute;
+  bottom: 47%;
+  left: 90%;
+  width: 7%;
+  opacity: 0.5;
+  @media all and (min-width: 768px) {
+    left: 92%;
+    width: 5%;
+    bottom: 40%;
+  }
+  @media all and (min-width: 1024px) {
+    width: 5%;
+    bottom: 47%;
+    left: 90%;
+  }
+}
+
+// Projects
+.add-project {
+  border: 2px $colorSecondary solid;
+  border-radius: 0;
+  padding-left: $sizeM;
+  padding-right: $sizeM;
+  padding-top: $sizeM;
+  padding-bottom: $sizeM;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $sizeXL;
+  &:first-child {
+    margin-top: $sizeXL;
+  }
+  a {
+    text-decoration: none;
+    color: $colorDark;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.buttons-project {
+  width: 20px;
+  flex-grow: 0;
+  opacity: 0.5;
+  transition: opacity ease 1s, color ease 0.5s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+//margin up & down button
+.margin-right-buttons {
+  margin-right: $sizeS;
+}
+
+// para que se vea año y mes jutos
+.containter-data-project {
+  display: flex;
+  justify-content: space-between;
+}

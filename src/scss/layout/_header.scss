@@ -1,0 +1,23 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: $sizeM;
+  padding-right: $sizeM;
+  padding-top: $sizeM;
+  padding-bottom: $sizeM;
+  background-color: $colorPrimary;
+  @media all and (min-width: 1024px) {
+    height: 80px;
+  }
+}
+
+.logo {
+  width: 70%;
+  max-width: 150px;
+  display: block;
+  @media all and (min-width: 1024px) {
+    width: 90%;
+  }
+}
