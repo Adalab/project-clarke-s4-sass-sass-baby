@@ -5,7 +5,7 @@ class PersonalData extends Component {
   render(){
     return(
       <Fieldset title="Datos personales">
-        <input className="input-form firstname" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required />
+        <input onChange={this.props.handleChange} className="input-form firstname" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required />
         <input className="input-form profession" id="profession" type="text" name="profession" placeholder="Profesión actual" required />
         <input className="input-form residence" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required />
 

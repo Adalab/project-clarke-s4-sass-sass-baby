@@ -15,8 +15,16 @@ class App extends Component {
     super(props);
 
     this.state = {
-      printing: false
+      printing: false,
+      name: ''
     }
+  this.updateState =  this.updateState.bind(this);
+  }
+
+  updateState(event) {
+    this.setState({
+        name: event.target.value
+    });
   }
 
   componentDidMount() {
@@ -50,11 +58,11 @@ class App extends Component {
       <main>
       <Header/>
       <div className="formandcv">
-      <SectionGeneral/>
+      <SectionGeneral handleChange={this.updateState}/>
       <div className="cv-content">
       <aside>
       <div className="print-cv">
-      <LeftCv/>
+      <LeftCv name={this.state.name}/>
       <RightCv/>
       </div>
       <input type="button" onClick={ this.imprimir.bind(this) } className="buttonPrint" defaultValue="Imprimir" />

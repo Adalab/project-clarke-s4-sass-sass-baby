@@ -4,7 +4,7 @@ class PersonalDataBox extends Component {
 	render() {
 	return(
 		<div className="cv-contact">
-			<h2 className="cv-name cv-firstname">Nombre <br /> Apellido <br /> Apellido</h2>
+			<h2 className="cv-name cv-firstname">{ this.props.name }</h2>
 			<h3 className="cv-position cv-profession">Profesión actual</h3>
 			<h4>Contacto</h4>
 			<ul className="list-none">
