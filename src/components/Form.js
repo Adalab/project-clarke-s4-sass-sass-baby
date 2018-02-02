@@ -12,8 +12,8 @@ class Form extends Component {
       <PersonalData handleChange={this.props.handleChange}/>
 
       <Fieldset title="Formación">
-        <Colapsable box= "firstEducationBox">
-          <div className="drop-down hidden">
+        <Colapsable box= "firstEducationBox" link="Añadir formación 1">
+          <div className="drop-down">
           <input className="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required />
           <input className="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required />
           <input className="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required />
@@ -21,8 +21,8 @@ class Form extends Component {
           </div>
         </Colapsable>
 
-        <Colapsable box= "secondEducationBox">
-        <div className="drop-down hidden">
+        <Colapsable box= "secondEducationBox" link="Añadir formación 2">
+        <div className="drop-down">
           <input className="input-form title-education1 main-value" type="text" name="title-education1" placeholder="Título" required />
           <input className="input-form center-education1" type="text" name="company-project" placeholder="Centro de formación" required />
           <input className="input-form date-start-education1" type="date" name="company-project" placeholder="Fecha inicio" required />
@@ -32,8 +32,8 @@ class Form extends Component {
       </Fieldset>
 
       <Fieldset title= "Proyectos">
-      <Colapsable box="firstProyectBox">
-        <div className= "drop-down hidden">
+      <Colapsable box="firstProyectBox" link="Añadir proyecto 1">
+        <div className= "drop-down">
           <input className="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required />
           <input className="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required />
           <div className="containter-data-project">
@@ -60,8 +60,8 @@ class Form extends Component {
         </div>
       </Colapsable>
 
-      <Colapsable box= "secondProyectBox">
-        <div className= "drop-down hidden">
+      <Colapsable box= "secondProyectBox" link="Añadir proyecto 2">
+        <div className= "drop-down">
           <input className="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required />
           <input className="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required />
           <div className="containter-data-project">
@@ -90,8 +90,8 @@ class Form extends Component {
       </Fieldset>
 
       <Fieldset title= "Experiencia">
-      <Colapsable box="firstExperienceBox">
-      <div className="drop-down hidden">
+      <Colapsable box="firstExperienceBox" link="Añadir educación 1">
+      <div className="drop-down">
         <input className="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required />
         <input className="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required />
         <input className="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required />
@@ -99,8 +99,8 @@ class Form extends Component {
       </div>
       </Colapsable>
 
-      <Colapsable box="secondExperienceBox">
-      <div className="drop-down hidden">
+      <Colapsable box="secondExperienceBox" link="Añadir educación 2">
+      <div className="drop-down">
         <input className="input-form main-value name-company" id="company" type="text" name="company" placeholder="Empresa" required />
         <input className="input-form name-position" id="position" type="text" name="position" placeholder="Puesto de trabajo" required />
         <input className="input-form date-start-experience" id="init-data-experience" type="date" name="date-start-experience'" required />
