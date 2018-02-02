@@ -8,7 +8,7 @@ render(){
 return (
   <section id="section-form">
   <Tabs/>
-  <Form/>
+  <Form handleChange={this.props.handleChange}/>
   <ButtonsForm/>
   </section>
 );

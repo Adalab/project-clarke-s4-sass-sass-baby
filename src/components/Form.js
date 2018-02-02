@@ -9,7 +9,7 @@ class Form extends Component {
     return (
       <form className="main-form" id="main-form" action method="post">
 
-      <PersonalData/>
+      <PersonalData handleChange={this.props.handleChange}/>
 
       <Fieldset title="Formación">
         <Colapsable box= "firstEducationBox" link="Añadir formación 1">
