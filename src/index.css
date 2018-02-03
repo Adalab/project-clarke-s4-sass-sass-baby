@@ -17,11 +17,12 @@ body {
 #section-form {
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 32px; }
+  padding-bottom: 48px; }
   @media all and (min-width: 768px) {
     #section-form {
       padding-left: 48px;
-      padding-right: 48px; } }
+      padding-right: 48px;
+      padding-bottom: 64px; } }
 
 .formandcv {
   display: block; }
@@ -425,3 +426,31 @@ section {
   .cv-right {
     float: right;
     height: 842px; } }
+
+.footer {
+  font-weight: 300;
+  font-size: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #3661A2;
+  text-align: center;
+  color: #ffffff; }
+  .footer a {
+    font-size: 20px;
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+    font-weight: 400;
+    transition: color ease 0.8s, text-shadow ease 0.4s;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.4); }
+    .footer a:hover {
+      color: #3661A2;
+      text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; }
+  @media all and (min-width: 768px) {
+    .footer {
+      padding-top: 48px;
+      padding-bottom: 48px; } }
+  @media all and (min-width: 1024px) {
+    .footer {
+      padding-top: 48px;
+      padding-bottom: 48px; } }
