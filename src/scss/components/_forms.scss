@@ -93,6 +93,7 @@ hr {
   width: 20px;
   flex-grow: 0;
   opacity: 0.5;
+  cursor: pointer;
   transition: opacity ease 1s, color ease 0.5s;
   &:hover {
     opacity: 1;
