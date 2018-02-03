@@ -67,6 +67,9 @@ class App extends Component {
       </aside>
       </div>
       </div>
+      <footer className="App">
+        <p>Powered by: <span><a href="http://adalab.es/">ADALAB</a></span></p>
+      </footer>
       </div>
     )
   }
