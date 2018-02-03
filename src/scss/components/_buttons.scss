@@ -78,6 +78,11 @@
     color: $colorPrimary;
     background-color: $colorLight;
   }
+  a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+  }
   @media all and (min-width: 1024px) {
     box-shadow: 10px 10px $colorSecondary;
     transition: box-shadow ease 0.5s, color ease 0.5s;

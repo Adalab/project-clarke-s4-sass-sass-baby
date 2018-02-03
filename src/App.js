@@ -4,7 +4,6 @@ import Header from './components/Header';
 import SectionGeneral from './components/SectionGeneral';
 import Tabs from './components/Tabs';
 import Form from './components/Form';
-import ButtonsForm from './components/ButtonsForm';
 import RightCv from './components/RightCv';
 import LeftCv from './components/LeftCv';
 
@@ -55,7 +54,6 @@ class App extends Component {
     return (
       <div className="App">
       <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
-      <main>
       <Header/>
       <div className="formandcv">
       <SectionGeneral handleChange={this.updateState}/>
@@ -69,7 +67,6 @@ class App extends Component {
       </aside>
       </div>
       </div>
-      </main>
       </div>
     )
   }
