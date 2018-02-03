@@ -2,35 +2,52 @@ import React, { Component } from 'react';
 import Fieldset from './Fieldset';
 import Colapsable from './Colapsable';
 import PersonalData from './PersonalData';
-
+import { Link, Route, Switch } from 'react-router-dom';
+// const { Link, Route, Switch } = 'react-router-dom';
 
 class Form extends Component {
   render(){
     return (
       <form className="main-form" id="main-form" action method="post">
 
-      <PersonalData handleChange={this.props.handleChange}/>
-
-      <Fieldset title="Formación">
-        <Colapsable box= "firstEducationBox" link="Añadir formación 1">
-          <div className="drop-down">
-          <input className="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required />
-          <input className="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required />
-          <input className="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required />
-          <input className="input-form date-end-education" type="date" name="company-project" placeholder="Fecha fin" required />
+      <Route exact path="/" render={()=>
+        <div>
+          <PersonalData handleChange={this.props.handleChange}/>
+          <div className="buttonsChangeForm">
+            <button className="buttonContinue"><Link to="/studies">Continuar</Link></button>
           </div>
-        </Colapsable>
-
-        <Colapsable box= "secondEducationBox" link="Añadir formación 2">
-        <div className="drop-down">
-          <input className="input-form title-education1 main-value" type="text" name="title-education1" placeholder="Título" required />
-          <input className="input-form center-education1" type="text" name="company-project" placeholder="Centro de formación" required />
-          <input className="input-form date-start-education1" type="date" name="company-project" placeholder="Fecha inicio" required />
-          <input className="input-form date-end-education1" type="date" name="company-project" placeholder="Fecha inicio" required />
         </div>
-        </Colapsable>
-      </Fieldset>
+      }/>
 
+      <Route path="/studies" render={()=>
+        <div>
+        <Fieldset title="Formación">
+          <Colapsable box= "firstEducationBox" link="Añadir formación 1">
+            <div className="drop-down">
+            <input className="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required />
+            <input className="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required />
+            <input className="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required />
+            <input className="input-form date-end-education" type="date" name="company-project" placeholder="Fecha fin" required />
+            </div>
+          </Colapsable>
+
+          <Colapsable box= "secondEducationBox" link="Añadir formación 2">
+          <div className="drop-down">
+            <input className="input-form title-education1 main-value" type="text" name="title-education1" placeholder="Título" required />
+            <input className="input-form center-education1" type="text" name="company-project" placeholder="Centro de formación" required />
+            <input className="input-form date-start-education1" type="date" name="company-project" placeholder="Fecha inicio" required />
+            <input className="input-form date-end-education1" type="date" name="company-project" placeholder="Fecha inicio" required />
+          </div>
+          </Colapsable>
+        </Fieldset>
+        <div className="buttonsChangeForm">
+          <button className="buttonContinue"><Link to="/projects">Continuar</Link></button>
+        </div>
+      </div>
+      }/>
+
+      <Route path="/projects" render={()=>
+        <div>
       <Fieldset title= "Proyectos">
       <Colapsable box="firstProyectBox" link="Añadir proyecto 1">
         <div className= "drop-down">
@@ -88,7 +105,14 @@ class Form extends Component {
         </div>
       </Colapsable>
       </Fieldset>
+      <div className="buttonsChangeForm">
+        <button className="buttonContinue"><Link to="/experience">Continuar</Link></button>
+      </div>
+    </div>
+    }/>
 
+    <Route path="/experience" render={()=>
+      <div>
       <Fieldset title= "Experiencia">
       <Colapsable box="firstExperienceBox" link="Añadir educación 1">
       <div className="drop-down">
@@ -109,6 +133,12 @@ class Form extends Component {
       </div>
       </Colapsable>
       </Fieldset>
+      <div className="buttonsChangeForm">
+        <button className="buttonContinue"><Link exact to="/">Continuar</Link></button>
+      </div>
+    </div>
+      }/>
+
       </form>
     );
   }

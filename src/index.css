@@ -111,6 +111,10 @@ fieldset {
   .buttonContinue:hover {
     color: #3661A2;
     background-color: #ffffff; }
+  .buttonContinue a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto; }
   @media all and (min-width: 1024px) {
     .buttonContinue {
       box-shadow: 10px 10px rgba(54, 97, 162, 0.5);
@@ -294,7 +298,7 @@ hr {
     .main-nav-button {
       height: 96px; } }
 
-.active {
+a.active button {
   opacity: 1; }
 
 .display-none {
