@@ -17,11 +17,12 @@ body {
 #section-form {
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 32px; }
+  padding-bottom: 48px; }
   @media all and (min-width: 768px) {
     #section-form {
       padding-left: 48px;
-      padding-right: 48px; } }
+      padding-right: 48px;
+      padding-bottom: 64px; } }
 
 .formandcv {
   display: block; }
