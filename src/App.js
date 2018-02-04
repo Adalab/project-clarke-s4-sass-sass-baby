@@ -31,8 +31,11 @@ class App extends Component {
         startDateExperience: 'Inicio',
         finishDateExperience: 'Fecha de fin',
         descriptionExperience: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
-        
-
+        nameProject: 'Nombre del proyecto',
+        companyProject: 'Empresa',
+        descriptionProject: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo',
+        monthProject: 'Mes',
+        yearProject: 'Año'
       }
     }
     this.updateCv =  this.updateCv.bind(this);
