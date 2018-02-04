@@ -6,7 +6,7 @@ class Projects extends Component {
 
   render() {
     const handleChange = (event) => {
-      const name = event.target.id;
+      const name = event.target.name;
       this.props.handleChange(name, event.target.value);
     };
     return (

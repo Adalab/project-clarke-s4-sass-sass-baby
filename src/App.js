@@ -21,7 +21,18 @@ class App extends Component {
         email: 'email',
         social: 'Redes sociales',
         personalWebsite: 'Web personal',
-        personalDescription: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+        personalDescription: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+        titleEducation: 'Título de la formación',
+        trainingCenterEducation: 'Centro de formación',
+        startDateEducation: 'Fecha de inicio',
+        finishDateEducation: 'Fecha de fin',
+        companyName: 'Nombre empresa',
+        titleExperiencie: 'Puesto de trabajo',
+        startDateExperience: 'Inicio',
+        finishDateExperience: 'Fecha de fin',
+        descriptionExperience: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+        
+
       }
     }
     this.updateCv =  this.updateCv.bind(this);
