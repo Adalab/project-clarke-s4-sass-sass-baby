@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Tabs from './components/Tabs';
 import RightCv from './components/RightCv';
-import LeftCv from './components/LeftCv';
+import PersonalDataBox from './components/PersonalDataBox';
 
 
 class App extends Component {
@@ -40,7 +40,7 @@ class App extends Component {
     if (this.state.printing) {
       return (
         <div className="print-cv" style={{height: '100%', margin: 0}}>
-          <LeftCv cv={this.state.cv} />
+          <PersonalDataBox cv={this.state.cv} />
           <RightCv cv={this.state.cv} />
         </div>
       );
@@ -55,7 +55,7 @@ class App extends Component {
       <div className="cv-content">
       <aside>
       <div className="print-cv">
-        <LeftCv cv={this.state.cv} />
+        <PersonalDataBox cv={this.state.cv} />
         <RightCv cv={this.state.cv} />
       </div>
       <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
