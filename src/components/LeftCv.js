@@ -6,7 +6,7 @@ class LeftCv extends Component {
   render() {
     return(
       <div className="cv-left">
-        <PersonalDataBox name={this.props.name}/>
+        <PersonalDataBox cv={this.props.cv}/>
         <BasicBox/>
       </div>
     );

@@ -15,8 +15,8 @@ class Education extends Component {
           <div className="drop-down">
           <input className="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required />
           <input className="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required />
-          <input className="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required />
-          <input className="input-form date-end-education" type="date" name="company-project" placeholder="Fecha fin" required />
+          <input className="input-form date-start-education" type="date" name="start-date-project" placeholder="Fecha inicio" required />
+          <input className="input-form date-end-education" type="date" name="finish-date-project" placeholder="Fecha fin" required />
           </div>
         </Colapsable>
 

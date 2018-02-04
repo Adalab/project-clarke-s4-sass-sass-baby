@@ -13,16 +13,18 @@ class App extends Component {
     super(props);
     this.state = {
       printing: false,
-      name: ''
+      cv: {
+        name: 'Nombre', profession: 'profesión actual'
+      }
     }
-    this.updateState =  this.updateState.bind(this);
+    this.updateCv =  this.updateCv.bind(this);
     this.print =  this.print.bind(this);
   }
 
-  updateState(name, value) {
-    const state = {};
-    state[name] = value;
-    this.setState(state);
+  updateCv(name, value) {
+    const cv = this.state.cv;
+    cv[name] = value;
+    this.setState({cv: cv});
   }
 
   componentDidMount() {
@@ -38,8 +40,8 @@ class App extends Component {
     if (this.state.printing) {
       return (
         <div className="print-cv" style={{height: '100%', margin: 0}}>
-        <LeftCv/>
-        <RightCv/>
+          <LeftCv cv={this.state.cv} />
+          <RightCv cv={this.state.cv} />
         </div>
       );
     }
@@ -49,12 +51,12 @@ class App extends Component {
       <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
       <Header/>
       <div className="formandcv">
-      <Form handleChange={this.updateState}/>
+      <Form handleChange={this.updateCv}/>
       <div className="cv-content">
       <aside>
       <div className="print-cv">
-      <LeftCv name={this.state.name}/>
-      <RightCv/>
+        <LeftCv cv={this.state.cv} />
+        <RightCv cv={this.state.cv} />
       </div>
       <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
       </aside>
