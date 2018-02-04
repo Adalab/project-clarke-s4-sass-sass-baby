@@ -1,115 +1,58 @@
 import React, { Component } from 'react';
 import Fieldset from './Fieldset';
-import Colapsable from './Colapsable';
+import Tabs from './Tabs';
 import PersonalData from './PersonalData';
-
+import Education from './Education';
+import Projects from './Projects';
+import Experience from './Experience';
+import Colapsable from './Colapsable';
+import { Link, Route, Switch } from 'react-router-dom';
 
 class Form extends Component {
   render(){
     return (
+      <section id="section-form">
+      <Tabs/>
       <form className="main-form" id="main-form" action method="post">
 
-      <PersonalData handleChange={this.props.handleChange}/>
-
-      <Fieldset title="Formación">
-        <Colapsable box= "firstEducationBox" link="Añadir formación 1">
-          <div className="drop-down">
-          <input className="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required />
-          <input className="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required />
-          <input className="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required />
-          <input className="input-form date-end-education" type="date" name="company-project" placeholder="Fecha fin" required />
-          </div>
-        </Colapsable>
-
-        <Colapsable box= "secondEducationBox" link="Añadir formación 2">
-        <div className="drop-down">
-          <input className="input-form title-education1 main-value" type="text" name="title-education1" placeholder="Título" required />
-          <input className="input-form center-education1" type="text" name="company-project" placeholder="Centro de formación" required />
-          <input className="input-form date-start-education1" type="date" name="company-project" placeholder="Fecha inicio" required />
-          <input className="input-form date-end-education1" type="date" name="company-project" placeholder="Fecha inicio" required />
+      <Route exact path="/" render={()=>
+        <div>
+        <PersonalData handleChange={this.props.handleChange} />
+        <div className="buttonsChangeForm">
+        <button className="buttonContinue"><Link to="/studies">Continuar</Link></button>
         </div>
-        </Colapsable>
-      </Fieldset>
-
-      <Fieldset title= "Proyectos">
-      <Colapsable box="firstProyectBox" link="Añadir proyecto 1">
-        <div className= "drop-down">
-          <input className="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required />
-          <input className="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required />
-          <div className="containter-data-project">
-            <select className="input-form select-date" name="month-project">
-              <option className="option-form grey" disabled selected>Mes</option>
-              <option>Enero</option>
-              <option>Febrero</option>
-              <option>Marzo</option>
-              <option>Abril</option>
-              <option>Mayo</option>
-              <option>Junio</option>
-              <option>Julio</option>
-              <option>Agosto</option>
-              <option>Septiembre</option>
-              <option>Octubre</option>
-              <option>Noviembre</option>
-              <option>Diciembre</option>
-            </select>
-            <select className="input-form select-date" name="year-project" id="selectorYear">
-              <option className="option-form" disabled selected>Año</option>
-            </select>
-          </div>
-          <textarea className="input-form description-project" name="description-project" rows={8} cols={80} defaultValue={""} />
         </div>
-      </Colapsable>
+      }/>
 
-      <Colapsable box= "secondProyectBox" link="Añadir proyecto 2">
-        <div className= "drop-down">
-          <input className="input-form main-value name-project" id="name-project" type="text" name="name-project" placeholder="Nombre del proyecto" required />
-          <input className="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required />
-          <div className="containter-data-project">
-            <select className="input-form select-date" name="month-project">
-              <option className="option-form grey" disabled selected>Mes</option>
-              <option>Enero</option>
-              <option>Febrero</option>
-              <option>Marzo</option>
-              <option>Abril</option>
-              <option>Mayo</option>
-              <option>Junio</option>
-              <option>Julio</option>
-              <option>Agosto</option>
-              <option>Septiembre</option>
-              <option>Octubre</option>
-              <option>Noviembre</option>
-              <option>Diciembre</option>
-            </select>
-            <select className="input-form select-date" name="year-project" id="selectorYear">
-              <option className="option-form" disabled selected>Año</option>
-            </select>
-          </div>
-          <textarea className="input-form description-project" name="description-project" rows={8} cols={80} defaultValue={""} />
+      <Route path="/studies" render={()=>
+        <div>
+        <Education />
+        <div className="buttonsChangeForm">
+        <button className="buttonContinue"><Link to="/projects">Continuar</Link></button>
         </div>
-      </Colapsable>
-      </Fieldset>
+        </div>
+      }/>
 
-      <Fieldset title= "Experiencia">
-      <Colapsable box="firstExperienceBox" link="Añadir educación 1">
-      <div className="drop-down">
-        <input className="input-form title-education main-value" type="text" name="title-education" placeholder="Título" required />
-        <input className="input-form center-education" type="text" name="company-project" placeholder="Centro de formación" required />
-        <input className="input-form date-start-education" type="date" name="company-project" placeholder="Fecha inicio" required />
-        <input className="input-form date-end-education" type="date" name="company-project" placeholder="Fecha fin" required />
-      </div>
-      </Colapsable>
+      <Route path="/projects" render={()=>
+        <div>
+        <Projects />
+        <div className="buttonsChangeForm">
+        <button className="buttonContinue"><Link to="/experience">Continuar</Link></button>
+        </div>
+        </div>
+      }/>
 
-      <Colapsable box="secondExperienceBox" link="Añadir educación 2">
-      <div className="drop-down">
-        <input className="input-form main-value name-company" id="company" type="text" name="company" placeholder="Empresa" required />
-        <input className="input-form name-position" id="position" type="text" name="position" placeholder="Puesto de trabajo" required />
-        <input className="input-form date-start-experience" id="init-data-experience" type="date" name="date-start-experience'" required />
-        <input className="input-form date-end-experience" id="finish-data-experience" type="date" name="date-end-experience" required />
-        <textarea className="input-form description-experience" name="description-experience" rows={8} cols={80} defaultValue={"                      "} />
-      </div>
-      </Colapsable>
-      </Fieldset>
+      <Route path="/experience" render={()=>
+        <div>
+        <Experience />
+        <div className="buttonsChangeForm">
+        <button className="buttonContinue"><Link exact to="/">Continuar</Link></button>
+        </div>
+        </div>
+      }/>
+
       </form>
+      </section>
     );
   }
 }

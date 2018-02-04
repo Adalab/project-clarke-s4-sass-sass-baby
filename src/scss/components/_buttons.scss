@@ -6,6 +6,7 @@
 
 .buttonPrint {
   @include noWebKit();
+  cursor: pointer;
   font-size: 16px;
   font-family: $familyPrimary;
   font-weight: map-get($fontWeight, 'light');
@@ -33,6 +34,7 @@
 
 .buttonSave {
   @include noWebKit();
+  cursor: pointer;
   // margin-right: 40px;
   font-size: 16px;
   font-family: $familyPrimary;
@@ -62,6 +64,7 @@
 
 .buttonContinue {
   @include noWebKit();
+  cursor: pointer;
   font-size: 16px;
   font-family: $familyPrimary;
   font-weight: map-get($fontWeight, 'light');
@@ -78,6 +81,11 @@
     color: $colorPrimary;
     background-color: $colorLight;
   }
+  a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
   @media all and (min-width: 1024px) {
     box-shadow: 10px 10px $colorSecondary;
     transition: box-shadow ease 0.5s, color ease 0.5s;
@@ -91,6 +99,7 @@
 // BUTTON IN HEADER
 .button-CV {
   @include noWebKit();
+  cursor: pointer;
   background-color: $colorLight;
   padding: 8px 10px;
   color: $colorPrimary;

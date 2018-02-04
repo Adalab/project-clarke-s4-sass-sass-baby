@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import Fieldset from './Fieldset';
 
 class PersonalData extends Component {
-  render(){
-    return(
+
+  render() {
+    const handleChange = (event) => {
+      const name = event.target.name;
+      this.props.handleChange(name, event.target.value);
+    };
+    return (
       <Fieldset title="Datos personales">
-        <input onChange={this.props.handleChange} className="input-form firstname" id="firstname" type="text" name="firstname" placeholder="Nombre y apellidos" required />
-        <input className="input-form profession" id="profession" type="text" name="profession" placeholder="Profesión actual" required />
+        <input onChange={handleChange} className="input-form firstname" id="firstname" type="text" name="name" placeholder="Nombre y apellidos" required />
+        <input onChange={handleChange} className="input-form profession" id="profession" type="text" name="profession" placeholder="Profesión actual" required />
         <input className="input-form residence" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required />
 
         <div id="input_container">

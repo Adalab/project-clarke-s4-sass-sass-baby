@@ -1,83 +1,66 @@
 import React, { Component } from 'react';
 import './index.css';
 import Header from './components/Header';
-import SectionGeneral from './components/SectionGeneral';
-import Tabs from './components/Tabs';
 import Form from './components/Form';
-import ButtonsForm from './components/ButtonsForm';
-import RightCv from './components/RightCv';
-import LeftCv from './components/LeftCv';
+import Tabs from './components/Tabs';
+import Cv from './components/Cv';
+import PersonalDataBox from './components/PersonalDataBox';
 
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       printing: false,
-      name: ''
-
+      cv: {
+        name: 'Nombre', profession: 'profesión actual'
+      }
     }
-  this.updateState =  this.updateState.bind(this);
+
+    this.updateCv =  this.updateCv.bind(this);
+    this.print =  this.print.bind(this);
   }
 
-  updateState(event) {
-    this.setState({
-        name: event.target.value
-    });
+  updateCv(name, value) {
+    const cv = this.state.cv;
+    cv[name] = value;
+    this.setState({cv: cv});
   }
 
   componentDidMount() {
-    var self = this;
-    window.onafterprint = () => {
-      self.setState({printing: false})
-    };
+    window.onafterprint = () => this.setState({printing: false});
   }
 
-  imprimir() {
+  print() {
     this.setState({printing: true})
-    setTimeout(() => {
-      window.print();
-    }, 1000);
+    setTimeout(() => window.print(), 1000);
   }
 
-  renderApplication() {
-
-    if (this.state.printing === true) {
+  render() {
+    if (this.state.printing) {
       return (
-        <div className="print-cv" style={{height: '100%', margin: 0}}>
-        <LeftCv/>
-        <RightCv/>
-        </div>
-      )
+        <Cv style={{height: '100%', margin: 0}} cv={this.state.cv} />
+      );
     }
 
     return (
       <div className="App">
       <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
-      <main>
       <Header/>
       <div className="formandcv">
-      <SectionGeneral handleChange={this.updateState}/>
+      <Form handleChange={this.updateCv}/>
       <div className="cv-content">
       <aside>
-      <div className="print-cv">
-      <LeftCv name={this.state.name}/>
-      <RightCv/>
-      </div>
-      <input type="button" onClick={ this.imprimir.bind(this) } className="buttonPrint" defaultValue="Imprimir" />
+      <Cv cv={this.state.cv} />
+      <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
       </aside>
       </div>
       </div>
-      </main>
+      <footer className="footer">
+      <p>Powered by<span><a className="adalab" target="_blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
+      </footer>
       </div>
-    )
-  }
-
-  render() {
-    return (
-      this.renderApplication()
     );
   }
 }

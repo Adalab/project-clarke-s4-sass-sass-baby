@@ -1,0 +1,33 @@
+.footer {
+  font-weight: map-get($fontWeight, 'light');
+  font-size: $sizeM;
+  padding-top: $sizeXL;
+  padding-bottom: $sizeXL;
+  background-color: $colorPrimary;
+  text-align: center;
+  color: $colorLight;
+  a {
+    font-size: 20px;
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+    font-weight: map-get($fontWeight, 'regular');
+    transition: color ease 0.8s, text-shadow ease 0.4s;
+    text-shadow: 2px 2px rgba($colorLight, 0.4);
+    &:hover {
+      color: $colorPrimary;
+      text-shadow: -1px -1px 0 $colorLight,
+                    1px -1px 0 $colorLight,
+                   -1px 1px 0 $colorLight,
+                    1px 1px 0 $colorLight;
+    }
+  }
+  @media all and (min-width: 768px) {
+    padding-top: $sizeXXL;
+    padding-bottom: $sizeXXL;
+  }
+  @media all and (min-width: 1024px) {
+    padding-top: $sizeXXL;
+    padding-bottom: $sizeXXL;
+  }
+}

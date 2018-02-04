@@ -35,6 +35,7 @@
 }
 
 .main-nav-button {
+  cursor: pointer;
   border: none;
   background: none;
   height: 64px;
@@ -49,6 +50,6 @@
 
 }
 
-.active {
+a.active button {
   opacity: 1;
 }
