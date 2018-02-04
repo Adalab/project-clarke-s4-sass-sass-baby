@@ -14,7 +14,14 @@ class App extends Component {
     this.state = {
       printing: false,
       cv: {
-        name: 'Nombre', profession: 'profesión actual'
+        name: 'Nombre',
+        profession: 'Profesión Actual',
+        residence: 'Ciudad',
+        telephone: 'Correo electrónico',
+        email: 'email',
+        social: 'Redes sociales',
+        personalWebsite: 'Web personal',
+        personalDescription: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
       }
     }
     this.updateCv =  this.updateCv.bind(this);
