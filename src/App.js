@@ -17,6 +17,7 @@ class App extends Component {
     this.state = {
       printing: false,
       name: ''
+
     }
   this.updateState =  this.updateState.bind(this);
   }
