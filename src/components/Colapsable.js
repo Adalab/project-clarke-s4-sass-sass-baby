@@ -18,10 +18,10 @@ class Colapsable extends Component {
     const collapse = this.state.collapsed ? 'hidden' : '';
 
     return(
-      <div onClick={this.handleClick} id={this.props.box}>
+      <div  id={this.props.box}>
       <div className="add-project caja-educacion">
       <div className="addfield" data-id={0}>
-      <a href="" className="textadd">{this.props.link}</a>
+      <a onClick={this.handleClick} className="textadd">{this.props.link}</a>
       </div>
 
       <div className="buttons-project-container">
