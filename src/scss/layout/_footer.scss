@@ -10,7 +10,7 @@
     font-size: 20px;
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: pointer;
     font-weight: map-get($fontWeight, 'regular');
     transition: color ease 0.8s, text-shadow ease 0.4s;
     text-shadow: 2px 2px rgba($colorLight, 0.4);
