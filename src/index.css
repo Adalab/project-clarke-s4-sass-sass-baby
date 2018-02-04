@@ -246,6 +246,9 @@ hr {
   display: flex;
   justify-content: space-between; }
 
+.textadd {
+  cursor: pointer; }
+
 .header {
   height: 70px;
   display: flex;
