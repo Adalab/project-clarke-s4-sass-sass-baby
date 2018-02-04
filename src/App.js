@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './index.css';
 import Header from './components/Header';
-import SectionGeneral from './components/SectionGeneral';
-import Tabs from './components/Tabs';
 import Form from './components/Form';
+import Tabs from './components/Tabs';
 import RightCv from './components/RightCv';
 import LeftCv from './components/LeftCv';
 
@@ -12,43 +11,37 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       printing: false,
       name: ''
     }
-  this.updateState =  this.updateState.bind(this);
+    this.updateState =  this.updateState.bind(this);
+    this.print =  this.print.bind(this);
   }
 
-  updateState(event) {
-    this.setState({
-        name: event.target.value
-    });
+  updateState(name, value) {
+    const state = {};
+    state[name] = value;
+    this.setState(state);
   }
 
   componentDidMount() {
-    var self = this;
-    window.onafterprint = () => {
-      self.setState({printing: false})
-    };
+    window.onafterprint = () => this.setState({printing: false});
   }
 
-  imprimir() {
+  print() {
     this.setState({printing: true})
-    setTimeout(() => {
-      window.print();
-    }, 1000);
+    setTimeout(() => window.print(), 1000);
   }
 
-  renderApplication() {
-
-    if (this.state.printing === true) {
+  render() {
+    if (this.state.printing) {
       return (
         <div className="print-cv" style={{height: '100%', margin: 0}}>
         <LeftCv/>
         <RightCv/>
         </div>
-      )
+      );
     }
 
     return (
@@ -56,14 +49,14 @@ class App extends Component {
       <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
       <Header/>
       <div className="formandcv">
-      <SectionGeneral handleChange={this.updateState}/>
+      <Form handleChange={this.updateState}/>
       <div className="cv-content">
       <aside>
       <div className="print-cv">
       <LeftCv name={this.state.name}/>
       <RightCv/>
       </div>
-      <input type="button" onClick={ this.imprimir.bind(this) } className="buttonPrint" defaultValue="Imprimir" />
+      <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
       </aside>
       </div>
       </div>
@@ -71,12 +64,6 @@ class App extends Component {
         <p>Powered by<span><a className="adalab" target="_blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
       </footer>
       </div>
-    )
-  }
-
-  render() {
-    return (
-      this.renderApplication()
     );
   }
 }
