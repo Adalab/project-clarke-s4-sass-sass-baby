@@ -38,6 +38,7 @@ class App extends Component {
         yearProject: 'Año'
       }
     }
+    
     this.updateCv =  this.updateCv.bind(this);
     this.print =  this.print.bind(this);
   }
