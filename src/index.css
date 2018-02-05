@@ -165,6 +165,24 @@ hr {
 .label-form {
   display: none; }
 
+.input-container {
+  position: relative; }
+  .input-container .papelera {
+    position: absolute;
+    width: 6%;
+    top: 29%;
+    right: 3px; }
+    @media all and (min-width: 768px) {
+      .input-container .papelera {
+        width: 4%;
+        top: 25%;
+        right: 12px; } }
+    @media all and (min-width: 1024px) {
+      .input-container .papelera {
+        width: 5%;
+        top: 30%;
+        right: 10px; } }
+
 .input-form {
   -webkit-appearance: none;
   -moz-appearance: none;

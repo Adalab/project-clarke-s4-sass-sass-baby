@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fieldset from './Fieldset';
+import Input from './Input';
 
 class PersonalData extends Component {
 
@@ -10,9 +11,9 @@ class PersonalData extends Component {
     };
     return (
       <Fieldset title="Datos personales">
-        <input onChange={handleChange} className="input-form firstname" id="firstname" type="text" name="name" placeholder="Nombre y apellidos" required />
-        <input onChange={handleChange} className="input-form profession" id="profession" type="text" name="profession" placeholder="Profesión actual" required />
-        <input onChange={handleChange} className="input-form residence" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required />
+        <Input onChange={handleChange} className="input-form firstname" id="firstname" type="text" name="name" placeholder="Nombre y apellidos" required />
+        <Input onChange={handleChange} className="input-form profession" id="profession" type="text" name="profession" placeholder="Profesión actual" required />
+        <Input onChange={handleChange} className="input-form residence" id="residence" type="text" name="residence" placeholder="Lugar de residencia" required />
 
         <div id="input_container">
         <input onChange={handleChange} className="input-form telephone" id="telephone" type="tel" name="telephone" placeholder="Teléfono" required />
