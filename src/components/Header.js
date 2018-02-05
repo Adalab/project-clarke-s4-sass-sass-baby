@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Header extends Component {
 
-handleDoubleClick() {
+handleClick() {
   const sectionForm = document.querySelector('#section-form');
   const sectionCV = document.querySelector('.cv-content');
   const buttonPreview = document.querySelector('.button-CV');
@@ -24,7 +24,7 @@ handleDoubleClick() {
     return (
       <header className="header">
       <a href="#"><img className="logo" src="img/logo.svg" alt="logo" /></a>
-      <button className="button-CV" onClick={this.handleDoubleClick.bind(this)}>Previsualizar</button>
+      <button className="button-CV" onClick={this.handleClick.bind(this)}>Previsualizar</button>
       </header>
     );
   }
