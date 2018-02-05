@@ -26,7 +26,7 @@ class Form extends Component {
 
       <Route path="/studies" render={()=>
         <div>
-        <Education />
+        <Education handleChange={this.props.handleChange} />
         <div className="buttonsChangeForm">
         <button className="buttonContinue"><Link to="/projects">Continuar</Link></button>
         </div>
@@ -35,7 +35,7 @@ class Form extends Component {
 
       <Route path="/projects" render={()=>
         <div>
-        <Projects />
+        <Projects handleChange={this.props.handleChange}/>
         <div className="buttonsChangeForm">
         <button className="buttonContinue"><Link to="/experience">Continuar</Link></button>
         </div>
@@ -44,7 +44,7 @@ class Form extends Component {
 
       <Route path="/experience" render={()=>
         <div>
-        <Experience />
+        <Experience handleChange={this.props.handleChange}/>
         <div className="buttonsChangeForm">
         <button className="buttonContinue"><Link exact to="/">Continuar</Link></button>
         </div>

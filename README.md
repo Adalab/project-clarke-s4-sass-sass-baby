@@ -2,7 +2,7 @@
 
 Este proyecto toma como base el código heredado de [itgirls](https://github.com/Adalab/clarke-s2-itgirls), del segundo sprint (el currículum interactivo).
 
-![itgirls Web](img-readme/itgirls.png)
+![itgirls Web](https://github.com/Adalab/clarke-s4-SASS-SASS-baby/blob/master/img-readme/Itgirls.png)
 
 ## Objetivos
 
