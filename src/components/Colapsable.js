@@ -13,11 +13,6 @@ class Colapsable extends Component {
     this.setState({collapsed : !this.state.collapsed});
   }
 
-
-  handleDeleteAll(){
-
-}
-
   render(){
     const collapse = this.state.collapsed ? 'hidden' : '';
 
