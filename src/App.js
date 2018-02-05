@@ -23,9 +23,13 @@ class App extends Component {
         personalWebsite: 'Web personal',
         personalDescription: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
         titleEducation: 'Título de la formación',
+        titleEducation2: 'Título de la formación 2',
         trainingCenterEducation: 'Centro de formación',
+        trainingCenterEducation2: 'Centro de formación 2',
         startDateEducation: 'Fecha de inicio',
+        startDateEducation2: 'Fecha de inicio',
         finishDateEducation: 'Fecha de fin',
+        finishDateEducation2: 'Fecha de fin',
         companyName: 'Nombre empresa',
         titleExperiencie: 'Puesto de trabajo',
         startDateExperience: 'Inicio',
@@ -38,7 +42,7 @@ class App extends Component {
         yearProject: 'Año'
       }
     }
-    
+
     this.updateCv =  this.updateCv.bind(this);
     this.print =  this.print.bind(this);
   }
@@ -58,6 +62,11 @@ class App extends Component {
     setTimeout(() => window.print(), 1000);
   }
 
+  deleteState = (key) => {
+    const newCV = Object.assign({}, this.state.cv, {[key]: ''})
+    this.setState({cv: newCV});
+  }
+
   render() {
     if (this.state.printing) {
       return (
@@ -67,20 +76,20 @@ class App extends Component {
 
     return (
       <div className="App">
-        <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
-        <Header/>
-        <div className="formandcv">
-          <Form handleChange={this.updateCv}/>
-          <div className="cv-content">
-            <aside>
-              <Cv cv={this.state.cv} />
-              <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
-            </aside>
-          </div>
-        </div>
-        <footer className="footer">
-          <p>Powered by<span><a className="adalab" target="_blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
-        </footer>
+      <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
+      <Header/>
+      <div className="formandcv">
+      <Form data={this.state.cv} handleChange={this.updateCv} deleteState={this.deleteState}/>
+      <div className="cv-content">
+      <aside>
+      <Cv cv={this.state.cv} />
+      <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
+      </aside>
+      </div>
+      </div>
+      <footer className="footer">
+      <p>Powered by<span><a className="adalab" target="_blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
+      </footer>
       </div>
     );
   }
