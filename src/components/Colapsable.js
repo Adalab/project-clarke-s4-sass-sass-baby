@@ -24,7 +24,6 @@ class Colapsable extends Component {
       </div>
 
       <div className="buttons-project-container">
-      <img className="buttons-project margin-right-buttons papelera" src="img/trash.png" alt="Icono de papelera" />
       <img id="arrowDownFirstElement" onClick={this.handleClick} className="buttons-project flecha-abajo" src="img/arrowdown.png" alt="Flecha hacia abajo" />
       </div>
       </div>
