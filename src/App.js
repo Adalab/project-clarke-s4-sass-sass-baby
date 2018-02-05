@@ -38,6 +38,7 @@ class App extends Component {
         yearProject: 'Año'
       }
     }
+
     this.updateCv =  this.updateCv.bind(this);
     this.print =  this.print.bind(this);
   }
@@ -66,20 +67,20 @@ class App extends Component {
 
     return (
       <div className="App">
-        <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
-        <Header/>
-        <div className="formandcv">
-          <Form handleChange={this.updateCv}/>
-          <div className="cv-content">
-            <aside>
-              <Cv cv={this.state.cv} />
-              <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
-            </aside>
-          </div>
-        </div>
-        <footer className="footer">
-          <p>Powered by<span><a className="adalab" target="_blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
-        </footer>
+      <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
+      <Header/>
+      <div className="formandcv">
+      <Form handleChange={this.updateCv}/>
+      <div className="cv-content">
+      <aside>
+      <Cv cv={this.state.cv} />
+      <input type="button" onClick={ this.print } className="buttonPrint" defaultValue="Imprimir" />
+      </aside>
+      </div>
+      </div>
+      <footer className="footer">
+      <p>Powered by<span><a className="adalab" target="_blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
+      </footer>
       </div>
     );
   }
