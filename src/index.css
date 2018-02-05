@@ -427,7 +427,8 @@ section {
   font-weight: 700; }
 
 .put-inline {
-  display: inline-block; }
+  display: inline-block;
+  padding-right: 15px; }
 
 @media print {
   .print-cv {
