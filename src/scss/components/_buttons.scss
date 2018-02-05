@@ -1,0 +1,115 @@
+//BUTTON CONTINUE SAVE PRINT AND BACK
+.buttonsChangeForm { // es un div, para que los botones esten a la derecha
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonPrint {
+  @include noWebKit();
+  cursor: pointer;
+  font-size: 16px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $colorLight;
+  padding: 8px 30px;
+  background-color: $colorPrimary;
+  border-radius: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover{
+    color: $colorPrimary;
+    background-color: $colorLight;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.buttonSave {
+  @include noWebKit();
+  cursor: pointer;
+  // margin-right: 40px;
+  font-size: 16px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $colorLight;
+  padding: 8px 30px;
+  background-color: $colorPrimary;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover{
+    color: $colorPrimary;
+    background-color: $colorLight;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.buttonContinue {
+  @include noWebKit();
+  cursor: pointer;
+  font-size: 16px;
+  font-family: $familyPrimary;
+  font-weight: map-get($fontWeight, 'light');
+  color: $colorLight;
+  padding: 8px 30px;
+  background-color: $colorPrimary;
+  border-radius: 0;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 8px;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover{
+    color: $colorPrimary;
+    background-color: $colorLight;
+  }
+  a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  @media all and (min-width: 1024px) {
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+
+// BUTTON IN HEADER
+.button-CV {
+  @include noWebKit();
+  cursor: pointer;
+  background-color: $colorLight;
+  padding: 8px 10px;
+  color: $colorPrimary;
+  font-weight: map-get($fontWeight, 'regular');
+  text-align: center;
+  border-radius: 0px;
+  border: 0;
+  font-size: 12px;
+  font-family: $familyPrimary;
+  @media all and (min-width:1024px) {
+    display: none;
+  }
+}

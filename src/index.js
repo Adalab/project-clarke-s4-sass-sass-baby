@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import legacyCode from './legacy';
+import { HashRouter } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-legacyCode();
+ReactDOM.render(
+  <HashRouter>
+    <App />
+  </HashRouter>,
+  document.getElementById('root')
+);
+
+// legacyCode();

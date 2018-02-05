@@ -1,0 +1,162 @@
+.display-none { //devderia reutilizarse la class hidden
+  display: none;
+}
+
+// Clases generales
+section {
+  width: 100%;
+  @media all and (min-width: 1024px) {
+    width: 60%;
+  }
+}
+
+.cv-content {
+  overflow: scroll;
+  width:100%;
+  background-image: url('bg.png');
+  background-repeat: repeat;
+  border: 0;
+  padding-bottom: $sizeXXXL;
+  display: none;
+  @media all and (min-width: 768px) {
+    padding-top: $sizeXXXL;
+  }
+  @media all and (min-width: 1024px) {
+    padding-top: 128px;
+    border-left: 2px solid $colorPrimary;
+    border-style: dashed;
+    display: block;
+  }
+}
+
+.print-cv {
+  display: flex;
+  height: 842px;
+  width: 595px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $sizeXL;
+  @media all and (min-width: 768px) {
+    border: 2px solid $colorSecondary;
+    box-shadow: 10px 10px $colorSecondary;
+    transition: box-shadow ease 0.5s, color ease 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+
+  }
+}
+
+.list-none {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+//css cv-left
+.cv-left {
+  padding: $sizeL;
+  background-color: $colorDarkMidtone;
+  color: $colorLight;
+  font-size: 15px;
+  max-width: 30%;
+  min-width: 30%;
+  * {
+    margin-bottom: $sizeXL;
+    margin-top: $sizeM;
+    &:first-child {
+      margin-top: 0;
+    }
+    * {
+      margin-bottom: $sizeS;
+    }
+    ul {
+      margin-top: 12px;
+      font-size: 10px;
+      font-weight: map-get($fontWeight, 'regular');
+    }
+    li {
+      margin-bottom: $sizeS;
+      margin-top: $sizeS;
+    }
+  }
+}
+
+.cv-name {
+  margin-bottom: $sizeM;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.cv-description {
+  * {
+    margin-top: 0;
+    margin-bottom: $sizeS;
+  }
+  .description-text {
+    font-size: 12px;
+    line-height: $sizeM;
+  }
+}
+
+
+//css cv-right
+.cv-right {
+  line-height: 20px;
+  padding: $sizeL;
+  min-width: 70%;
+  max-width: 70%;
+  background-color: $colorLight;
+  font-size: 14px;
+  ul{
+    padding: 0;
+    list-style-type: none;
+    margin-top: $sizeM;
+  }
+  h3 {
+    margin-top: $sizeL;
+    margin-bottom: $sizeS;
+    text-decoration: underline;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: $sizeM;
+  }
+  .tittle-education {
+    margin-top: $sizeS;
+  }
+  .list-style {
+    margin-top: 0;
+  }
+}
+
+
+.bold {
+  font-weight: map-get($fontWeight, 'bold');
+}
+
+.put-inline {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+// PRINT
+@media print {
+  .print-cv {
+    display: flex;
+    page-break-inside: avoid;
+  }
+
+  .cv-left {
+    float: left;
+    background-color: $colorDark;
+    -webkit-print-color-adjust:exact;
+    height: 842px;
+  }
+
+  .cv-right {
+    float: right;
+    height: 842px;
+  }
+}
