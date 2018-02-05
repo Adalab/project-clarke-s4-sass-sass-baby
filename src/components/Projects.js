@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fieldset from './Fieldset';
 import Colapsable from './Colapsable';
+import Input from './Input';
 
 class Projects extends Component {
   static defaultProps = {
@@ -21,8 +22,8 @@ class Projects extends Component {
       <Fieldset title= "Proyectos">
       <Colapsable box="firstProyectBox" link="Añadir proyecto 1">
       <div className= "drop-down">
-      <input onChange={handleChange} className="input-form main-value name-project" id="name-project" type="text" name="nameProject" placeholder="Nombre del proyecto" required />
-      <input onChange={handleChange} className="input-form company-project" id="company-project" type="text" name="companyProject" placeholder="Empresa o proyecto personal" required />
+      <Input onChange={handleChange} className="input-form main-value name-project" id="name-project" type="text" name="nameProject" placeholder="Nombre del proyecto" value={this.props.data.nameProject} deleteState={this.props.deleteState} required={true} />
+      <Input onChange={handleChange} className="input-form company-project" id="company-project" type="text" name="companyProject" placeholder="Empresa o proyecto personal" value={this.props.data.companyProject} deleteState={this.props.deleteState} required={true} />
       <div className="containter-data-project">
       <select onChange={handleChange} className="input-form select-date" name="monthProject">
       <option className="option-form grey" disabled selected>Mes</option>
@@ -43,14 +44,14 @@ class Projects extends Component {
         {yearOptions}
       </select>
       </div>
-      <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject" rows={8} cols={80} defaultValue={""} />
+      <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject" rows={8} cols={80} defaultValue={""} value={this.props.descriptionProject} deleteState={this.props.deleteState} required={true}/>
       </div>
       </Colapsable>
 
       <Colapsable box= "secondProyectBox" link="Añadir proyecto 2">
       <div className= "drop-down">
-      <input onChange={handleChange}  className="input-form main-value name-project" id="name-project" type="text" name="nameProject2" placeholder="Nombre del proyecto" required />
-      <input onChange={handleChange}  className="input-form company-project" id="company-project" type="text" name="companyProject2" placeholder="Empresa o proyecto personal" required />
+      <Input onChange={handleChange}  className="input-form main-value name-project" id="name-project" type="text" name="nameProject2" placeholder="Nombre del proyecto" required />
+      <input onChange={handleChange}  className="input-form company-project" id="company-project" type="text" name="companyProject2" placeholder="Empresa o proyecto personal" value={this.props.data.nameProject2} deleteState={this.props.deleteState} required={true} />
       <div className="containter-data-project">
       <select onChange={handleChange} className="input-form select-date" name="monthProject2">
       <option className="option-form grey" selected>Mes</option>
@@ -71,7 +72,7 @@ class Projects extends Component {
       {yearOptions}
       </select>
       </div>
-      <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject2" rows={8} cols={80} defaultValue={""} />
+      <textarea Input onChange={handleChange} className="input-form description-project" name="descriptionProject2" rows={8} cols={80} defaultValue={""} value={this.props.data.descriptionProject2} deleteState={this.props.deleteState} required={true}/>
       </div>
       </Colapsable>
       </Fieldset>
