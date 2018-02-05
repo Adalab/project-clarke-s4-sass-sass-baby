@@ -58,6 +58,11 @@ class App extends Component {
     setTimeout(() => window.print(), 1000);
   }
 
+  deleteState = (key) => {
+    const newCV = Object.assign({}, this.state.cv, {[key]: ''})
+    this.setState({cv: newCV});
+  }
+
   render() {
     if (this.state.printing) {
       return (
@@ -70,7 +75,7 @@ class App extends Component {
       <iframe id="ifmcontentstoprint" style={{height: '0px', width: '0px', position: 'absolute'}}></iframe>
       <Header/>
       <div className="formandcv">
-      <Form handleChange={this.updateCv}/>
+      <Form data={this.state.cv} handleChange={this.updateCv} deleteState={this.deleteState}/>
       <div className="cv-content">
       <aside>
       <Cv cv={this.state.cv} />
