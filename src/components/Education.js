@@ -23,10 +23,10 @@ class Education extends Component {
 
         <Colapsable box= "secondEducationBox" link="Añadir formación 2">
         <div className="drop-down">
-          <input onChange={handleChange} className="input-form title-education1 main-value" type="text" name="titleEducation2" placeholder="Título" required />
-          <input onChange={handleChange} className="input-form center-education1" type="text" name="trainingCenterEducation2" placeholder="Centro de formación" required />
-          <input onChange={handleChange} className="input-form date-start-education1" type="date" name="startDateEducation2" placeholder="Fecha inicio" required />
-          <input onChange={handleChange} className="input-form date-end-education1" type="date" name="finishDateEducation2" placeholder="Fecha inicio" required />
+          <input onChange={handleChange} className="input-form title-education1 main-value" type="text" name="titleEducation2" placeholder="Título" value={this.props.data.titleEducation2} deleteState={this.props.deleteState} required={true}/>
+          <input onChange={handleChange} className="input-form center-education1" type="text" name="trainingCenterEducation2" placeholder="Centro de formación" value={this.props.data.trainingCenterEducation2} deleteState={this.props.deleteState} required={true} />
+          <input onChange={handleChange} className="input-form date-start-education1" type="date" name="startDateEducation2" placeholder="Fecha inicio" value={this.props.data.startDateEducation2} deleteState={this.props.deleteState} required={true} />
+          <input onChange={handleChange} className="input-form date-end-education1" type="date" name="finishDateEducation2" placeholder="Fecha inicio" value={this.props.data.startDateEducation2} deleteState={this.props.deleteState} required={true} />
         </div>
         </Colapsable>
       </Fieldset>
