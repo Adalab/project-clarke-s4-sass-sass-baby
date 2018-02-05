@@ -6,20 +6,14 @@ class Projects extends Component {
   constructor(props){
     super(props);
     this.state= {
-      value: 'Mes'
+      month: 'Mes'
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event){
-    this.setState({value: event.target.value})
-  }
-
-  handleSubmit(event){
-    alert('El mes elegido es' + this.state.value);
-    event.preventDefault();
+    this.setState({month: event.target.month})
   }
 
 
@@ -36,20 +30,20 @@ class Projects extends Component {
       <input className="input-form company-project" id="company-project" type="text" name="company-project" placeholder="Empresa o proyecto personal" required />
       <div className="containter-data-project">
 
-      <select value={this.state.value} onChange={this.handleChange} onSubmit= {this.handleSubmit} className="input-form select-date" name="month-project">
+      <select value={this.state.month} onChange={this.handleChange} className="input-form select-date" name="month-project">
       <option className="option-form grey" disabled selected>Mes</option>
-      <option value= "Enero">Enero</option>
-      <option value= "Febrero">Febrero</option>
-      <option value= "Marzo">Marzo</option>
-      <option value= "Abril">Abril</option>
-      <option value= "Mayo">Mayo</option>
-      <option value= "Junio">Junio</option>
-      <option value= "Julio">Julio</option>
-      <option value= "Agosto">Agosto</option>
-      <option value= "Septiembre">Septiembre</option>
-      <option value= "Octubre">Octubre</option>
-      <option value= "Noviembre">Noviembre</option>
-      <option value= "Diciembre">Diciembre</option>
+      <option month= "Enero">Enero</option>
+      <option month= "Febrero">Febrero</option>
+      <option month= "Marzo">Marzo</option>
+      <option month= "Abril">Abril</option>
+      <option month= "Mayo">Mayo</option>
+      <option month= "Junio">Junio</option>
+      <option month= "Julio">Julio</option>
+      <option month= "Agosto">Agosto</option>
+      <option month= "Septiembre">Septiembre</option>
+      <option month= "Octubre">Octubre</option>
+      <option month= "Noviembre">Noviembre</option>
+      <option month= "Diciembre">Diciembre</option>
       </select>
       <select className="input-form select-date" name="year-project" id="selectorYear">
       <option className="option-form" disabled selected>Año</option>
