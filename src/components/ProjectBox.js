@@ -10,7 +10,7 @@ class ProjectBox extends Component {
 				<li className="cv-name-project bold">{ this.props.cv.nameProject }</li>
 				<li className="cv-company-project">{ this.props.cv.companyProject }</li>
 				<li className="write-date put-inline">{ this.props.cv.monthProject }</li>
-				<li className="write-date put-inline">{ this.props.cv.yearProject }</li>
+				<li className="write-date put-inline">{this.props.cv.yearProject}</li>
 			</ul>
 			<p className="cv-description-project">{ this.props.cv.descriptionProject }
 			</p>
@@ -18,7 +18,7 @@ class ProjectBox extends Component {
 			<ul className="list-none">
 				<li className="cv-name-project1 bold">{ this.props.cv.nameProject2 }</li>
 				<li className="cv-company-project1">{ this.props.cv.companyProject2}</li>
-				<li className="write-date put-inline">{ this.props.cv.monthProject2 }</li>
+				<li className="write-date put-inline">{this.props.cv.monthProject2 }</li>
 				<li className="write-date put-inline">{ this.props.cv.yearProject2 }</li>
 			</ul>
 			<p className="cv-description-project1"> { this.props.cv.descriptionProject2 }

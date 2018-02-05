@@ -9,7 +9,9 @@ import Colapsable from './Colapsable';
 import { Link, Route, Switch } from 'react-router-dom';
 
 class Form extends Component {
+
   render(){
+
     return (
       <section id="section-form">
       <Tabs/>

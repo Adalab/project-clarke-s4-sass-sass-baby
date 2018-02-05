@@ -3,8 +3,15 @@ import Fieldset from './Fieldset';
 import Colapsable from './Colapsable';
 
 class Projects extends Component {
+  static defaultProps = {
+      yearexp: ['Año','1970','1971','1972','1973','1974','1975','1976','1977','1978','1979','1980','1981','1982','1983','1984','1985','1986','1987','1988','1989','1990','1991','1992','1993','1994','1995','1996','1997','1998','1999','2000','2001','202','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018']
+    }
 
   render() {
+    let yearOptions = this.props.yearexp.map((yearexp) => {
+              return <option className="option-form" key={yearexp} value={yearexp} >{yearexp}</option>
+        });
+
     const handleChange = (event) => {
       const name = event.target.name;
       this.props.handleChange(name, event.target.value);
@@ -33,19 +40,7 @@ class Projects extends Component {
       <option>Diciembre</option>
       </select>
       <select onChange={handleChange} className="input-form select-date" name="yearProject" id="selectorYear">
-      <option className="option-form" disabled selected>Año</option>
-      <option>2018</option>
-      <option>2017</option>
-      <option>2016</option>
-      <option>2015</option>
-      <option>2014</option>
-      <option>2013</option>
-      <option>2012</option>
-      <option>2011</option>
-      <option>2010</option>
-      <option>2009</option>
-      <option>2008</option>
-      <option>2007</option>
+        {yearOptions}
       </select>
       </div>
       <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject" rows={8} cols={80} defaultValue={""} />
@@ -57,8 +52,8 @@ class Projects extends Component {
       <input onChange={handleChange}  className="input-form main-value name-project" id="name-project" type="text" name="nameProject2" placeholder="Nombre del proyecto" required />
       <input onChange={handleChange}  className="input-form company-project" id="company-project" type="text" name="companyProject2" placeholder="Empresa o proyecto personal" required />
       <div className="containter-data-project">
-      <select onChange={handleChange} className="input-form select-date" name="monthProjectProject2">
-      <option className="option-form grey"  disabled selected>Mes</option>
+      <select onChange={handleChange} className="input-form select-date" name="monthProject2">
+      <option className="option-form grey" selected>Mes</option>
       <option>Enero</option>
       <option>Febrero</option>
       <option>Marzo</option>
@@ -73,7 +68,7 @@ class Projects extends Component {
       <option>Diciembre</option>
       </select>
       <select onChange={handleChange} className="input-form select-date" name="yearProject2" id="selectorYear">
-      <option className="option-form" disabled selected>Año</option>
+      {yearOptions}
       </select>
       </div>
       <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject2" rows={8} cols={80} defaultValue={""} />
