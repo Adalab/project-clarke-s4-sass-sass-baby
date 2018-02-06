@@ -23,7 +23,7 @@ handleClick() {
   render(){
     return (
       <header className="header">
-      <a href="#"><img className="logo" src="img/logo.svg" alt="logo" /></a>
+      <a><img className="logo" src="img/logo.svg" alt="logo" /></a>
       <button className="button-CV" onClick={this.handleClick.bind(this)}>Previsualizar</button>
       </header>
     );

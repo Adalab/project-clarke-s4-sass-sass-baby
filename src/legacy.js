@@ -1,4 +1,3 @@
-'use strict';
 
 function legacyCode() {
   //Función para selector Year en formulario

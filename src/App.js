@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './index.css';
 import Header from './components/Header';
 import Form from './components/Form';
-import Tabs from './components/Tabs';
 import Cv from './components/Cv';
-import PersonalDataBox from './components/PersonalDataBox';
 
 
 class App extends Component {
@@ -97,7 +95,7 @@ class App extends Component {
       </div>
       </div>
       <footer className="footer">
-      <p>Powered by<span><a className="adalab" target="_blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
+      <p>Powered by<span><a className="adalab" target="blank" href="http://adalab.es/"> &nbsp;Adalab</a></span></p>
       </footer>
       </div>
     );

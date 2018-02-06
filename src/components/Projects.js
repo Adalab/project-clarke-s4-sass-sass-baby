@@ -26,7 +26,7 @@ class Projects extends Component {
       <Input onChange={handleChange} className="input-form company-project" id="company-project" type="text" name="companyProject" placeholder="Empresa o proyecto personal" value={this.props.data.companyProject} deleteState={this.props.deleteState} required={true} />
       <div className="containter-data-project">
       <select onChange={handleChange} className="input-form select-date" name="monthProject">
-      <option className="option-form grey" disabled selected>Mes</option>
+      <option className="option-form grey" selected>Mes</option>
       <option>Enero</option>
       <option>Febrero</option>
       <option>Marzo</option>
@@ -44,7 +44,7 @@ class Projects extends Component {
         {yearOptions}
       </select>
       </div>
-      <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject" rows={8} cols={80} defaultValue={""} value={this.props.descriptionProject} deleteState={this.props.deleteState} required={true}/>
+      <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject" rows={8} cols={80} defaultValue={""} required={true}/>
       </div>
       </Colapsable>
 
@@ -68,11 +68,11 @@ class Projects extends Component {
       <option>Noviembre</option>
       <option>Diciembre</option>
       </select>
-      <select onChange={handleChange} className="input-form select-date" name="yearProject2" id="selectorYear">
+      <select onChange={handleChange} className="input-form select-date" name="yearProject2" id="selectorYear" defaultValue={""}>
       {yearOptions}
       </select>
       </div>
-      <textarea Input onChange={handleChange} className="input-form description-project" name="descriptionProject2" rows={8} cols={80} defaultValue={""} value={this.props.data.descriptionProject2} deleteState={this.props.deleteState} required={true}/>
+      <textarea onChange={handleChange} className="input-form description-project" name="descriptionProject2" rows={8} cols={80} defaultValue={""} required={true}/>
       </div>
       </Colapsable>
       </Fieldset>

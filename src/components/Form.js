@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Fieldset from './Fieldset';
 import Tabs from './Tabs';
 import PersonalData from './PersonalData';
 import Education from './Education';
 import Projects from './Projects';
 import Experience from './Experience';
-import Colapsable from './Colapsable';
 import { Link, Route, Switch } from 'react-router-dom';
 
 class Form extends Component {
@@ -15,8 +13,8 @@ class Form extends Component {
     return (
       <section id="section-form">
       <Tabs/>
-      <form className="main-form" id="main-form" action method="post">
-
+      <form className="main-form" id="main-form" method="true">
+      <Switch>
       <Route exact path="/" render={()=>
         <div>
         <PersonalData data={this.props.data} handleChange={this.props.handleChange} deleteState={this.props.deleteState}/>
@@ -25,7 +23,8 @@ class Form extends Component {
         </div>
         </div>
       }/>
-
+      </Switch>
+      <Switch>
       <Route path="/studies" render={()=>
         <div>
         <Education data={this.props.data} handleChange={this.props.handleChange} deleteState={this.props.deleteState}/>
@@ -34,7 +33,8 @@ class Form extends Component {
         </div>
         </div>
       }/>
-
+      </Switch>
+      <Switch>
       <Route path="/projects" render={()=>
         <div>
         <Projects data={this.props.data} handleChange={this.props.handleChange} deleteState={this.props.deleteState}/>
@@ -43,7 +43,8 @@ class Form extends Component {
         </div>
         </div>
       }/>
-
+      </Switch>
+      <Switch>
       <Route path="/experience" render={()=>
         <div>
         <Experience data={this.props.data} handleChange={this.props.handleChange} deleteState={this.props.deleteState}/>
@@ -52,7 +53,7 @@ class Form extends Component {
         </div>
         </div>
       }/>
-
+      </Switch>
       </form>
       </section>
     );
