@@ -50,8 +50,8 @@ class Projects extends Component {
 
       <Colapsable box= "secondProyectBox" link="Añadir proyecto 2">
       <div className= "drop-down">
-      <Input onChange={handleChange}  className="input-form main-value name-project" id="name-project" type="text" name="nameProject2" placeholder="Nombre del proyecto" required />
-      <input onChange={handleChange}  className="input-form company-project" id="company-project" type="text" name="companyProject2" placeholder="Empresa o proyecto personal" value={this.props.data.nameProject2} deleteState={this.props.deleteState} required={true} />
+      <Input onChange={handleChange}  className="input-form main-value name-project" id="name-project" type="text" name="nameProject2" placeholder="Nombre del proyecto" value={this.props.data.nameProject2} deleteState={this.props.deleteState} required={true} />
+      <Input onChange={handleChange}  className="input-form company-project" id="company-project" type="text" name="companyProject2" placeholder="Empresa o proyecto personal" value={this.props.data.companyProject2} deleteState={this.props.deleteState} required={true} />
       <div className="containter-data-project">
       <select onChange={handleChange} className="input-form select-date" name="monthProject2">
       <option className="option-form grey" selected>Mes</option>
