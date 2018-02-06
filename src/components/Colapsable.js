@@ -6,7 +6,7 @@ class Colapsable extends Component {
     this.state={
       collapsed:true
     }
-  this.handleClick=this.handleClick.bind(this);
+    this.handleClick=this.handleClick.bind(this);
   }
 
   handleClick(){

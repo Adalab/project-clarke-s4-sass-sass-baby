@@ -27,6 +27,7 @@ class Education extends Component {
           <Input onChange={handleChange} className="input-form center-education1" type="text" name="trainingCenterEducation2" placeholder="Centro de formación" value={this.props.data.trainingCenterEducation2} deleteState={this.props.deleteState} required={true} />
           <input onChange={handleChange} className="input-form date-start-education1" type="date" name="startDateEducation2" placeholder="Fecha inicio"/>
           <input onChange={handleChange} className="input-form date-end-education1" type="date" name="finishDateEducation2" placeholder="Fecha fin"/>
+
         </div>
         </Colapsable>
       </Fieldset>

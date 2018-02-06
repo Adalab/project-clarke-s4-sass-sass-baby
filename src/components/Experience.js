@@ -4,7 +4,6 @@ import Colapsable from './Colapsable';
 import Input from './Input';
 
 class Experience extends Component {
-
   render() {
     const handleChange = (event) => {
       const name = event.target.name;
