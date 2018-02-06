@@ -27,19 +27,28 @@ class App extends Component {
         trainingCenterEducation: 'Centro de formación',
         trainingCenterEducation2: 'Centro de formación 2',
         startDateEducation: 'Fecha de inicio',
-        startDateEducation2: 'Fecha de inicio',
         finishDateEducation: 'Fecha de fin',
+        startDateEducation2: 'Fecha de inicio',
         finishDateEducation2: 'Fecha de fin',
         companyName: 'Nombre empresa',
         titleExperiencie: 'Puesto de trabajo',
-        startDateExperience: 'Inicio',
+        titleExperiencie2: 'Puesto de trabajo 2',
+        startDateExperience: 'Fecha de inicio',
         finishDateExperience: 'Fecha de fin',
-        descriptionExperience: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+        startDateExperience2: 'Fecha de inicio',
+        finishDateExperience2: 'Fecha de fin',
+        descriptionExperience: 'Describe aquí tu experiencia profesional',
+        descriptionExperience2: 'Describe aquí tu experiencia profesional',
         nameProject: 'Nombre del proyecto',
+        nameProject2: 'Nombre del proyecto 2',
         companyProject: 'Empresa',
-        descriptionProject: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo',
+        companyProject2: 'Empresa 2',
+        descriptionProject: 'Describe aquí tu proyecto',
+        descriptionProject2: 'Describe aquí tu proyecto',
         monthProject: 'Mes',
-        yearProject: 'Año'
+        yearProject: 'Año',
+        monthProject2: 'Mes',
+        yearProject2: 'Año'
       }
     }
 

@@ -19,7 +19,7 @@ class Form extends Component {
 
       <Route exact path="/" render={()=>
         <div>
-        <PersonalData handleChange={this.props.handleChange} />
+        <PersonalData data={this.props.data} handleChange={this.props.handleChange} deleteState={this.props.deleteState}/>
         <div className="buttonsChangeForm">
         <button className="buttonContinue"><Link to="/studies">Continuar</Link></button>
         </div>
