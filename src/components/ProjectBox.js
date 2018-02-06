@@ -7,23 +7,21 @@ class ProjectBox extends Component {
 			<h3 className="seccion tittle-projects">PROYECTOS</h3>
 			<ul className="list-none">
 				{/*   PROJECTS 1  -------------*/}
-				<li className="cv-name-project bold">Nombre del proyecto</li>
-				<li className="cv-company-project">Empresa</li>
-				<li className="write-date put-inline"> Mes </li>
-				<li className="write-date put-inline"> Año </li>
+				<li className="cv-name-project bold">{ this.props.cv.nameProject }</li>
+				<li className="cv-company-project">{ this.props.cv.companyProject }</li>
+				<li className="write-date put-inline">{ this.props.cv.monthProject }</li>
+				<li className="write-date put-inline">{this.props.cv.yearProject}</li>
 			</ul>
-			<p className="cv-description-project"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-				ligula eget dolor. Aenean massa.
+			<p className="cv-description-project">{ this.props.cv.descriptionProject }
 			</p>
 			{/*   PROJECTS 2  -------------*/}
 			<ul className="list-none">
-				<li className="cv-name-project1 bold">Nombre del proyecto</li>
-				<li className="cv-company-project1">Empresa</li>
-				<li className="write-date put-inline"> Mes </li>
-				<li className="write-date put-inline"> Año </li>
+				<li className="cv-name-project1 bold">{ this.props.cv.nameProject2 }</li>
+				<li className="cv-company-project1">{ this.props.cv.companyProject2}</li>
+				<li className="write-date put-inline">{this.props.cv.monthProject2 }</li>
+				<li className="write-date put-inline">{ this.props.cv.yearProject2 }</li>
 			</ul>
-			<p className="cv-description-project1"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-				ligula eget dolor. Aenean massa.
+			<p className="cv-description-project1"> { this.props.cv.descriptionProject2 }
 			</p>
 		</div>
   );
