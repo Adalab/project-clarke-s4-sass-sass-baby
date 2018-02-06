@@ -16,17 +16,17 @@ class PersonalData extends Component {
         <Input onChange={handleChange} className="input-form residence" id="residence" type="text" name="residence" placeholder="Lugar de residencia" value={this.props.data.residence} deleteState={this.props.deleteState} required={true}/>
 
         <div id="input_container">
-        <Input onChange={handleChange} className="input-form telephone" id="telephone" type="tel" name="telephone" placeholder="Teléfono" value={this.props.data.telephone} deleteState={this.props.deleteState} required={true} />
+        <input onChange={handleChange} className="input-form telephone" id="telephone" type="tel" name="telephone" placeholder="Teléfono" value={this.props.data.telephone} deleteState={this.props.deleteState} required={true} />
         <img src="img/phone.png" id="input_img" />
         </div>
 
         <div id="input_container">
-        <Input onChange={handleChange} className="input-form email" id="email" type="email" name="email" placeholder="Email" value={this.props.data.email} deleteState={this.props.deleteState} required={true} />
+        <input onChange={handleChange} className="input-form email" id="email" type="email" name="email" placeholder="Email" value={this.props.data.email} deleteState={this.props.deleteState} required={true} />
         <img src="img/email.png" id="input_img" />
         </div>
 
         <div id="input_container">
-        <Input onChange={handleChange} className="input-form social" id="social" type="url" name="social" placeholder="Red social - https://miredsocial.com" value={this.props.data.social} deleteState={this.props.deleteState} />
+        <input onChange={handleChange} className="input-form social" id="social" type="url" name="social" placeholder="Red social - https://miredsocial.com" value={this.props.data.social} deleteState={this.props.deleteState} />
         <img src="img/github-logo.png" id="input_img" />
         </div>
 
